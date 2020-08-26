@@ -1,0 +1,364 @@
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 100%;
+  transition: font-size 0.2s linear;
+  scroll-behavior: smooth; 
+  @media (min-width: 500px) and (max-width: 792px) {
+    font-size: 110%;
+  }
+  @media (min-width: 793px) and (max-width:992px) {
+    font-size: 125%;
+  }
+  @media (min-width: 993px) {
+    font-size: 140%;
+  }
+}
+@font-face {
+  font-family: 'Iceland';
+  src: url("../../public/assets/fonts/Iceland-Regular.ttf");
+}
+@font-face {
+  font-family: 'RussoOne';
+  src: url("../../public/assets/fonts/RussoOne-Regular.ttf");
+}
+
+body {
+  background-image: url("../../public/assets/w3.jpg");
+  background-size: 100% 30%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  
+}
+
+
+.active {
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+
+
+.bg0, .bg1, .bg2, .bg3{
+  // z-index: 999;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+  color: lightgrey;
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.nav_section {
+  height: 60px;
+  display: flex;
+#scrolling {
+  border-bottom: 2px solid white;
+  background: rgb(2, 2, 34);
+} 
+  .navbar {
+    font-family: 'Iceland', cursive;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    .collapse {
+      @media (min-width: 767px) {
+        display: block !important;
+      }
+    }
+    .nav-item {
+      margin: 0 5px;
+      color: grey;
+      a:hover {
+        color: white;
+      }
+      @media (max-width: 370px){
+        margin: 0;
+        padding: 0 ;
+      }
+    }
+    .nav-link {
+      padding: 0 12px;
+      @media (max-width: 400px) {
+        padding: 0 6px;
+      }
+      @media (max-width: 318px) {
+        padding: 0;
+      }
+    }
+    
+  }
+  .logo {
+    height: 40px;
+    width: 80px;
+    display: none;
+    // margin: 17px 50px 0 0;
+    @media (min-width: 470px) {
+      display: block;
+    }
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 3.4em;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Iceland', cursive;
+    text-align: center;
+  }  
+}
+    
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5em;
+  color: transparent !important;
+  text-transform: uppercase;
+  font-family: 'RussoOne';
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+  background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+} 
+
+.about {
+  color: white;
+  .aboutCode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1em;
+    color: rgb(6, 167, 6);
+    font-weight: 500;
+    margin-bottom: 10px;
+    p {
+      margin: 0;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 0.8em;
+    
+    span {
+      color: cornflowerblue;
+    }
+  }
+  .sub {
+    margin: 10px 0;
+    font-size: 1.35em;
+    font-weight: 700;
+    color: cornflowerblue;
+  }
+  i {
+    text-align: center;
+    font-weight: 600;
+  }
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    &:hover {
+      color: white;
+    }
+  }
+  h2 {
+    margin-top: 40px;
+  }
+}
+
+// projects styles
+.project {
+  h1 {
+    font-family: 'Iceland', cursive;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: white;
+    text-shadow: 0 0 15px blue;
+  }
+}
+.appImage {
+  width: auto;
+  height: 150px;
+  margin-bottom: 30px;
+  border-radius: 2%;
+  @media (min-width: 370px) and (max-width: 576px) {
+    height: 200px;
+  }
+  @media (min-width: 576px) and (max-width:768px) {
+    height: 300px;
+  }
+  @media (min-width: 769px) and (max-width: 992px) {
+    height: 350px;
+  }
+  @media (min-width: 993px) {
+    height: 350px;
+  }
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1em;
+  color: white;
+  text-shadow: 0 0 15px blue;
+  text-align: center;
+  
+}
+.iconLinks {
+  margin-top: 10px;
+  a {
+    margin: 15px;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Contact + footer
+.contact {
+  strong {
+    margin: 20px 0;
+    color: white;
+    font-size: 1em;
+  }
+  .iconContact {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: blue;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+    a {
+      color: blue;
+      font-size: 1.3em;
+      margin-left: 20px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  .date {
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-top: 20px;
+    p {
+      margin-right: 5px;
+      margin-bottom: 0;
+    }
+  }
+  
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  //border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: linear-gradient(to bottom, #373b44, #4286f4);
+}
+
+//Menu button
+
+.burger-button {
+  position: relative;
+  height: 30px;
+  width: 32px;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+  pointer-events: all;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  outline: none !important;
+  margin-top: 7px;
+}
+
+.burger-bar {
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  left: 6px;
+  height: 3px;
+  width: auto;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+  opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+  background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.burger-bar--1 {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.burger-bar--2 {
+  transform-origin: 100% 50%;
+  transform: scaleX(0.8);
+}
+
+.burger-button:hover .burger-bar--2 {
+  transform: scaleX(1);
+}
+
+.no-touchevents .burger-bar--2:hover {
+  transform: scaleX(1);
+}
+
+.burger-bar--3 {
+  transform: translateY(6px);
+}
+
+#burger.active .burger-button {
+  transform: rotate(-180deg);
+}
+
+#burger.active .burger-bar {
+  background-color: red;
+}
+
+#burger.active .burger-bar--1 {
+  transform: rotate(45deg);
+}
+
+#burger.active .burger-bar--2 {
+  opacity: 0;
+}
+
+#burger.active .burger-bar--3 {
+  transform: rotate(-45deg);
+}
+
+
