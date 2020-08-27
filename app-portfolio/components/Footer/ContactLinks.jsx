@@ -18,8 +18,8 @@ export default function ContactLinks() {
             <a className="iconContact" id="mail" href="mailto:luchianemil@gmail.com"  rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faEnvelope} /> luchianemil@gmail.com
             </a>
-             {/* eslint-disable-next-line */}
-            <a className="iconContact" href='#' target={'_blank'} onClick={contactToggle}>
+            
+            <a className="iconContact" href='#' target={'_blank'} onClick={contactToggle} rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faListAlt}/> In-app form 
             </a>
             <Modal isOpen={contact} title={"Contact"} onToggle={contactToggle}>
@@ -27,13 +27,28 @@ export default function ContactLinks() {
             </Modal>
 
             <div className='links'>
-                    <a  href='https://github.com/EmilLM' target={'_blank'} rel="noopener noreferrer">
+                    <a  
+                        href='https://github.com/EmilLM' 
+                        target={'_blank'} 
+                        rel="noopener noreferrer" 
+                        alt="github link"
+                    >
                         <FontAwesomeIcon icon={faGithubSquare} />
                     </a>
-                    <a  href='https://www.linkedin.com/in/emil-luchian-9933b198/' target={'_blank'} rel="noopener noreferrer">
+                    <a  
+                        href='https://www.linkedin.com/in/emil-luchian-9933b198/' 
+                        target={'_blank'} 
+                        rel="noopener noreferrer"
+                        alt="linkedIn link"
+                    >
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
-                    <a  href='https://www.facebook.com/luchian.emil/' target={'_blank'} rel="noopener noreferrer">
+                    <a  
+                        href='https://www.facebook.com/luchian.emil/'
+                        target={'_blank'} 
+                        rel="noopener noreferrer"
+                        alt="facebook link"
+                     >
                         <FontAwesomeIcon icon={faFacebookSquare} />
                     </a>
             </div>

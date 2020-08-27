@@ -45,26 +45,26 @@
     border-top: 2px solid white;
   }
   .bgAbout::before {
-    background-image: url("../../public/assets/w1.jpg");
+    background-image: url("../../public/assets/about_bg.webp");
     @include bgProps;
     
   }
   .bg0::before {
-    background-image: url("../../public/assets/about.jpg");
+    background-image: url("../../public/assets/chat_bg.webp");
     @include bgProps;
   }
   
   .bg1::before {
-    background-image: url("../../public/assets/CV.jpg");
+    background-image: url("../../public/assets/CV_bg.webp");
     @include bgProps;
   }
   
   .bg2::before {
-    background-image: url("../../public/assets/aurora1.jpg");
+    background-image: url("../../public/assets/CI_bg.webp");
     @include bgProps;
   }
   .bg3::before {
-    background-image: url("../../public/assets/test.jpg");
+    background-image: url("../../public/assets/weather_bg.webp");
     @include bgProps;
     border-bottom: 4px solid white;
   }
@@ -87,7 +87,7 @@
   .clip-path {
     position: relative;
     margin-top: calc( ( var(--clip-padding) * -1 ) - 2px );
-    background-image: url("../../public/assets/bg1.webp");
+    background-image: url("../../public/assets/contact.webp");
     background-size: 101% 100%;
     background-position: right bottom;
     background-repeat: no-repeat;

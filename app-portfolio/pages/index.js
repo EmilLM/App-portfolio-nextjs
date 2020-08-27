@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>App portfolio landing page</title>
+        <title>Portfolio</title>
       </Head>
       <NavBar/>
       <Content/>

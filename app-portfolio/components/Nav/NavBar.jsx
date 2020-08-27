@@ -40,7 +40,7 @@ export default function NavBar() {
                             </Scrollspy>
                         </Nav>
                     </Collapse>
-                    <img className="logo" src="/assets/logo.png" alt="logo"/>
+                    <img className="logo" src="/assets/logo.webp" alt="logo"/>
                 </Navbar>
                 
             </section>

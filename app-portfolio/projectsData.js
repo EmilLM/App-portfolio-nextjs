@@ -2,7 +2,7 @@
  const projects = [
     {
         _id: 0,
-        src: 'ChatAway.jpg',
+        src: 'ChatAway.webp',
         link: 'https://chat-away-app.herokuapp.com',
         sourceLink: 'https://github.com/EmilLM/ChatAway',
         altText: 'ChatAway image',
@@ -20,7 +20,7 @@
         altText: 'CV image',
         title: 'CV',
         description: 'Static site of a short and long version of my resume.',
-        stack: 'Vue - Bootstrap4'
+        stack: 'Vue -Scss- Bootstrap4'
 
     },
     {
