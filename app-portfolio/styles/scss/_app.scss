@@ -5,7 +5,7 @@
 html {
   font-size: 100%;
   transition: font-size 0.2s linear;
-  scroll-behavior: smooth; 
+  // scroll-behavior: smooth; 
   @media (min-width: 500px) and (max-width: 792px) {
     font-size: 110%;
   }
@@ -34,10 +34,7 @@ body {
 }
 
 
-.active {
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-}
+
 
 
 
@@ -52,18 +49,28 @@ body {
 }
 
 .nav_section {
-  height: 60px;
   display: flex;
-#scrolling {
-  border-bottom: 2px solid white;
-  background: rgb(2, 2, 34);
-} 
+  .is-active{
+    background: rgb(15, 15, 15);
+    border-radius: 5px;
+  }
+  #scrolling {
+    border-bottom: 2px solid white;
+    background: rgb(4, 4, 65);
+  } 
   .navbar {
+    height: 55px;
     font-family: 'Iceland', cursive;
     font-size: 1.3em;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
+    padding: 1px 0px;
+    @media (min-width: 400px) {
+      padding: 8px 16px;
+      
+    
+    }
     .collapse {
       @media (min-width: 767px) {
         display: block !important;
@@ -71,24 +78,36 @@ body {
     }
     .nav-item {
       margin: 0 5px;
-      color: grey;
-      a:hover {
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+      &:hover{
         color: white;
+        svg {
+          color: white;
+        }
       }
-      @media (max-width: 370px){
-        margin: 0;
-        padding: 0 ;
+      svg {
+        color: #007bff;
+        font-size: 0.8em;
+        margin-right: 5px;
+        
       }
-    }
-    .nav-link {
-      padding: 0 12px;
-      @media (max-width: 400px) {
-        padding: 0 6px;
-      }
-      @media (max-width: 318px) {
+      .nav-link {
         padding: 0;
+        &:hover{
+          color: white;
+        }
+      } 
+     
+      @media (min-width: 770px){ 
+        padding: 0 10px;
+        svg {
+          margin-right: 10px;
+        }
       }
     }
+    
     
   }
   .logo {
@@ -96,7 +115,7 @@ body {
     width: 80px;
     display: none;
     // margin: 17px 50px 0 0;
-    @media (min-width: 470px) {
+    @media (min-width: 550px) {
       display: block;
     }
   }
@@ -116,6 +135,7 @@ header {
     margin-bottom: 40px;
     font-family: 'Iceland', cursive;
     text-align: center;
+    text-shadow: 0 0 10px #eeff03;
   }  
 }
     
@@ -130,51 +150,7 @@ header {
   -webkit-text-fill-color: transparent !important;
 } 
 
-.about {
-  color: white;
-  .aboutCode {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.1em;
-    color: rgb(6, 167, 6);
-    font-weight: 500;
-    margin-bottom: 10px;
-    p {
-      margin: 0;
-    }
-  }
-  p {
-    text-align: center;
-    font-size: 0.8em;
-    
-    span {
-      color: cornflowerblue;
-    }
-  }
-  .sub {
-    margin: 10px 0;
-    font-size: 1.35em;
-    font-weight: 700;
-    color: cornflowerblue;
-  }
-  i {
-    text-align: center;
-    font-weight: 600;
-  }
-  a {
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.4em;
-    &:hover {
-      color: white;
-    }
-  }
-  h2 {
-    margin-top: 40px;
-  }
-}
+
 
 // projects styles
 .project {
@@ -229,6 +205,7 @@ header {
 
 // Contact + footer
 .contact {
+  min-height: 80vh;
   strong {
     margin: 20px 0;
     color: white;
@@ -291,74 +268,6 @@ footer {
   background: linear-gradient(to bottom, #373b44, #4286f4);
 }
 
-//Menu button
 
-.burger-button {
-  position: relative;
-  height: 30px;
-  width: 32px;
-  display: block;
-  border: 0;
-  background-color: transparent;
-  border-radius: 0;
-  pointer-events: all;
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  outline: none !important;
-  margin-top: 7px;
-}
-
-.burger-bar {
-  background-color: blue;
-  position: absolute;
-  top: 50%;
-  right: 6px;
-  left: 6px;
-  height: 3px;
-  width: auto;
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-  opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
-  background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.burger-bar--1 {
-  -webkit-transform: translateY(-6px);
-  transform: translateY(-6px);
-}
-
-.burger-bar--2 {
-  transform-origin: 100% 50%;
-  transform: scaleX(0.8);
-}
-
-.burger-button:hover .burger-bar--2 {
-  transform: scaleX(1);
-}
-
-.no-touchevents .burger-bar--2:hover {
-  transform: scaleX(1);
-}
-
-.burger-bar--3 {
-  transform: translateY(6px);
-}
-
-#burger.active .burger-button {
-  transform: rotate(-180deg);
-}
-
-#burger.active .burger-bar {
-  background-color: red;
-}
-
-#burger.active .burger-bar--1 {
-  transform: rotate(45deg);
-}
-
-#burger.active .burger-bar--2 {
-  opacity: 0;
-}
-
-#burger.active .burger-bar--3 {
-  transform: rotate(-45deg);
-}
 
 

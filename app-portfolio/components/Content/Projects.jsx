@@ -1,9 +1,9 @@
 import React from 'react';
 import Project from "./Project";
-import projects from '../../projectsData'
 
 
-const Projects = () => {
+
+const Projects = ({projects}) => {
 
   
     return ( 

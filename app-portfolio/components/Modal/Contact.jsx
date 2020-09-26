@@ -41,11 +41,9 @@ export default function Contact() {
     return(
         <>
         {errors.isValid && nameInput && emailInput && messageInput
-            ?
-            <h2 id="afterSubmit">Thanks for the message, {nameInput}</h2>
-            :
-           <Form onSubmit={handleSubmit}>
-               <FormGroup>
+            ?<h2 id="afterSubmit">Thanks for the message, {nameInput}</h2>
+            :<Form onSubmit={handleSubmit} >
+                <FormGroup>
                    <Label for="nameInput">Name:</Label>
                    <Input name="nameInput" autoComplete="off"
                           value={nameInput}
@@ -55,26 +53,26 @@ export default function Contact() {
 
                    />
                    <FormFeedback valid>Cool name!</FormFeedback>
-               </FormGroup>
-               <FormGroup>
-                   <Label for="emailInput">Email:</Label>
-                   <Input  type={"text"} name="emailInput"
-                           value={emailInput} onChange={handleChange}
-                           onClick={handleSelect} noValidate
-                           valid={emailInput.includes('@')} invalid={errors.isInvalid}
-                   />
-                   <FormFeedback valid>Seems alright!</FormFeedback>
-               </FormGroup>
-               <FormGroup>
-                   <Label for="messageInput">Message:</Label>
-                   <Input type="textarea" name="messageInput" id="messageArea"
-                          value={messageInput}
-                          onChange={handleChange}
-                          onClick={handleSelect}
-                   />
-               </FormGroup>
-               <button type="submit" className="btn btn-primary" disabled={!isEnabled} >Submit</button>
-           </Form>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="emailInput">Email:</Label>
+                    <Input  type={"text"} name="emailInput"
+                            value={emailInput} onChange={handleChange}
+                            onClick={handleSelect} noValidate
+                            valid={emailInput.includes('@')} invalid={errors.isInvalid}
+                    />
+                    <FormFeedback valid>Seems alright!</FormFeedback>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="messageInput">Message:</Label>
+                    <Input type="textarea" name="messageInput" id="messageArea"
+                            value={messageInput}
+                            onChange={handleChange}
+                            onClick={handleSelect}
+                    />
+                </FormGroup>
+                <button type="submit" className="btn btn-primary" disabled={!isEnabled} >Submit</button>
+            </Form>
         }
         </>
     )

@@ -1,11 +1,11 @@
 import React from 'react';
 import HeaderBox from './HeaderBox';
 import Projects from "./Projects";
-import FooterBox from "./FooterBox";
+import Contact from "./Contact";
 import About from "./About";
 
 
-export default function Content()  {
+export default function Content({projects})  {
     
 
     
@@ -13,8 +13,8 @@ export default function Content()  {
         <main>
             <HeaderBox/>
             <About/>
-            <Projects/>
-            <FooterBox/>
+            <Projects projects={projects}/>
+            <Contact/>
         </main>
     );
 };
