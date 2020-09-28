@@ -6,7 +6,7 @@ const About = () => {
     return ( 
         <div className={'diagonal-box bgAbout'} id="about">
             <div className="content about">
-                <h1 className="sectionTitle">About</h1>
+                <h2 className="sectionTitle">About</h2>
                 
                 <div className="about-code">
                     <p><span>Name :</span> 'Luchian Emil Moise', </p>
@@ -17,7 +17,7 @@ const About = () => {
                
                 <p className="about-info">
                     Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Self-learned
-                    the <span>MERN stack</span> and currently practicing technologies like GraphQL, Jest, Docker <br />with more to follow.
+                    the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker <br />with more to follow.
                 </p>
                 <p className="about-info">
                     Eager to prove my abilities and excited for new challenges.

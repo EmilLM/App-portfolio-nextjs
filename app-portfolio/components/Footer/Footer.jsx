@@ -7,7 +7,7 @@ export default function Footer() {
     const year = new Date().getFullYear()
     return (
         <footer id="contact">
-            <Logo/>
+            <Logo footerLogo={"footerLogo"}/>
             <div className="date" > 
                 <p>Copyright &copy;</p>
                 <span >{year}</span>

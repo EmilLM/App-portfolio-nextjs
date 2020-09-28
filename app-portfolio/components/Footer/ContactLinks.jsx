@@ -1,39 +1,42 @@
-import React, { useState } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faListAlt } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithubSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import Modal from "../Modal/Modal";
-import Contact from "../Modal/Contact.jsx";
+// import Modal from "../Modal/Modal";
+// import Contact from "../Modal/Contact.jsx";
 
 export default function ContactLinks() {
     
-    const [contact, setContact] = useState(false);
-    const contactToggle = (e) => {
-        e.preventDefault();
-        setContact(!contact);
-    }
+    // const [contact, setContact] = useState(false);
+    // const contactToggle = (e) => {
+    //     e.preventDefault();
+    //     setContact(!contact);
+    // }
     return (
-        <>
-            <a className="iconContact" id="mail" href="mailto:luchianemil@gmail.com"  rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faEnvelope} /> luchianemil@gmail.com
-            </a>
+        <div className="links-container">
+           <p className="links-info">You can also reach me on:</p>
             
-            <a className="iconContact" href='#' target={'_blank'} onClick={contactToggle} rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faListAlt}/> In-app form 
-            </a>
-            <Modal isOpen={contact} title={"Contact"} onToggle={contactToggle}>
+            {/* <a className="iconContact" href='#' target={'_blank'} onClick={contactToggle} rel="noopener noreferrer">
+                <img src="" > In-app form 
+            </a> */}
+            {/* <Modal isOpen={contact} title={"Contact"} onToggle={contactToggle}>
                 <Contact/>
-            </Modal>
+            </Modal> */}
 
             <div className='links'>
+                    <a
+                        classNam                   id="mail" 
+                        href="mailto:luchianemil@gmail.com" 
+                        rel="noopener noreferrer"
+                    >
+                        <img src="/assets/icons/gmail.svg"  />
+                        luchianemil
+                    </a>
                     <a  
                         href='https://github.com/EmilLM' 
                         target={'_blank'} 
                         rel="noopener noreferrer" 
                         alt="github link"
-                    >
-                        <FontAwesomeIcon icon={faGithubSquare} />
+                    >   
+                        <img src="/assets/icons/github-sign.svg"  />
+                        EmilLM
                     </a>
                     <a  
                         href='https://www.linkedin.com/in/emil-luchian-9933b198/' 
@@ -41,7 +44,8 @@ export default function ContactLinks() {
                         rel="noopener noreferrer"
                         alt="linkedIn link"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <img src="/assets/icons/linkedin.svg"  />
+                        Emil Luchian
                     </a>
                     <a  
                         href='https://www.facebook.com/luchian.emil/'
@@ -49,9 +53,10 @@ export default function ContactLinks() {
                         rel="noopener noreferrer"
                         alt="facebook link"
                      >
-                        <FontAwesomeIcon icon={faFacebookSquare} />
+                        <img src="/assets/icons/facebook.svg"  />
+                        Emil Luchian
                     </a>
             </div>
-        </>
+        </div>
     );
 };

@@ -33,11 +33,6 @@ body {
   
 }
 
-
-
-
-
-
 .bg0, .bg1, .bg2, .bg3{
   // z-index: 999;
   transition: filter 0.5s ease;
@@ -91,7 +86,10 @@ body {
         color: #007bff;
         font-size: 0.8em;
         margin-right: 5px;
-        
+        display: none;
+        @media (min-width: 408px) {
+          display: block;
+        }
       }
       .nav-link {
         padding: 0;
@@ -101,9 +99,9 @@ body {
       } 
      
       @media (min-width: 770px){ 
-        padding: 0 10px;
+        padding: 0 7px;
         svg {
-          margin-right: 10px;
+          margin-right: 7px;
         }
       }
     }
@@ -125,8 +123,9 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  h3 {
+  .header-text {
     width: 100%;
     color: white;
     font-weight: 700;
@@ -135,26 +134,27 @@ header {
     margin-bottom: 40px;
     font-family: 'Iceland', cursive;
     text-align: center;
-    text-shadow: 0 0 10px #eeff03;
+    text-shadow: 0 0 7px #eeff03;
   }  
 }
     
 .sectionTitle {
+  // width: 100%;
   text-align: center;
   font-size: 2.5em;
   color: transparent !important;
   text-transform: uppercase;
   font-family: 'RussoOne';
-  background: linear-gradient(to right, #1a2980, #26d0ce);
+  background: linear-gradient(90deg,#1a2980,#26d0ce);
   background-clip: text;
-  -webkit-text-fill-color: transparent !important;
+  
 } 
 
 
 
 // projects styles
 .project {
-  h1 {
+  h3 {
     font-family: 'Iceland', cursive;
     font-weight: 700;
     font-size: 2.2em;
@@ -192,7 +192,7 @@ header {
   
 }
 .iconLinks {
-  margin-top: 10px;
+  margin-top: 7px;
   a {
     margin: 15px;
     &:hover {
@@ -203,59 +203,7 @@ header {
 }
 
 
-// Contact + footer
-.contact {
-  min-height: 80vh;
-  strong {
-    margin: 20px 0;
-    color: white;
-    font-size: 1em;
-  }
-  .iconContact {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: blue;
-    text-decoration: none;
-    &:hover {
-      color: white;
-    }
-  }
-  
-  .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    
-    a {
-      color: blue;
-      font-size: 1.3em;
-      margin-left: 20px;
-      &:hover {
-        color: white;
-      }
-    }
-  }
-}
 
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  .date {
-    display: flex;
-    align-items: center;
-    color: gray;
-    margin-top: 20px;
-    p {
-      margin-right: 5px;
-      margin-bottom: 0;
-    }
-  }
-  
-}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -263,7 +211,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  //border-radius: 10px;
+  //border-radius: 7px;
   box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background: linear-gradient(to bottom, #373b44, #4286f4);
 }

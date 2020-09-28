@@ -13,8 +13,8 @@ const Project = (props) => {
         <div className={`diagonal-box bg${id}`}>
              <LazyLoad height={150} offset={100}>
                 <div className="content project">
-                    {sectionTitle?<h2 className="sectionTitle">{sectionTitle}</h2>: null}
-                    <h1> &lt; {title} &gt;</h1>
+                    {sectionTitle &&<h2 className="sectionTitle">{sectionTitle}</h2>}
+                    <h3> &lt; {title} &gt;</h3>
                     <img className="appImage" src={`/assets/${src}`} alt={altText}/>
                     <div className="description">
                         <p>{description}</p>

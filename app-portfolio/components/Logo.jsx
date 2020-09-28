@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
 import { Tooltip } from 'reactstrap';
 
-const Logo = () => {
+const Logo = ({footerLogo}) => {
 
     const [tooltipOpen, setTooltipOpen] = useState(false);
     const toggle = () => setTooltipOpen(!tooltipOpen);
 
     return (
         <>
-            <h4 className="lem" id="lem_logo">LEM</h4>
+            <div className="lem flicker-in-glow footerLogo" id="lem_logo">
+                <span className="logo-text">LEM</span>
+            </div>
             <Tooltip placement="bottom" isOpen={tooltipOpen} target="lem_logo" toggle={toggle}>
                 Stands for my full name initials!
             </Tooltip>

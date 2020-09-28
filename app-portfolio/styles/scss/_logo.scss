@@ -1,34 +1,50 @@
+
 .lem {
-  // width: 200px;
-  // height: 78px;
+  width: 200px;
+  height: 200px;
   position: relative;
-  font-size: 45px;
-  color: black;
+  font-size: 50px;
   font-family: "RussoOne", sans-serif;
   text-transform: uppercase;
-  margin: 0 auto;
-  // color: rgb(24, 24, 145);
+  // background-color: hsla(0, 0%, 0%, 0.1);
   color: white;
-  text-shadow: 0 0 15px blue;
+  // text-shadow: 0 0 15px blue;
+  //  box-shadow: 0px 0px 62px -4px rgb(30, 26, 216);
   letter-spacing: 20px;
-  border: 5px solid rgb(42, 42, 110);
-  // border-radius: 10px;
-  padding: 10px 0 10px 20px;
+  border-top: 10px solid navy;
+  border-left: 10px solid navy;
+  border-right: 10px solid lightblue;
+  border-bottom: 10px solid lightblue;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
   @media (min-width: 992px) {
     font-size: 60px;
   }
-  &::before {
-    position: absolute;
-    content: '';
-    width: 55%;
-    height: 114%;
-    top: -5px;
-    right: -5px;
-    border-bottom: 5px solid lightblue;
-    border-top: 5px solid lightblue;
-    border-right: 5px solid lightblue;
-    @media (min-width: 992px) {
-      height: 111%;
-    }
+
+  
+  .logo-text {
+    transform: rotate(-45deg);
+    margin-left: 15px;
+    margin-bottom: 20px;
   }
 }
+
+
+// &::before {
+//     position: absolute;
+//     content: '';
+//     width: 55%;
+//     height: 114%;
+//     top: -10px;
+//     right: -10px;
+//     border-bottom: 10px solid lightblue;
+//     border-top: 10px solid lightblue;
+//     border-right: 10px solid lightblue;
+//     @media (min-width: 992px) {
+//       height: 111%;
+//     }
+//   }
