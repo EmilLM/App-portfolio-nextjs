@@ -11,7 +11,6 @@ const Contact = () => {
                 <h2 className="sectionTitle" >Contact</h2>
                 <div className="contact-container">
                     <ContactForm />
-                    <strong></strong>
                     <ContactLinks />
                 </div>
                 <Footer/>

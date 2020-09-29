@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Input, FormFeedback} from 'reactstrap';
+import emailjs from 'emailjs-com';
+
 
 
 export default function ContactForm() {
@@ -22,6 +24,22 @@ export default function ContactForm() {
         isValid: false,
         isInvalid: false,
     });
+
+    const sendEmail = () => {
+        const templateParams = {
+            name: nameInput,
+            message: messageInput,
+            email: emailInput
+        }
+        emailjs.send('1234-GMAIL','template_jczgxtd', templateParams, 'user_VIMh8mewaR5I6RPSpsz35')
+            .then((response) => {
+                console.log('SUCCESS!', response);
+            }, (err) => {
+                console.log('FAILED...', err);
+            });
+    }
+
+
     const handleSubmit = e => {
         e.preventDefault();
         if (emailInput.includes('@')) {
@@ -34,6 +52,7 @@ export default function ContactForm() {
                 isInvalid: true
             })
         }
+        sendEmail();
         setFormState({
             nameInput: "",
             emailInput: "",
@@ -41,13 +60,16 @@ export default function ContactForm() {
         });
     };
 
+    
+
     return(
-        <div className="container-form">
-            <div className="contact-info">
+        <div className="form-container">
+            <div className="form-info">
                 <div>We can discuss ideas, projects or  opportunities to develop yours.</div>
                 <p>Feel free to leave your impression of my work.</p>
             </div>
             <Form onSubmit={handleSubmit} className="contact-form" >
+                
                 <FormGroup>
                     <Input  
                         name="nameInput" type="text"
@@ -57,17 +79,16 @@ export default function ContactForm() {
                         noValidate valid={Boolean(nameInput)}
                         placeholder={"Name"}
                     />
-                    <FormFeedback valid>Cool name!</FormFeedback>
+                    
                 </FormGroup>
                 <FormGroup>
                     <Input  
-                        type={"text"} name="emailInput"
+                        type="email" name="emailInput"
                         value={emailInput} onChange={handleChange}
                         noValidate
                         valid={emailInput.includes('@')} invalid={errors.isInvalid}
                         placeholder={"Email"}
                     />
-                    <FormFeedback valid>Seems alright!</FormFeedback>
                 </FormGroup>
                 <FormGroup>
                     <Input 

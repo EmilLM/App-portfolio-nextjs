@@ -22,7 +22,7 @@ export default function ContactLinks() {
 
             <div className='links'>
                     <a
-                        classNam                   id="mail" 
+                        id="mail" 
                         href="mailto:luchianemil@gmail.com" 
                         rel="noopener noreferrer"
                     >

@@ -91,7 +91,7 @@
     background-size: 101% 100%;
     background-position: right bottom;
     background-repeat: no-repeat;
-    padding: calc( ( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) ) ) 0 4em;
+    padding: calc( ( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) ) ) 0 0;
     clip-path: polygon(
       0% calc(var(--clip-padding) * 2), 
       100% 0%, 

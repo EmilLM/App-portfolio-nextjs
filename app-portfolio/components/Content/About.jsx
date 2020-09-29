@@ -10,14 +10,14 @@ const About = () => {
                 
                 <div className="about-code">
                     <p><span>Name :</span> 'Luchian Emil Moise', </p>
-                    <p><span>Specialization :</span> 'Full stack web developer',</p> 
+                    <p><span>Specialization :</span> 'Full stack web dev',</p> 
                     <p><span>Stack :</span> 'MongoDB-Express-React-Node',</p>
                     <p><span>Location :</span> 'Bucharest, Romania'</p>
                 </div>
                
                 <p className="about-info">
                     Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Self-learned
-                    the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker <br />with more to follow.
+                    the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker with more to follow.
                 </p>
                 <p className="about-info">
                     Eager to prove my abilities and excited for new challenges.
