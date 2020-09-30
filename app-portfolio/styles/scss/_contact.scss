@@ -28,13 +28,16 @@
   }
   .form-info {
     margin-top: 10px;
+    font-size: 0.8em;
     text-align: center;
     color: white;
+    font-family: "Quantum";
   
   }
   .contact-form {
     width: 320px;
     height: 300px !important;
+    font-family: "Iceland";
     @media (max-width: 360px) {
         width: 270px;
       }
@@ -85,6 +88,8 @@
     margin-top: 10px;
     text-align: center;
     color: white;
+    font-size: 0.8em;
+    font-family: "Quantum";
   }
   .links {
     height: 240px;
@@ -105,6 +110,7 @@
       justify-content: flex-start;
       align-items: center;
       border-radius: 0.25em;
+      font-family: "Iceland";
       @media (max-width: 360px) {
         width: 270px;
       }
@@ -132,6 +138,7 @@ footer {
     display: flex;
     align-items: center;
     color: gray;
+    font-family: "Quantum";
     p {
       margin-right: 5px;
       margin-bottom: 0;
@@ -145,7 +152,7 @@ footer {
   border-right: 7px solid lightblue;
   border-bottom: 7px solid lightblue;
     .logo-text {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
   

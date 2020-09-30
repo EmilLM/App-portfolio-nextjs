@@ -9,6 +9,7 @@
     color: rgb(6, 167, 6);
     font-weight: 500;
     margin-bottom: 30px;
+    font-family: "Iceland";
     p {
       margin: 0;
       span {
@@ -23,7 +24,7 @@
     padding: 10px 20px;
     color: white;
     border-radius: 10px;
- 
+    font-family: "RussoOne";
     max-width: 700px;
     span {
       color: cornflowerblue;
@@ -31,14 +32,17 @@
   }
   .about-skills {
     margin: 10px 0;
-    font-size: 1.35em;
+    font-size: 1.1em;
     font-weight: 700;
     color: white;
+    font-family: "Quantum";
   }
   i {
     text-align: center;
     font-weight: 600;
     color: rgb(36, 25, 184);
+    font-weight: bold;
+    font-family: "Iceland";
   }
   a {
     &:hover {
