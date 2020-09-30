@@ -1,6 +1,7 @@
 .about {
   color: white;
   .about-code {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,11 +19,11 @@
   .about-info {
     text-align: center;
     font-size: 0.8em;
-    background-color:rgba(240, 251, 255, 0.3);
+    background-color: rgb(18 72 92 / 38%);
     padding: 10px 20px;
     color: white;
     border-radius: 10px;
-    border: 2px solid black;    
+ 
     max-width: 700px;
     span {
       color: cornflowerblue;
@@ -32,24 +33,29 @@
     margin: 10px 0;
     font-size: 1.35em;
     font-weight: 700;
-    color: cornflowerblue;
+    color: white;
   }
   i {
     text-align: center;
     font-weight: 600;
+    color: rgb(36, 25, 184);
   }
   a {
     &:hover {
-      color: white;
+      color: rgb(70, 88, 189);
     }
   }
   h2 {
     margin-top: 40px;
   }
   button {
+    color: rgb(112, 119, 211);
     margin-top: 30px;
     font-size: 0.8em;
     font-weight: 700;
+    background: rgb(18 72 92 / 38%);
+    border: none;
+
     svg {
         margin-right: 10px;
     }

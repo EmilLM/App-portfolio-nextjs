@@ -26,7 +26,7 @@ const About = () => {
                 </p>
                 <div className="about-skills">Main stack:</div>
                 <i>
-                    HTML5, CSS3, Javascript, Scss, React, Next.js, Node, Express, MongoDB, <br/> Bootstrap4, Material-UI
+                    HTML5, CSS3, Javascript, Scss, React, Next.js, Bootstrap4, Material-UI <br /> Node.js, Express.js, MongoDB
                 </i>
                 <button 
                     className="btn btn-primary"

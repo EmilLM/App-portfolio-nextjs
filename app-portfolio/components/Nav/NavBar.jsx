@@ -40,7 +40,7 @@ const NavBar = React.memo(() =>{
                                     <FontAwesomeIcon icon={faUser}/>
                                     <a className="nav-link" href="#about">About</a> 
                                 </li>
-                                <li className="nav-item"> 
+                                <li className="nav-item projects"> 
                                     <FontAwesomeIcon icon={faFolder} />
                                     <a className="nav-link" href="#projects">Projects</a>
                                 </li>
