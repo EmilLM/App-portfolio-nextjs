@@ -1,6 +1,6 @@
 // Contact + footer
 .contact {
-  min-height: 80vh;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,10 +9,11 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-  @media (max-width: 767px) {
-    flex-direction: column;
-  }
-    
+    max-width: 1024px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
   }
   
   .form-container {
@@ -28,10 +29,10 @@
   }
   .form-info {
     margin-top: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     color: white;
-    font-family: "Quantum";
+    font-family: "Iceland";
   
   }
   .contact-form {
@@ -85,11 +86,11 @@
     }
   }
   .links-info {
-    margin-top: 10px;
+    // margin-top: 10px;
     text-align: center;
     color: white;
-    font-size: 0.8em;
-    font-family: "Quantum";
+    font-size: 1em;
+    font-family: "Iceland";
   }
   .links {
     height: 240px;
@@ -133,24 +134,28 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 160px;
+  // height: 160px; 
+  
   .date {
     display: flex;
     align-items: center;
     color: gray;
     font-family: "Quantum";
+     margin-top: 20px;
     p {
       margin-right: 5px;
       margin-bottom: 0;
+     
     }
   }
   .footerLogo {
     width: 100px;
     height: 100px;
     border-top: 7px solid navy;
-  border-left: 7px solid navy;
-  border-right: 7px solid lightblue;
-  border-bottom: 7px solid lightblue;
+    border-left: 7px solid navy;
+    border-right: 7px solid lightblue;
+    border-bottom: 7px solid lightblue;
+    margin-top: 0;
     .logo-text {
       font-size: 25px;
     }

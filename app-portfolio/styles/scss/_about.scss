@@ -8,7 +8,7 @@
     font-size: 1.1em;
     color: rgb(6, 167, 6);
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-family: "Iceland";
     p {
       margin: 0;
@@ -16,6 +16,21 @@
        color: cornflowerblue;
       }
     }
+  }
+  button {
+    color: rgb(112, 119, 211);
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    font-weight: 700;
+    background: rgb(18 72 92 / 38%);
+    border: none;
+    &:hover {
+      color: white;
+    }
+    svg {
+        margin-right: 10px;
+    }
+
   }
   .about-info {
     text-align: center;
@@ -30,38 +45,71 @@
       color: cornflowerblue;
     }
   }
+  h3 {
+    margin: 0;
+    font-family: "Quantum"
+  }
   .about-skills {
-    margin: 10px 0;
-    font-size: 1.1em;
-    font-weight: 700;
-    color: white;
-    font-family: "Quantum";
-  }
-  i {
-    text-align: center;
-    font-weight: 600;
-    color: rgb(36, 25, 184);
-    font-weight: bold;
-    font-family: "Iceland";
-  }
-  a {
-    &:hover {
-      color: rgb(70, 88, 189);
-    }
-  }
-  h2 {
-    margin-top: 40px;
-  }
-  button {
-    color: rgb(112, 119, 211);
     margin-top: 30px;
-    font-size: 0.8em;
-    font-weight: 700;
-    background: rgb(18 72 92 / 38%);
-    border: none;
-
-    svg {
-        margin-right: 10px;
+    width: 100%;
+    // max-width: 1000px;
+    // 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (min-width: 950px) {
+      width: 100%;
+      max-width: 925px;
+    }
+    
+  }
+  .skills-container{
+    // margin: 0 10px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    @media (min-width: 950px) {
+      width: 50%;
     }
   }
+  .skills-card {
+    width: 43%;
+    height: 210px;
+    
+    max-width: 240px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(18 72 92 / 38%);
+    border-radius: 0.25em;
+    @media (min-width: 950px) {
+      height: 250px;
+      width: 23%;
+      min-width: 200px;
+    }
+    svg {
+      color: red;
+    }
+    strong {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-family: "Quantum"
+
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: rgb(133, 133, 133);
+        font-size: 1em;
+        text-align: center;
+        font-family: "Iceland";
+      }
+  }
+  
+  
 }

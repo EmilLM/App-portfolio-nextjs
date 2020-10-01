@@ -42,7 +42,7 @@
     background-size: 100% 100%;
     background-position: left top;
     background-repeat: no-repeat;
-    border-top: 2px solid white;
+    border-top: 4px solid rgb(0, 0, 0);
   }
   .bgAbout::before {
     background-image: url("../../public/assets/about_bg.webp");
@@ -66,7 +66,7 @@
   .bg3::before {
     background-image: url("../../public/assets/weather_bg.webp");
     @include bgProps;
-    border-bottom: 4px solid white;
+    border-bottom: 6px solid rgb(0, 0, 0);
   }
   
  

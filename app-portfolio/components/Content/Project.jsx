@@ -20,7 +20,7 @@ const Project = (props) => {
                         <p>{description}</p>
                         <strong>{stack}</strong>
                         <div className="iconLinks">
-                            <a href={link} target="_blank" rel="noopener noreferrer">
+                            <a href={link} target="_blank" rel="noopener noreferrer" id="demo">
                                 <FontAwesomeIcon icon={faLaptopCode}/>   Demo
                             </a>   
                             <a href={source} target="_blank" rel="noopener noreferrer">
