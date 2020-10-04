@@ -3,17 +3,19 @@ import LazyLoad from 'react-lazyload';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons'
+import Waves from "../Waves"
+import MiscContext from "../MiscContext"
 
-const Project = (props) => {
+const Project = ({project}) => {
 
-    const {id, src, link, source, altText, title, description, stack, sectionTitle} = props;
-    
+    const {id, src, link, source, altText, title, description, stack, sectionTitle, wavesClass} = project;
+    const {animate} = React.useContext(MiscContext)
 
     return ( 
-        <div className={`diagonal-box bg${id}`}>
+        <div className="project-container">
              <LazyLoad height={150} offset={100}>
                 <div className="content project">
-                    {sectionTitle &&<h2 className="sectionTitle">{sectionTitle}</h2>}
+                    {sectionTitle &&<h2 className="section-title">{sectionTitle}</h2>}
                     <h3> &lt; {title} &gt;</h3>
                     <img className="appImage" src={`/assets/${src}`} alt={altText}/>
                     <div className="description">
@@ -30,6 +32,7 @@ const Project = (props) => {
                     </div>                      
                 </div> 
             </LazyLoad>  
+            <Waves animate={animate} wavesClass={wavesClass}/>
         </div>
      );
 }

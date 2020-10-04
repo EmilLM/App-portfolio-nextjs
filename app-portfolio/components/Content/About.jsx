@@ -1,12 +1,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faTools, faPencilAlt, faDatabase, faDesktop } from '@fortawesome/free-solid-svg-icons'
-
+import Waves from "../Waves"
+import MiscContext from "../MiscContext"
 const About = () => {
+    const {animate} = React.useContext(MiscContext)
     return ( 
-        <div className={'diagonal-box bgAbout'} id="about">
-            <div className="content about">
-                <h2 className="sectionTitle">About</h2>
+        <div className="about-bg" id="about">
+            <div className="content about-content ">
+                <h2 className="section-title">About</h2>
                 
                 <div className="about-code">
                     <p><span>Name :</span> 'Luchian Emil Moise', </p>
@@ -29,9 +31,9 @@ const About = () => {
                     the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker with more to follow.
                 </p>
                 <p className="about-info">
-                    Eager to prove my abilities and excited for new challenges.
-                    Efficient and resourceful in reaching my objectives, in bringing code to life in amazing designs. 
-                    <br/><span>(Now with a solid back-end to boot.)</span>
+                    Eager to prove my abilities and excited for new challenges. <span>Efficient</span> and 
+                    <span>resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
+                   
                 </p>
                 
                 <h3>Skills</h3>
@@ -82,7 +84,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            
+            {/* <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
+                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" strokeWidth="120" strokeLinecap="round" />
+            </svg> */}
+            <Waves wavesClass={"about-waves"} animate={animate} />
         </div>
     );
 }

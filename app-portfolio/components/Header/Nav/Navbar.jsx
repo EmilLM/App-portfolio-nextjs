@@ -6,13 +6,14 @@ import Scrollspy from 'react-scrollspy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faFolder} from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = React.memo(() =>{
+const NavBar = React.memo(({setAnimate, animate}) =>{
 
     //NavToggler event
     const [navToggle, setNavToggle] = useState(false);
     const toggleNavBar = () => setNavToggle(!navToggle);
 
     const [offset, setOffset] = useState(false);
+    const [checked, setChecked] = React.useState(true);
 
     useEffect(() => {
         window.onscroll = () => {
@@ -34,7 +35,7 @@ const NavBar = React.memo(() =>{
                                 offset={-5}
                                 style={{display: "flex"}}
                             >
-                                {/* added header to items as a way to avoid about navbar highlight from start */}
+                                {/* added header to items as a way to avoid "about" navbar highlight from start */}
                                 <li className="nav-item" style={{display: "none"}}> <a className="nav-link" href="#header">header</a> </li>
                                 <li className="nav-item"> 
                                     <FontAwesomeIcon icon={faUser}/>
@@ -51,7 +52,11 @@ const NavBar = React.memo(() =>{
                             </Scrollspy>
                         </Nav>
                     </Collapse>
-                    <img className="logo" src="/assets/logo.webp" alt="logo"/>
+                    <label className="switch">
+                        <input type="checkbox" checked={checked} className={checked && "checkedInput"}
+                            onChange={() => setChecked(!checked)}/>
+                        <span className="slider round"></span>
+                    </label>
                 </Navbar>
                 
             </section>

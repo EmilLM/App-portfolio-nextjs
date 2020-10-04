@@ -20,10 +20,7 @@ export default function ContactForm() {
         })
     };
     
-    const [errors, setErrors] = useState({
-        isValid: false,
-        isInvalid: false,
-    });
+    const [isValid, setIsValid] = useState(false);
 
     const sendEmail = () => {
         const templateParams = {
@@ -38,19 +35,13 @@ export default function ContactForm() {
                 console.log('FAILED...', err);
             });
     }
-
-
+   
     const handleSubmit = e => {
         e.preventDefault();
-        if (emailInput.includes('@')) {
-            setErrors({
-                isValid: true,
-            })
+        if (emailInput.includes('@') && emailInput.includes('.com')) {
+            setIsValid(true);
         } else {
-            setErrors( {
-                isValid: false,
-                isInvalid: true
-            })
+            setIsValid(false);
         }
         sendEmail();
         setFormState({
@@ -76,7 +67,7 @@ export default function ContactForm() {
                         autoComplete="off"
                         value={nameInput}
                         onChange={handleChange}
-                        noValidate valid={Boolean(nameInput)}
+                        noValidate 
                         placeholder={"Name"}
                     />
                     
@@ -85,8 +76,7 @@ export default function ContactForm() {
                     <Input  
                         type="email" name="emailInput"
                         value={emailInput} onChange={handleChange}
-                        noValidate
-                        valid={emailInput.includes('@')} invalid={errors.isInvalid}
+                        // noValidate
                         placeholder={"Email"}
                     />
                 </FormGroup>
@@ -99,7 +89,7 @@ export default function ContactForm() {
                     />
                 </FormGroup>
                 <Button type="submit" className="btn" disabled={!isEnabled}>Send</Button>
-                {errors.isValid &&
+                {isValid &&
                 <p id="afterSubmit">Message sent!</p>}
             </Form>
         </div>      

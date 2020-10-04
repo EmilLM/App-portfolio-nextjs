@@ -1,25 +1,11 @@
 
-// import Modal from "../Modal/Modal";
-// import Contact from "../Modal/Contact.jsx";
-
 export default function ContactLinks() {
     
-    // const [contact, setContact] = useState(false);
-    // const contactToggle = (e) => {
-    //     e.preventDefault();
-    //     setContact(!contact);
-    // }
+    
     return (
         <div className="links-container">
            <p className="links-info">You can also reach me on:</p>
             
-            {/* <a className="iconContact" href='#' target={'_blank'} onClick={contactToggle} rel="noopener noreferrer">
-                <img src="" > In-app form 
-            </a> */}
-            {/* <Modal isOpen={contact} title={"Contact"} onToggle={contactToggle}>
-                <Contact/>
-            </Modal> */}
-
             <div className='links'>
                     <a
                         id="mail" 

@@ -8,19 +8,9 @@ const Projects = ({projects}) => {
   
     return ( 
         <div id="projects">          
-            {projects.map( (project, index) => {
+            {projects.map(project => {
                 return (
-                    <Project key={index}
-                    id={project._id} 
-                    title={project.title}
-                    src={project.src}
-                    link={project.link}
-                    source={project.sourceLink}
-                    altText={project.altText}
-                    description={project.description}
-                    stack={project.stack}
-                    sectionTitle={project.sectionTitle}
-                    />
+                    <Project key={project.id} project={project} />
                 )
             })}              
         </div>

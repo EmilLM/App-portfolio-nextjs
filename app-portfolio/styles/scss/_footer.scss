@@ -1,9 +1,14 @@
 // Contact + footer
-.contact {
+footer {
+  background: linear-gradient(to bottom, #fff, #9cecfb, #65c7f7, #0052d4);
+  
+}
 
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 100%; 
   .contact-container {
     display: flex;
     align-items: center;
@@ -31,7 +36,7 @@
     margin-top: 10px;
     font-size: 1em;
     text-align: center;
-    color: white;
+    color: navy;
     font-family: "Iceland";
   
   }
@@ -45,6 +50,7 @@
     .form-group {
       padding: 0;
       input {
+        color: navy;
         font-size: .7em;
         height: 30px !important;
       }
@@ -88,7 +94,7 @@
   .links-info {
     // margin-top: 10px;
     text-align: center;
-    color: white;
+    color: navy;
     font-size: 1em;
     font-family: "Iceland";
   }
@@ -139,9 +145,12 @@ footer {
   .date {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
     color: gray;
     font-family: "Quantum";
-     margin-top: 20px;
+    background-color: white;
+    width: 100%;
     p {
       margin-right: 5px;
       margin-bottom: 0;

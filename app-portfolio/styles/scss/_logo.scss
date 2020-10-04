@@ -6,9 +6,6 @@
   font-family: "Quantum", sans-serif;
   text-transform: uppercase;
   // background-color: hsla(0, 0%, 0%, 0.1);
-  color: white;
-  // text-shadow: 0 0 15px blue;
-  //  box-shadow: 0px 0px 62px -4px rgb(30, 26, 216);
   letter-spacing: 20px;
   border-top: 6px solid navy;
   border-left: 6px solid navy;
@@ -18,9 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   
-  @media (min-width: 992px) {
+  
+  @media (min-width: 768px) {
     width: 150px;
     height: 150px;
     font-size: 45px;

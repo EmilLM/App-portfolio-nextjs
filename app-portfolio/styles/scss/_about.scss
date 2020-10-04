@@ -1,5 +1,14 @@
-.about {
+
+.about-bg {
+  // background: linear-gradient(0deg, rgba(145,145,254,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+}
+.about-content {
   color: white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
   .about-code {
     margin-top: 20px;
     display: flex;
@@ -13,12 +22,12 @@
     p {
       margin: 0;
       span {
-       color: cornflowerblue;
+       color: navy;
       }
     }
   }
   button {
-    color: rgb(112, 119, 211);
+    color: navy;
     margin-bottom: 20px;
     font-size: 0.8em;
     font-weight: 700;
@@ -42,10 +51,17 @@
     font-family: "RussoOne";
     max-width: 700px;
     span {
-      color: cornflowerblue;
+      color: navy ; 
+      a {
+        color: navy;
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
   h3 {
+    color: navy;
     margin: 0;
     font-family: "Quantum"
   }
@@ -53,7 +69,6 @@
     margin-top: 30px;
     width: 100%;
     // max-width: 1000px;
-    // 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -74,9 +89,8 @@
     }
   }
   .skills-card {
-    width: 43%;
-    height: 210px;
-    
+    width: 50%;
+    height: 150px;
     max-width: 240px;
     margin: 0 15px;
     display: flex;
@@ -85,6 +99,11 @@
     align-items: center;
     background-color: rgb(18 72 92 / 38%);
     border-radius: 0.25em;
+    @media (min-width: 350px) and (max-width: 950px) {
+      height: 210px;
+      width: 43%;
+      
+    }
     @media (min-width: 950px) {
       height: 250px;
       width: 23%;
@@ -96,7 +115,7 @@
     strong {
       color: white;
       text-transform: uppercase;
-      font-size: 1em;
+      font-size: 0.8em;
       font-family: "Quantum"
 
     }
@@ -104,7 +123,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        color: rgb(133, 133, 133);
+        color: rgb(33, 25, 61);
         font-size: 1em;
         text-align: center;
         font-family: "Iceland";
