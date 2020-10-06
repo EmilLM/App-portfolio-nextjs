@@ -7,8 +7,8 @@
         sourceLink: 'https://github.com/EmilLM/ChatAway',
         altText: 'ChatAway image',
         title: 'ChatAway',
-        description: 'Slack-type chat app with fully built back-end (work in progress).',
-        stack: 'MERN-Next.js-MaterialUI',
+        description: 'Slack-type chat app with fully built back-end.',
+        stack: 'MERN - Next.js - MaterialUI',
         sectionTitle: 'Projects',
         wavesClass: 'project0-waves'
 
@@ -21,7 +21,7 @@
         altText: 'CV image',
         title: 'CV',
         description: 'Static site of a short and long version of my resume.',
-        stack: 'Vue -Scss- Bootstrap4',
+        stack: 'Vue - Scss - Bootstrap4',
         wavesClass: 'project1-waves'
 
     },
@@ -33,7 +33,7 @@
         altText: 'CountryInfo app',
         title: 'CountryInfo',
         description: 'Socio-economic statistics about countries.',
-        stack: 'React - Scss - reactstrap',
+        stack: 'React - Scss - CRA',
         wavesClass: 'project2-waves'
     },
     {

@@ -19,47 +19,47 @@
     --clip-padding: calc(var(--full-width) * var(--magic-number));
   }
   
-  .diagonal-box {
-    position: relative;
-    padding: var(--skew-padding) 0;
-    margin-top: -2px;
+  // .diagonal-box {
+  //   position: relative;
+  //   padding: var(--skew-padding) 0;
+  //   margin-top: -2px;
     
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      transform: skewy(var(--angle));
-      transform-origin: 50% 0;
-      outline: 1px solid transparent;
-      backface-visibility: hidden;
-    }
-  }
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     transform: skewy(var(--angle));
+  //     transform-origin: 50% 0;
+  //     outline: 1px solid transparent;
+  //     backface-visibility: hidden;
+  //   }
+  // }
  
   
   
-  .clip-path {
-    position: relative;
-    margin-top: calc( ( var(--clip-padding) * -1 ) - 2px );
-    background-image: url("../../public/assets/contact.webp");
-    background-size: 101% 100%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    padding: calc( ( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) ) ) 0 0;
-    clip-path: polygon(
-      0% calc(var(--clip-padding) * 2), 
-      100% 0%, 
-      100% 100%, 
-      0% 100% );
-    -webkit-clip-path: polygon(
-      0% calc(var(--clip-padding) * 2), 
-      100% 0%, 
-      100% 100%, 
-      0% 100% );
+  // .clip-path {
+  //   position: relative;
+  //   margin-top: calc( ( var(--clip-padding) * -1 ) - 2px );
+  //   background-image: url("../../public/assets/contact.webp");
+  //   background-size: 101% 100%;
+  //   background-position: right bottom;
+  //   background-repeat: no-repeat;
+  //   padding: calc( ( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) ) ) 0 0;
+  //   clip-path: polygon(
+  //     0% calc(var(--clip-padding) * 2), 
+  //     100% 0%, 
+  //     100% 100%, 
+  //     0% 100% );
+  //   -webkit-clip-path: polygon(
+  //     0% calc(var(--clip-padding) * 2), 
+  //     100% 0%, 
+  //     100% 100%, 
+  //     0% 100% );
     
-  }
+  // }
   
 
   

@@ -1,0 +1,59 @@
+.switches-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  .switch-animation {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-image: url('../../public/assets/icons/gear.svg');
+    background-size: contain;
+    cursor: pointer;
+    &:hover {
+      animation: rotation 6s infinite linear;
+    }
+  }
+
+  .switch-theme {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-size: contain;
+    transition: 0.4s;
+    display: none;
+   
+  }
+   .light {
+      background-image: url('../../public/assets/icons/moon.svg');
+      &:hover {
+        background-image: url('../../public/assets/icons/sun.svg');
+      }
+    }
+    .dark {
+      background-image: url('../../public/assets/icons/sun.svg');
+      &:hover {
+        background-image: url('../../public/assets/icons/moon.svg');
+      }
+    }
+}
+
+.rotate {
+  animation: rotation 6s infinite linear;
+ 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
+}

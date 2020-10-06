@@ -24,53 +24,93 @@ footer {
   .form-container {
     // border: 1px solid white;
     display: flex;
+    min-width: 300px; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 50%;
     min-width: 300px; 
-    height: 300px;
-    margin-top: 30px; 
+    margin-top: 30px;
+    
   }
   .form-info {
-    margin-top: 10px;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     color: navy;
     font-family: "Iceland";
   
   }
-  .contact-form {
-    width: 320px;
-    height: 300px !important;
+  form {
+    width: 300px;
+    height: 234px ;
     font-family: "Iceland";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media (max-width: 360px) {
+      width: 270px;
+    }
+    input {
+      font-family: "Iceland";
+      color: navy;
+      font-size: 1em;
+      height: 35px;
+      border: 2px solid lightblue;
+      border-radius: 5px;
+      padding-left: 10px;
+      color: navy;
+      border: 2px solid rgb(120, 120, 248);
+      outline: none;
+      &:focus {
+        box-shadow: 0px 0px 4px 0px rgba(42, 2, 75, 0.95);
+      }
+    }
+    textarea {
+      font-size: 1em;
+      height: 80px;
+      resize: none;
+      width: 300px;
+      border-radius: 5px;
+      padding-left: 10px;
+      color: navy;
+      border: 2px solid rgb(120, 120, 248);
+      outline: none;
+      &:focus {
+        box-shadow: 0px 0px 4px 0px rgba(42, 2, 75, 0.95);
+      }
+      @media (max-width: 360px) {
         width: 270px;
-      }
-    .form-group {
-      padding: 0;
-      input {
-        color: navy;
-        font-size: .7em;
-        height: 30px !important;
-      }
-      textarea {
-        font-size: .7em;
-        height: 80px;
       }
     }
     .btn {
-      font-size: 0.7em;
+      font-size: 1em;
+      font-family: "Iceland";
+      font-weight: 600;
+      background: rgb(0, 191, 255);
+      color: navy;
+      padding: 5px 0;
+      border-radius: 5px;
+      border: none;
+      &:hover {
+        color: white;
+        background: navy;
+      }
+      &:focus {
+        color: red;
+      }
+      &:disabled {
+        background: lightblue;
+        color: gray;
+      }
     }
     #afterSubmit {
       text-align: center;
-      font-size: 0.7em;
-      color: white;
-      background: blue;
+      font-size: 1em;
+      color: navy;
       padding: 5px;
       border-radius: 5px;
-      width: 40%;
-      margin: 0 30%;
+      width: 100%;
+      margin: 0;
     }
   }
   
@@ -95,7 +135,7 @@ footer {
     // margin-top: 10px;
     text-align: center;
     color: navy;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Iceland";
   }
   .links {
@@ -107,17 +147,18 @@ footer {
    
     a {
       // max-width: 95vw;  
-      background-color: rgb(85, 58, 58);
+      background: rgb(18 72 92 / 38%);
       height: 40px;
-      width: 330px;
+      width: 300px;
       color: white;
-      font-size: 1.1em;
+      font-size: 18px;
       font-weight: 500;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       border-radius: 0.25em;
       font-family: "Iceland";
+      text-decoration: none;
       @media (max-width: 360px) {
         width: 270px;
       }
@@ -125,10 +166,11 @@ footer {
         color: blue;
         text-decoration: none;
       }
+    
       img {
         width: 50px;
         height: 30px;
-        margin: 0 15px;
+        margin: 0 25px;
       }
     }
   }
@@ -140,11 +182,11 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  // height: 160px; 
+  
   
   .date {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     padding-bottom: 20px;
     color: gray;
@@ -152,21 +194,20 @@ footer {
     background-color: white;
     width: 100%;
     p {
-      margin-right: 5px;
-      margin-bottom: 0;
-     
+      margin: 0 5px;
     }
   }
   .footerLogo {
-    width: 100px;
-    height: 100px;
-    border-top: 7px solid navy;
-    border-left: 7px solid navy;
-    border-right: 7px solid lightblue;
-    border-bottom: 7px solid lightblue;
+    width: 80px;
+    height: 80px;
+    border-top: 5px solid navy;
+    border-left: 5px solid navy;
+    border-right: 5px solid lightblue;
+    border-bottom: 5px solid lightblue;
     margin-top: 0;
+    margin: 10px 0;
     .logo-text {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   

@@ -27,12 +27,11 @@ const About = () => {
                 </button>
                
                 <p className="about-info">
-                    Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Self-learned
-                    the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker with more to follow.
+                    Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Self-learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker with more to follow.
                 </p>
                 <p className="about-info">
-                    Eager to prove my abilities and excited for new challenges. <span>Efficient</span> and 
-                    <span>resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
+                    Eager to prove my abilities and excited for new challenges. <span>Efficient </span>and 
+                    <span> resourceful</span> in reaching my objectives, in bringing code to life in <br/><span>amazing designs</span>. 
                    
                 </p>
                 

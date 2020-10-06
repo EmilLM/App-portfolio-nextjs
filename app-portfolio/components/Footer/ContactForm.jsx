@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Form, FormGroup, Input, FormFeedback} from 'reactstrap';
+
 import emailjs from 'emailjs-com';
 
 
@@ -55,14 +55,9 @@ export default function ContactForm() {
 
     return(
         <div className="form-container">
-            <div className="form-info">
-                {/* <div>We can discuss ideas, projects or  opportunities to develop yours.</div> */}
-                <p>Feel free to leave your impression of my work.</p>
-            </div>
-            <Form onSubmit={handleSubmit} className="contact-form" >
-                
-                <FormGroup>
-                    <Input  
+                <p className="form-info">Feel free to leave some feedback.</p>
+            <form onSubmit={handleSubmit} >
+                    <input  
                         name="nameInput" type="text"
                         autoComplete="off"
                         value={nameInput}
@@ -70,28 +65,25 @@ export default function ContactForm() {
                         noValidate 
                         placeholder={"Name"}
                     />
-                    
-                </FormGroup>
-                <FormGroup>
-                    <Input  
+    
+                    <input  
                         type="email" name="emailInput"
                         value={emailInput} onChange={handleChange}
                         // noValidate
                         placeholder={"Email"}
                     />
-                </FormGroup>
-                <FormGroup>
-                    <Input 
-                        type="textarea" name="messageInput" id="messageArea"
+               
+                    <textarea
+                        name="messageInput" id="messageArea"
                         value={messageInput}
                         onChange={handleChange}
                         placeholder={"Message"}
                     />
-                </FormGroup>
-                <Button type="submit" className="btn" disabled={!isEnabled}>Send</Button>
-                {isValid &&
-                <p id="afterSubmit">Message sent!</p>}
-            </Form>
+                
+                <button type="submit" className="btn" disabled={!isEnabled}>Send</button>
+                {isValid && <p id="afterSubmit">Message sent!</p>}
+            </form>
+            
         </div>      
     )
 }

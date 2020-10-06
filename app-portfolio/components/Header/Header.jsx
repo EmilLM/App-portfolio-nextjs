@@ -8,12 +8,12 @@ export default function Header() {
     const {animate, setAnimate} = React.useContext(MiscContext)
     return (
         <header id="header">
+            
+            <Navbar setAnimate={setAnimate} animate={animate}/>
             <div className="header-inner">
-                <Navbar setAnimate={setAnimate} animate={animate}/>
                 <h1 className={"header-text"}>APP PORTFOLIO</h1>
                 <Logo/>
-               
-            </div>
+            </div>  
             <Waves animate={animate} wavesClass={"header-waves"}/>
         </header>
     )

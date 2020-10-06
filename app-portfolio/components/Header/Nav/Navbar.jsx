@@ -1,20 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import { Collapse, Navbar,Nav} from 'reactstrap';
-import NavToggle from "./NavToggle.jsx";
-
 import Scrollspy from 'react-scrollspy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faFolder} from '@fortawesome/free-solid-svg-icons'
+import NavSwitches from './NavSwitches.jsx';
 
-const NavBar = React.memo(({setAnimate, animate}) =>{
-
-    //NavToggler event
-    const [navToggle, setNavToggle] = useState(false);
-    const toggleNavBar = () => setNavToggle(!navToggle);
-
+const NavBar = React.memo(() =>{
     const [offset, setOffset] = useState(false);
-    const [checked, setChecked] = React.useState(true);
-
+    
     useEffect(() => {
         window.onscroll = () => {
             if (window.pageYOffset > 60) {
@@ -22,13 +14,12 @@ const NavBar = React.memo(({setAnimate, animate}) =>{
             } else setOffset(false)
         }
     }, [offset]);
+   
         return (
             <section className='nav_section'>
-                <Navbar className="navbar navbar-expand-sm navbar-dark " 
-                fixed="top" id={offset ? "scrolling": null}>
-                    <NavToggle onToggle={toggleNavBar} class={navToggle}/>
-                    <Collapse isOpen={navToggle} >
-                        <Nav>
+                <nav className="navbar"  id={offset ? "scrolling": null}>
+    
+                        <ul>
                             <Scrollspy items={['header','about', 'projects', 'contact']} 
                                 currentClassName="is-active"
                                 componentTag={"div"} 
@@ -50,14 +41,9 @@ const NavBar = React.memo(({setAnimate, animate}) =>{
                                     <a className="nav-link" href="#contact">Contact</a> 
                                 </li>
                             </Scrollspy>
-                        </Nav>
-                    </Collapse>
-                    <label className="switch">
-                        <input type="checkbox" checked={checked} className={checked && "checkedInput"}
-                            onChange={() => setChecked(!checked)}/>
-                        <span className="slider round"></span>
-                    </label>
-                </Navbar>
+                        </ul>
+                    <NavSwitches/>
+                </nav>
                 
             </section>
 

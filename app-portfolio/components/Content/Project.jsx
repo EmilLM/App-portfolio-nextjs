@@ -16,7 +16,7 @@ const Project = ({project}) => {
              <LazyLoad height={150} offset={100}>
                 <div className="content project">
                     {sectionTitle &&<h2 className="section-title">{sectionTitle}</h2>}
-                    <h3> &lt; {title} &gt;</h3>
+                    <h3> &lt; {title} /&gt;</h3>
                     <img className="appImage" src={`/assets/${src}`} alt={altText}/>
                     <div className="description">
                         <p>{description}</p>

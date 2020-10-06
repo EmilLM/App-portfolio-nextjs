@@ -10,29 +10,34 @@
   align-items: center;
   
   .about-code {
-    margin-top: 20px;
+    margin: 30px 0;
+    // margin-left: 50px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.1em;
+    // align-items: center;
+    text-align: left;
+    font-size: 1.2em;
     color: rgb(6, 167, 6);
     font-weight: 500;
-    margin-bottom: 15px;
     font-family: "Iceland";
     p {
       margin: 0;
       span {
        color: navy;
+       font-weight: 600;
       }
     }
   }
   button {
     color: navy;
-    margin-bottom: 20px;
-    font-size: 0.8em;
+    margin: 5px 0;
+    padding: 9px 8px;
+    border-radius: 0.25em;
+    font-size: 1em;
     font-weight: 700;
     background: rgb(18 72 92 / 38%);
     border: none;
+    font-family: "Iceland";
     &:hover {
       color: white;
     }
@@ -44,8 +49,9 @@
   .about-info {
     text-align: center;
     font-size: 0.8em;
+    
     background-color: rgb(18 72 92 / 38%);
-    padding: 10px 20px;
+    padding: 25px 15px;
     color: white;
     border-radius: 10px;
     font-family: "RussoOne";
@@ -54,6 +60,7 @@
       color: navy ; 
       a {
         color: navy;
+        text-decoration: none;
         &:hover {
           color: black;
         }
@@ -62,8 +69,8 @@
   }
   h3 {
     color: navy;
-    margin: 0;
-    font-family: "Quantum"
+    font-family: "Quantum";
+    font-size: 1.4em;
   }
   .about-skills {
     margin-top: 30px;
@@ -72,26 +79,30 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: space-evenly;
     @media (min-width: 950px) {
       width: 100%;
       max-width: 925px;
+     
     }
     
   }
   .skills-container{
-    // margin: 0 10px;
     width: 100%; 
     display: flex;
     justify-content: center;
-    margin: 15px 0;
+    margin-bottom: 30px;
     @media (min-width: 950px) {
       width: 50%;
+      margin: 0;
     }
+    
   }
   .skills-card {
     width: 50%;
     height: 150px;
     max-width: 240px;
+    min-width: 90px;
     margin: 0 15px;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,25 @@
+import MiscContext from "../../MiscContext"
+
+// Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+const NavSwitches = () => {
+    const {animate, setAnimate} = React.useContext(MiscContext)
+    return ( 
+        <div className="switches-container">
+            <button 
+                className={`switch-animation ${animate ? "rotate": ""}`}
+                onClick={()=>setAnimate(!animate)}
+                >
+
+            </button>
+            <button 
+                className={`switch-theme ${animate? "light": "dark"}`}
+                onClick={()=>setAnimate(!animate)}
+            >
+
+            </button>
+        </div>
+    );
+}
+ 
+export default NavSwitches;
