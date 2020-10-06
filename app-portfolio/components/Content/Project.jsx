@@ -9,7 +9,7 @@ import MiscContext from "../MiscContext"
 const Project = ({project}) => {
 
     const {id, src, link, source, altText, title, description, stack, sectionTitle, wavesClass} = project;
-    const {animate} = React.useContext(MiscContext)
+    const {theme} = React.useContext(MiscContext)
 
     return ( 
         <div className="project-container">
@@ -32,7 +32,7 @@ const Project = ({project}) => {
                     </div>                      
                 </div> 
             </LazyLoad>  
-            <Waves animate={animate} wavesClass={wavesClass}/>
+            <Waves wavesClass={wavesClass}/>
         </div>
      );
 }

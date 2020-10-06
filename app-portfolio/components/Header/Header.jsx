@@ -5,16 +5,17 @@ import Waves from "../Waves"
 import MiscContext from "../MiscContext"
 
 export default function Header() {
-    const {animate, setAnimate} = React.useContext(MiscContext)
+    const {theme} = React.useContext(MiscContext);
+
     return (
-        <header id="header">
+        <header id="header" className={theme?"header-dark": "header-light"}>
             
-            <Navbar setAnimate={setAnimate} animate={animate}/>
+            <Navbar/>
             <div className="header-inner">
                 <h1 className={"header-text"}>APP PORTFOLIO</h1>
                 <Logo/>
             </div>  
-            <Waves animate={animate} wavesClass={"header-waves"}/>
+            <Waves wavesClass={"header-waves"}/>
         </header>
     )
 }

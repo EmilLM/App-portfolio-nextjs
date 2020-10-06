@@ -1,0 +1,85 @@
+// dark theme
+
+// dark theme main color
+$dmc: navy;
+// theme secondary color
+$dsc: rgb(255, 255, 255);
+// hover text color
+$dhtc: rgb(160, 160, 255);
+
+.header-dark {
+    background: linear-gradient(to top, #000428, #004e92);
+    .is-active {
+        background-color: rgb(5, 4, 41);
+    }
+    #scrolling {
+        background: $dmc;
+    }
+    .nav-item {
+        
+        &:hover{
+            color: $dhtc ;
+            svg {
+                color: $dhtc ;
+            }
+            .nav-link {
+                color: $dhtc ;
+            }
+        }
+        .nav-link {
+            color: $dsc ;
+        }
+        svg {
+            color: $dsc ;
+        }
+    }
+    .header-text {
+        color: white ;
+    }
+    .lem {
+        color: $dsc;
+    }
+
+}
+// about+projects section
+.main-dark {
+    .about-bg {
+        background: linear-gradient(to top, #373b44, #4286f4);
+        
+    }
+    .project-container {
+       background: linear-gradient(to top,#02193d, rgb(6, 44, 131), #4286f4); 
+       h3 {
+            color: $dsc;
+        }
+        .description {
+            p {
+                color: $dhtc;
+            }
+            strong {
+                color: $dsc;
+            }
+        }
+    }
+}
+
+.footer-dark {
+    background: linear-gradient(to top, rgb(3, 0, 5),  #0f0353, #4286f4);
+    .contact {
+        .form-info {
+            color: $dhtc;
+        }
+        .links-info {
+            color: $dhtc;
+        }
+    }
+    .footer-logo {
+        .logo-text {
+            color: $dsc;
+        }
+    }
+    .date {
+        background: #4286f4;
+        color: $dsc;
+    }
+}

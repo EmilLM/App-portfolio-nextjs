@@ -2,9 +2,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faTools, faPencilAlt, faDatabase, faDesktop } from '@fortawesome/free-solid-svg-icons'
 import Waves from "../Waves"
-import MiscContext from "../MiscContext"
+
 const About = () => {
-    const {animate} = React.useContext(MiscContext)
+    
     return ( 
         <div className="about-bg" id="about">
             <div className="content about-content ">
@@ -83,10 +83,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            {/* <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
-                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" strokeWidth="120" strokeLinecap="round" />
-            </svg> */}
-            <Waves wavesClass={"about-waves"} animate={animate} />
+            <Waves wavesClass={"about-waves"} />
         </div>
     );
 }

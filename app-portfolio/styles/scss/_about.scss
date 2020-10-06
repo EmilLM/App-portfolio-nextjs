@@ -1,10 +1,6 @@
 
-.about-bg {
-  // background: linear-gradient(0deg, rgba(145,145,254,1) 0%, rgba(255,255,255,1) 100%);
-  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
-}
+
 .about-content {
-  color: white;
   display: flex; 
   flex-direction: column;
   align-items: center;
@@ -17,7 +13,7 @@
     // align-items: center;
     text-align: left;
     font-size: 1.2em;
-    color: rgb(6, 167, 6);
+    color: rgb(5, 228, 105);
     font-weight: 500;
     font-family: "Iceland";
     p {
@@ -101,8 +97,8 @@
   .skills-card {
     width: 50%;
     height: 150px;
-    max-width: 240px;
-    min-width: 90px;
+    max-width: 200px;
+    min-width: 100px;
     margin: 0 15px;
     display: flex;
     flex-direction: column;
@@ -110,7 +106,7 @@
     align-items: center;
     background-color: rgb(18 72 92 / 38%);
     border-radius: 0.25em;
-    @media (min-width: 350px) and (max-width: 950px) {
+    @media (min-width: 372px) and (max-width: 950px) {
       height: 210px;
       width: 43%;
       

@@ -1,8 +1,10 @@
-const Waves = ({animate, wavesClass }) => {
-    
+import MiscContext from "./MiscContext"
+
+const Waves = ({ wavesClass }) => {
+    const {animate, theme} = React.useContext(MiscContext);
     return (
          
-        <svg className={`waves ${wavesClass}`} 
+        <svg className={`${theme?"dark-waves": "light-waves"} ${wavesClass}`} 
             xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
             viewBox="0 24 150 28" preserveAspectRatio="none"    shapeRendering="auto">
             <defs>

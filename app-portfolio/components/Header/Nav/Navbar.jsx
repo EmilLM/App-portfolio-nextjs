@@ -23,7 +23,7 @@ const NavBar = React.memo(() =>{
                             <Scrollspy items={['header','about', 'projects', 'contact']} 
                                 currentClassName="is-active"
                                 componentTag={"div"} 
-                                offset={-5}
+                                offset={-335}
                                 style={{display: "flex"}}
                             >
                                 {/* added header to items as a way to avoid "about" navbar highlight from start */}

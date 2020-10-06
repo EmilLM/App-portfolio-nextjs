@@ -8,7 +8,7 @@ const Logo = ({footerLogo}) => {
 
     return (
         <>
-            <div className="lem flicker-in-glow footerLogo" id="lem_logo">
+            <div className="lem flicker-in-glow footer-logo" id="lem_logo">
                 <span className="logo-text">LEM</span>
             </div>
             {/* <Tooltip placement="bottom" isOpen={tooltipOpen} target="lem_logo" toggle={toggle}>

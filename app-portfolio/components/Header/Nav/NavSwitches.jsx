@@ -3,7 +3,7 @@ import MiscContext from "../../MiscContext"
 // Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 const NavSwitches = () => {
-    const {animate, setAnimate} = React.useContext(MiscContext)
+    const {animate, setAnimate, theme, setTheme} = React.useContext(MiscContext)
     return ( 
         <div className="switches-container">
             <button 
@@ -13,8 +13,8 @@ const NavSwitches = () => {
 
             </button>
             <button 
-                className={`switch-theme ${animate? "light": "dark"}`}
-                onClick={()=>setAnimate(!animate)}
+                className={`switch-theme ${theme? "light": "dark"}`}
+                onClick={()=>setTheme(!theme)}
             >
 
             </button>

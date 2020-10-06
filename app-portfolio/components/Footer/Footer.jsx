@@ -7,12 +7,12 @@ import MiscContext from "../MiscContext"
 export default function Footer() {
 
     const year = new Date().getFullYear();
-    const {animate} = React.useContext(MiscContext);
+    const {theme} = React.useContext(MiscContext);
     return (
-        <footer id="contact">
+        <footer id="contact" className={theme ? "footer-dark": "footer-light"}>
             <Contact/>
-            <Logo footerLogo={"footerLogo"}/>
-            <Waves animate={animate} wavesClass={"contact-waves"}/>
+            <Logo />
+            <Waves wavesClass={"contact-waves"}/>
             <div className="date" > 
                 <p>Copyright &copy;</p>
                 <span >{year}</span>

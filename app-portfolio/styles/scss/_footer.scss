@@ -1,9 +1,10 @@
 // Contact + footer
 footer {
-  background: linear-gradient(to bottom, #fff, #9cecfb, #65c7f7, #0052d4);
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -36,7 +37,6 @@ footer {
   .form-info {
     font-size: 1.1em;
     text-align: center;
-    color: navy;
     font-family: "Iceland";
   
   }
@@ -123,11 +123,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: 3px solid rgb(14, 50, 230);
+    border-top: 3px solid rgb(146, 161, 235);
     margin-top: 30px;
     @media (min-width: 767px) {
       border-top: none;
-      border-left: 3px solid rgb(14, 50, 230);
+      border-left: 3px solid rgb(128, 146, 240);
       margin-top: none !important;
     }
   }
@@ -177,27 +177,7 @@ footer {
 }
 
 footer {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  
-  
-  .date {
-    display: flex;
-    // align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    color: gray;
-    font-family: "Quantum";
-    background-color: white;
-    width: 100%;
-    p {
-      margin: 0 5px;
-    }
-  }
-  .footerLogo {
+  .footer-logo {
     width: 80px;
     height: 80px;
     border-top: 5px solid navy;
@@ -208,6 +188,18 @@ footer {
     margin: 10px 0;
     .logo-text {
       font-size: 20px;
+      text-shadow: 0 0 3px blue;
+    }
+  }
+  .date {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-family: "Quantum";
+    width: 100%;
+    p {
+      margin: 0 5px;
     }
   }
   

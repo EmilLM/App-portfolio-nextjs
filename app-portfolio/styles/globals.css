@@ -1,4 +1,40 @@
-html,
+
+html {
+  font-size: 90%;
+  transition: font-size 0.2s linear;
+  /* scroll-behavior: smooth;  */
+  
+  @media (min-width: 500px) and (max-width: 792px) {
+    font-size: 110%;
+  }
+  @media (min-width: 793px) and (max-width:992px) {
+    font-size: 125%;
+  }
+  @media (min-width: 993px) {
+    font-size: 140%;
+  }
+  @media (min-width: 1500px) {
+    font-size: 160%;
+  }
+  font-family: "Iceland";
+}
+@font-face {
+  font-family: 'Iceland';
+  src: url("../public/assets/fonts/Iceland-Regular.ttf");
+}
+@font-face {
+  font-family: 'RussoOne';
+  src: url("../public/assets/fonts/RussoOne-Regular.ttf");
+}
+@font-face {
+  font-family: 'Quantum';
+  src: url("../public/assets/fonts/Quantum.otf");
+}
+@font-face {
+  font-family: 'Anurati';
+  src: url("../public/assets/fonts/Anurati-Regular.otf");
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -10,3 +46,8 @@ body {
 * {
   box-sizing: border-box;
 }
+
+*:before, *:after {
+  box-sizing: border-box; 
+}
+
