@@ -45,20 +45,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  .header-inner {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    height: 85vh;
-    max-height: 450px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    @media (min-width: 768px) {
-      max-height: 750px;
-    }
-  }
+  
   
 }
 .nav_section {
@@ -76,7 +63,7 @@ header {
     z-index: 999;
     height: 55px;
     width: 100%;
-    max-width: 1500px;
+    // max-width: 1500px;
     font-family: 'Iceland';
     font-size: 1.3em;
     text-transform: uppercase;
@@ -124,19 +111,76 @@ header {
   }
   
 }
-.header-text {
-  width: 100%;
-  font-weight: 700;
-  font-size: 3em;
-  font-family: 'Quantum', cursive;
-  text-align: center;
-  text-shadow: 0 0 5px #1900fd;
-} 
 
-.lem {
-  text-shadow: 0 0 7px blue;
-  box-shadow: 0px 0px 20px -4px rgb(0, 0, 0);
+.header-inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0 7px;
+  @media (min-width: 968px) {
+    min-height: 85vh;
+  }
+  .text-container {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media (min-width: 968px) {
+      width: 50%;
+      min-height: 500px;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .header-text {
+      width: 100%;
+      font-weight: 700;
+      font-size: 3em;
+      font-family: 'Quantum', cursive;
+      text-shadow: 0 0 5px #1900fd;
+      line-height: 80px;
+      letter-spacing: 3px;
+      @media (min-width: 768px) {
+        width: 80%;
+        font-size: 3.3em;
+      }
+    } 
+    .text-by {
+      margin-bottom: 50px;
+      // margin-left: 265px;
+      font-weight: bold; 
+      font-family: "Iceland";
+      color: gray;  
+      display: none; 
+    }
+    .logo {
+      margin-top: 20px;
+      color: white;
+      text-shadow: 0 0 7px blue;
+      box-shadow: 0px 0px 62px -4px rgb(30, 26, 216);
+    }
+  }
+  img {
+    width: 400px;
+    height: auto;
+    max-width: 270px;
+    min-width: 200px;
+    margin-top: 0;
+    @media (min-width: 968px) {
+      max-width: 450px;
+      min-width: 100px;
+      margin-top: 100px;
+    }
+  }
 }
+
+
 
 .section-title {
   text-align: center;
@@ -168,26 +212,31 @@ header {
 // projects styles
 
 .project {
+  
   h3 {
     font-family: 'Iceland', cursive;
     font-weight: 700;
     font-size: 2.4em;
-    text-shadow: 0 0 5px blue;
     margin: 0 0 30px 0;
   }
 }
-.appImage {
+
+.project-image {
   width: auto;
   border-radius: 2%;
   height: 150px;
+  transition: 0.4s;
   @media (min-width: 370px) and (max-width: 576px) {
     height: 200px;
+   
   }
   @media (min-width: 576px) and (max-width:768px) {
     height: 300px;
+    
   }
   @media (min-width: 769px) and (max-width: 992px) {
     height: 350px;
+  
   }
   @media (min-width: 993px) {
     height: 350px;
@@ -215,7 +264,7 @@ header {
     font-family: "Quantum";
   }
 }
-.iconLinks {
+.project-links {
   
   font-family: "Iceland";
   display: flex;
@@ -226,19 +275,23 @@ header {
     margin-right: 15px;
     background-color: white;
     &:hover {
-      background-color: rgb(18 72 92 / 38%);
+      background-color: rgba(18, 72, 92, 1);
+      color: white;
     }
   }
   a {
-    background-color: rgb(18 72 92 / 38%);
+    color: blue;
+    background-color: rgba(18, 72, 92, 0.38);
     padding: 7px 10px;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
     &:hover {
-      background-color: white;
+      color: white;
+      background-color: rgba(18, 72, 92, 1);
       text-decoration: none;
     }
     svg {

@@ -43,7 +43,7 @@
         sourceLink: 'https://github.com/EmilLM/Weather-app',
         altText: 'Weather App image',
         title: 'Weather App',
-        description: "Weather app for all cities. Coder's Lab project. (requires revision).",
+        description: "Weather app for all cities. Coder's Lab project.",
         stack: 'jQuery - Ajax - Scss',
         wavesClass: 'project3-waves'
     }

@@ -1,20 +1,18 @@
-import React, {useState} from 'react';
+import MiscContext from "./MiscContext"
 
+const Logo = () => {
 
-const Logo = ({footerLogo}) => {
-
-    const [tooltipOpen, setTooltipOpen] = useState(false);
-    const toggle = () => setTooltipOpen(!tooltipOpen);
+    const {animate} = React.useContext(MiscContext)
 
     return (
-        <>
-            <div className="lem flicker-in-glow footer-logo" id="lem_logo">
-                <span className="logo-text">LEM</span>
+        // 
+        <div className={`logo footer-logo tooltip ${animate?"flicker-in-glow":""}`} >
+            <span className="logo-text">LEM</span>
+            <div className="bottom">
+                <p>Stands for my full name initials!</p>
+                <i></i>
             </div>
-            {/* <Tooltip placement="bottom" isOpen={tooltipOpen} target="lem_logo" toggle={toggle}>
-                Stands for my full name initials!
-            </Tooltip> */}
-        </>
+        </div>          
     ) 
 }
  

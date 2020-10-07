@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../Logo'
 import Navbar from "./Nav/Navbar"
+import HeaderIntro from "./HeaderIntro"
 import Waves from "../Waves"
 import MiscContext from "../MiscContext"
 
@@ -11,10 +11,7 @@ export default function Header() {
         <header id="header" className={theme?"header-dark": "header-light"}>
             
             <Navbar/>
-            <div className="header-inner">
-                <h1 className={"header-text"}>APP PORTFOLIO</h1>
-                <Logo/>
-            </div>  
+            <HeaderIntro/>
             <Waves wavesClass={"header-waves"}/>
         </header>
     )

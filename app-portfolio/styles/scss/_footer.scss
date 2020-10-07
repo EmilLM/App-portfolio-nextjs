@@ -62,7 +62,7 @@ footer {
       border: 2px solid rgb(120, 120, 248);
       outline: none;
       &:focus {
-        box-shadow: 0px 0px 4px 0px rgba(42, 2, 75, 0.95);
+        box-shadow: 0px 0px 6px 0px rgba(253, 0, 0, 0.95);
       }
     }
     textarea {
@@ -76,7 +76,7 @@ footer {
       border: 2px solid rgb(120, 120, 248);
       outline: none;
       &:focus {
-        box-shadow: 0px 0px 4px 0px rgba(42, 2, 75, 0.95);
+        box-shadow: 0px 0px 6px 0px rgba(253, 0, 0, 0.95);
       }
       @media (max-width: 360px) {
         width: 270px;
@@ -91,6 +91,7 @@ footer {
       padding: 5px 0;
       border-radius: 5px;
       border: none;
+      cursor: pointer;
       &:hover {
         color: white;
         background: navy;
@@ -147,7 +148,7 @@ footer {
    
     a {
       // max-width: 95vw;  
-      background: rgb(18 72 92 / 38%);
+      background: rgba(18, 72, 92, 0.38);
       height: 40px;
       width: 300px;
       color: white;
@@ -163,8 +164,9 @@ footer {
         width: 270px;
       }
       &:hover {
-        color: blue;
+  
         text-decoration: none;
+        background: rgba(18, 72, 92, 1  );
       }
     
       img {
@@ -187,9 +189,14 @@ footer {
     margin-top: 0;
     margin: 10px 0;
     .logo-text {
+      color: white;
       font-size: 20px;
       text-shadow: 0 0 3px blue;
     }
+  }
+  .bottom {
+    min-width: 100px !important; 
+    font-size:10px !important;
   }
   .date {
     display: flex;

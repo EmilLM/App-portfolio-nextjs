@@ -27,15 +27,17 @@
   button {
     color: navy;
     margin: 5px 0;
-    padding: 9px 8px;
+    padding: 9px 13px;
     border-radius: 0.25em;
     font-size: 1em;
     font-weight: 700;
-    background: rgb(18 72 92 / 38%);
+    background: rgba(18, 72 ,92,  0.38);
     border: none;
     font-family: "Iceland";
+    cursor: pointer;
     &:hover {
       color: white;
+      background: rgba(18, 72 ,92,  1);
     }
     svg {
         margin-right: 10px;
@@ -91,10 +93,12 @@
     @media (min-width: 950px) {
       width: 50%;
       margin: 0;
+      min-height: 275px;
     }
     
   }
   .skills-card {
+    position: relative;
     width: 50%;
     height: 150px;
     max-width: 200px;
@@ -104,9 +108,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(18 72 92 / 38%);
+    background-color: rgb(18, 72, 92, 0.38);
     border-radius: 0.25em;
-    @media (min-width: 372px) and (max-width: 950px) {
+    transition: 0.5s;
+    @media (min-width: 372px) and (max-width: 949px) {
       height: 210px;
       width: 43%;
       
@@ -115,6 +120,11 @@
       height: 250px;
       width: 23%;
       min-width: 200px;
+      &:hover {
+        width: 27%;
+        height: 260px;
+        min-width: 220px;
+      }
     }
     svg {
       color: red;
@@ -127,15 +137,30 @@
 
     }
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        color: rgb(33, 25, 61);
-        font-size: 1em;
-        text-align: center;
-        font-family: "Iceland";
-      }
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: rgb(33, 25, 61);
+      font-size: 1em;
+      text-align: center;
+      font-family: "Iceland";
+    }
   }
-  
+  .skills-card::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: red;
+  }
+  .skills-card:hover {
+    background-color: rgb(18, 72, 92, 1);
+  }
+  .skills-card:hover::before {
+    transition: 0.6s;
+    width: 100%;
+  }
   
 }

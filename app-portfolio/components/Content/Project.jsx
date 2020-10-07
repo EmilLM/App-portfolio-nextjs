@@ -15,13 +15,21 @@ const Project = ({project}) => {
         <div className="project-container">
              <LazyLoad height={150} offset={100}>
                 <div className="content project">
+
                     {sectionTitle &&<h2 className="section-title">{sectionTitle}</h2>}
                     <h3> &lt; {title} /&gt;</h3>
-                    <img className="appImage" src={`/assets/${src}`} alt={altText}/>
+
+                    <div className="image-container">
+                        <a href={link} target="_blank">
+                            <img className="project-image" src={`/assets/${src}`} alt={altText}/>
+                        </a>
+                    </div>
+
                     <div className="description">
                         <p>{description}</p>
                         <strong>{stack}</strong>
-                        <div className="iconLinks">
+
+                        <div className="project-links">
                             <a href={link} target="_blank" rel="noopener noreferrer" id="demo">
                                 <FontAwesomeIcon icon={faLaptopCode}/>   Demo
                             </a>   
@@ -29,7 +37,9 @@ const Project = ({project}) => {
                                 <FontAwesomeIcon icon={faGithubSquare}/>  Source
                             </a>
                         </div>
-                    </div>                      
+
+                    </div> 
+
                 </div> 
             </LazyLoad>  
             <Waves wavesClass={wavesClass}/>
