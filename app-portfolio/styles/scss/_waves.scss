@@ -107,6 +107,23 @@
     }
 }
 
+.carousel-waves {
+    .parallax>use:nth-child(1) {
+        transform: translate3d(-20px, 0, 0);
+        
+    }
+    .parallax>use:nth-child(2) {
+        transform: translate3d(60px, 0, 0);
+    }
+    .parallax>use:nth-child(3) {
+        transform: translate3d(-30px, 0, 0);
+        
+    }
+    .parallax>use:nth-child(4) {
+        transform: translate3d(80pxpx, 0, 0);
+    }
+}
+
 .project0-waves {
     .parallax>use:nth-child(1) {
         transform: translate3d(10px, 0, 0);

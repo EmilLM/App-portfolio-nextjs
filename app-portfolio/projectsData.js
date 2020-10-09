@@ -9,7 +9,6 @@
         title: 'ChatAway',
         description: 'Slack-type chat app with fully built back-end.',
         stack: 'MERN - Next.js - MaterialUI',
-        sectionTitle: 'Projects',
         wavesClass: 'project0-waves'
 
     }, 

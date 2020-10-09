@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faFolder} from '@fortawesome/free-solid-svg-icons'
 import NavSwitches from './NavSwitches.jsx';
 
-const NavBar = React.memo(() =>{
+const NavBar = () =>{
     const [offset, setOffset] = useState(false);
     
     useEffect(() => {
@@ -32,7 +32,7 @@ const NavBar = React.memo(() =>{
                                     <FontAwesomeIcon icon={faUser}/>
                                     <a className="nav-link" href="#about">About</a> 
                                 </li>
-                                <li className="nav-item projects"> 
+                                <li className="nav-item"> 
                                     <FontAwesomeIcon icon={faFolder} />
                                     <a className="nav-link" href="#projects">Projects</a>
                                 </li>
@@ -49,6 +49,6 @@ const NavBar = React.memo(() =>{
 
         )
 
-})
+}
 
-export default NavBar;
+export default React.memo(NavBar);

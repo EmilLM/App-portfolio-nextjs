@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="UTF-8"/>
-          <meta name="description" content="Landing page for all web apps made by Luchian Emil as a full stack (MERN) developer"/>
+          <meta name="description" content="Landing page for all web apps made by Luchian Emil as a full stack web developer"/>
           <meta name="author" content="Luchian Emil"/>
           <meta name="keywords" content="next.js, react, web app, portfolio, Luchian Emil"/>
           <link rel="icon" href="/assets/logo.png" />

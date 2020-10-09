@@ -63,7 +63,7 @@ header {
     z-index: 999;
     height: 55px;
     width: 100%;
-    // max-width: 1500px;
+    // max-width: 1800px;
     font-family: 'Iceland';
     font-size: 1.3em;
     text-transform: uppercase;
@@ -119,8 +119,9 @@ header {
   flex-wrap: wrap;
   height: auto;
   width: 100%;
-  margin: 0;
-  padding: 0 7px;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 1.5em;
   @media (min-width: 968px) {
     min-height: 85vh;
   }
@@ -192,114 +193,18 @@ header {
   background-clip: text;
   margin: 0 0 10px 0;
 } 
-// Projects section title
-#projects > div:nth-child(1) > div > div > h2 {
-  margin-bottom: 50px;
-}
-.content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1.5em;
-    position: relative;
-    h1 {
-      margin-bottom: 40px;
-    }
-  }
 
-// projects styles
-
-.project {
-  
-  h3 {
-    font-family: 'Iceland', cursive;
-    font-weight: 700;
-    font-size: 2.4em;
-    margin: 0 0 30px 0;
-  }
-}
-
-.project-image {
-  width: auto;
-  border-radius: 2%;
-  height: 150px;
-  transition: 0.4s;
-  @media (min-width: 370px) and (max-width: 576px) {
-    height: 200px;
-   
-  }
-  @media (min-width: 576px) and (max-width:768px) {
-    height: 300px;
-    
-  }
-  @media (min-width: 769px) and (max-width: 992px) {
-    height: 350px;
-  
-  }
-  @media (min-width: 993px) {
-    height: 350px;
-  }
-}
-.description {
-  height: 170px;
+.content-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  
-  p {
-    color: rgb(11, 11, 104);
-    // text-shadow: 0 0 5px black;
-    font-weight: bold;
-    font-family: "Iceland";
-    margin: 0;
-  }
-  strong {
-    font-size: 1em;
-    color: black;
-    text-shadow: 0 0 3px blue;
-    text-align: center;
-    font-family: "Quantum";
+  margin: 0 auto;
+  padding: 1.5em;
+  h1 {
+    margin-bottom: 40px;
   }
 }
-.project-links {
-  
-  font-family: "Iceland";
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  #demo {
-    margin-right: 15px;
-    background-color: white;
-    &:hover {
-      background-color: rgba(18, 72, 92, 1);
-      color: white;
-    }
-  }
-  a {
-    color: blue;
-    background-color: rgba(18, 72, 92, 0.38);
-    padding: 7px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    &:hover {
-      color: white;
-      background-color: rgba(18, 72, 92, 1);
-      text-decoration: none;
-    }
-    svg {
-      margin-right: 5px;
-    }
-  }
-}
-
 
 
 

@@ -50,4 +50,8 @@ body {
 *:before, *:after {
   box-sizing: border-box; 
 }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 
