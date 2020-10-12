@@ -7,7 +7,7 @@
         sourceLink: 'https://github.com/EmilLM/ChatAway',
         altText: 'ChatAway image',
         title: 'ChatAway',
-        description: 'Slack-type chat app with fully built back-end.',
+        description: 'Slack-type chat app with fully built back-end : Express & MongoDB. Features: user authentication, edit profile, password recovery and more.',
         stack: 'MERN - Next.js - MaterialUI',
         wavesClass: 'project0-waves'
 
@@ -19,7 +19,7 @@
         sourceLink: 'https://github.com/EmilLM/My-CV',
         altText: 'CV image',
         title: 'CV',
-        description: 'Static site of a short and long version of my resume.',
+        description: 'Static site of a short and long version of my resume. Created as a way to dabble in Vue, learn Bootstrap and various design styles.',
         stack: 'Vue - Scss - Bootstrap4',
         wavesClass: 'project1-waves'
 
@@ -31,7 +31,7 @@
         sourceLink: 'https://github.com/EmilLM/CountryInfo',
         altText: 'CountryInfo app',
         title: 'CountryInfo',
-        description: 'Socio-economic statistics about countries.',
+        description: 'Socio-economic statistics about countries. My first independent project using data from the World Bank API.',
         stack: 'React - Scss - CRA',
         wavesClass: 'project2-waves'
     },
@@ -42,7 +42,7 @@
         sourceLink: 'https://github.com/EmilLM/Weather-app',
         altText: 'Weather App image',
         title: 'Weather App',
-        description: "Weather app for all cities. Coder's Lab project.",
+        description: "Weather app for all cities. Project made during my time at Coder's Lab. Uses a GPS and weather-data API.",
         stack: 'jQuery - Ajax - Scss',
         wavesClass: 'project3-waves'
     }

@@ -35,11 +35,6 @@
  
 }
 
-
-
-
-
-
 // expanded projects styles
 
 .project {
@@ -66,7 +61,7 @@
     
   }
   @media (min-width: 769px) and (max-width: 992px) {
-    height: 350px;
+    height: 330px;
   
   }
   @media (min-width: 993px) {
@@ -74,13 +69,19 @@
   }
 }
 .description {
-  height: 120px;
+  height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 600px;
   @media (min-width: 768px) {
-    height: 170px;
+    height: 180px;
+    // max-width: 600px;
+  }
+  @media (min-width: 424px) and (max-width: 574px) {
+  
+    max-width: 350px;
   }
   
   p {
@@ -89,6 +90,7 @@
     font-weight: bold;
     font-family: "Iceland";
     margin: 0;
+    text-align: center;
   }
   strong {
     font-size: 1em;

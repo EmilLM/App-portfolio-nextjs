@@ -7,8 +7,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from "next/head"
 import MiscContext from "../components/MiscContext.jsx";
 
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 function MyApp({ Component, pageProps}) {

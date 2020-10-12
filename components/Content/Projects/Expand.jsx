@@ -9,6 +9,7 @@ const ExpandButton = ({setExpand, expand}) => {
     const handleClick = () => {
         setExpand(prev=>!prev);
         setPulse(prev=>!prev);
+       
     }
     return (  
         <div

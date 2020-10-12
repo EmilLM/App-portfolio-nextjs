@@ -8,7 +8,7 @@ import Waves from "../../Waves"
 
 const Project = ({project}) => {
 
-    const {src, link, source, altText, title, description, stack, wavesClass} = project;
+    const {src, link, sourceLink, altText, title, description, stack, wavesClass} = project;
   
 
     return ( 
@@ -32,7 +32,7 @@ const Project = ({project}) => {
                             <a href={link} target="_blank" rel="noopener noreferrer" id="demo">
                                 <FontAwesomeIcon icon={faLaptopCode}/>   Demo
                             </a>   
-                            <a href={source} target="_blank" rel="noopener noreferrer">
+                            <a href={sourceLink} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faGithubSquare}/>  Source
                             </a>
                         </div>
