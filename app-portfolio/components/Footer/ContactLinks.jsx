@@ -12,7 +12,7 @@ export default function ContactLinks() {
                         href="mailto:luchianemil@gmail.com" 
                         rel="noopener noreferrer"
                     >
-                        <img src="/assets/icons/gmail.svg"  />
+                        <img src="/assets/icons/gmail.svg"  alt="gmail"/>
                         luchianemil
                     </a>
                     <a  
@@ -21,7 +21,7 @@ export default function ContactLinks() {
                         rel="noopener noreferrer" 
                         alt="github link"
                     >   
-                        <img src="/assets/icons/github-sign.svg"  />
+                        <img src="/assets/icons/github-sign.svg" alt="github" />
                         EmilLM
                     </a>
                     <a  
@@ -30,7 +30,7 @@ export default function ContactLinks() {
                         rel="noopener noreferrer"
                         alt="linkedIn link"
                     >
-                        <img src="/assets/icons/linkedin.svg"  />
+                        <img src="/assets/icons/linkedin.svg" alt="linkedin"  />
                         Emil Luchian
                     </a>
                     <a  
@@ -39,7 +39,7 @@ export default function ContactLinks() {
                         rel="noopener noreferrer"
                         alt="facebook link"
                      >
-                        <img src="/assets/icons/facebook.svg"  />
+                        <img src="/assets/icons/facebook.svg" alt="facebook"  />
                         Emil Luchian
                     </a>
             </div>
