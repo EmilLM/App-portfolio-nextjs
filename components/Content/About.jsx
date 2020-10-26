@@ -31,7 +31,7 @@ const About = () => {
                 </p>
                 <p className="about-info">
                     Eager to prove my abilities and excited for new challenges. <span>Efficient </span>and 
-                    <span> resourceful</span> in reaching my objectives, in bringing code to life in <br/><span>amazing designs</span>. 
+                    <span> resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
                    
                 </p>
                 
@@ -74,10 +74,10 @@ const About = () => {
                             <FontAwesomeIcon icon={faTools} />
                             <strong>Tools</strong>
                             <ul>
+                                <li>Jest</li>
                                 <li>Git/Github</li>
-                                <li>npm</li>
                                 <li>GraphQL</li>
-                                <li>REST API    </li>
+                                <li>REST API</li>
                             </ul>
                         </div>
                     </div>

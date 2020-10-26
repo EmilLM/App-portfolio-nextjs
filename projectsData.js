@@ -7,7 +7,7 @@
         sourceLink: 'https://github.com/EmilLM/ChatAway',
         altText: 'ChatAway image',
         title: 'ChatAway',
-        description: 'Slack-type chat app with fully built back-end : Express & MongoDB. Features: user authentication, edit profile, password recovery and more.',
+        description: 'Chat app with fully built back-end : Express & MongoDB. Features: user authentication, edit profile, password recovery and more.',
         stack: 'MERN - Next.js - MaterialUI',
         wavesClass: 'project0-waves'
 

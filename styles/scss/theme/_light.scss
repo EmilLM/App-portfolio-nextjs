@@ -62,6 +62,11 @@ $lhtc: rgb(0, 0, 0);
 .main-light {
     .about-bg {
         background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+        .skills-card {
+            ul {
+                color: rgb(33, 25, 61);
+            }  
+        }
     }
     .projects-header {
         background: linear-gradient(to top, #291aad,  #ffffff);

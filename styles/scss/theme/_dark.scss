@@ -60,7 +60,11 @@ $dhtc: rgb(160, 160, 255);
 .main-dark {
     .about-bg {
         background: linear-gradient(to top, #373b44, #4286f4);
-        
+        .skills-card {
+            ul {
+                color: rgb(117, 117, 247);
+            } 
+        }
     }
     .projects-header {
         background: linear-gradient(to top, #002457,  #4286f4);
