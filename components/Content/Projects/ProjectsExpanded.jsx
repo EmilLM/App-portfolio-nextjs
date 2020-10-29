@@ -1,13 +1,13 @@
 
 import Project from "./Project";
 import projects from "../../../projectsData"
-
+import {useRef, useEffect} from "react"
 
 const ProjectsExpanded = () => {
 
-    const projectRef = React.useRef();
+    const projectRef = useRef();
 
-    React.useEffect( ()=> {
+    useEffect( ()=> {
         
         const scrollToRef = () => projectRef.current?.scrollIntoView({ behavior: 'smooth' });
         scrollToRef();

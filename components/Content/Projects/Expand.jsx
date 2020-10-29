@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp} from '@fortawesome/free-solid-svg-icons';
 import Ripples from 'react-ripples'
+import {useState} from "react"
 
 const ExpandButton = ({setExpand, expand}) => {
 
-    const [pulse, setPulse] = React.useState(true);
+    const [pulse, setPulse] = useState(true);
 
     const handleClick = () => {
         setExpand(prev=>!prev);

@@ -1,8 +1,9 @@
+import {useContext} from "react"
 import MiscContext from "./MiscContext"
 
 const Logo = () => {
 
-    const {animate} = React.useContext(MiscContext)
+    const {animate} = useContext(MiscContext)
 
     return (
         // 

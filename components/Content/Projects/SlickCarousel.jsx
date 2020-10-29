@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import Slider from "react-slick";
 
 export default function SlickCarousel() {
@@ -14,6 +14,7 @@ export default function SlickCarousel() {
     swipeToSlide: true,
     focusOnSelect: true,
     adaptiveHeight: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -27,6 +28,14 @@ export default function SlickCarousel() {
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1
         }

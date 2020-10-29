@@ -1,8 +1,9 @@
 import Logo from "../Logo"
 import MiscContext from "../MiscContext"
+import {useContext} from "react"
 
 const HeaderIntro = () => {
-    const {animate} = React.useContext(MiscContext);
+    const {animate} = useContext(MiscContext);
     return (
         <div className="header-inner">
             <div className="text-container">

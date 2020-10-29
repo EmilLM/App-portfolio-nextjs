@@ -30,9 +30,12 @@
   
 }
 .carousel-container {
-  width: 90%;
-  margin-top: 50px;
- 
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 // expanded projects styles

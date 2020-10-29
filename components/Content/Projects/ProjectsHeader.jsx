@@ -1,7 +1,5 @@
 
 
-import Carousel from "./ProjectsCarousel";
-
 const ProjectsHeader = ({children}) => {
 
 

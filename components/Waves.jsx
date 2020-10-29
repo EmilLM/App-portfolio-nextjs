@@ -1,7 +1,8 @@
 import MiscContext from "./MiscContext"
+import {useContext} from "react"
 
 const Waves = ({ wavesClass }) => {
-    const {animate, theme} = React.useContext(MiscContext);
+    const {animate, theme} = useContext(MiscContext);
     return (
          
         <svg className={`${theme?"dark-waves": "light-waves"} ${wavesClass}`} 

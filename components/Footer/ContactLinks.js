@@ -1,7 +1,5 @@
 
 export default function ContactLinks() {
-    
-    
     return (
         <div className="links-container">
            <p className="links-info">You can also reach me on:</p>
