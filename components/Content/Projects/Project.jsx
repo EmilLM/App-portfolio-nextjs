@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import Waves from "../../Waves"
-import Image from "next/image"
-
+// import Image from "next/image"
+// next.js Image not compatible with firebase, image isnt displayed!???
 const Project = ({project}) => {
 
     const {src, link, sourceLink, altText, title, description, stack, wavesClass} = project;
@@ -18,7 +18,7 @@ const Project = ({project}) => {
 
                 <div className="image-container">
                     <a href={link} target="_blank">
-                        <Image className="project-image" src={`/assets/${src}`} alt={altText} unsized/>
+                        <img className="project-image" src={`/assets/${src}`} alt={altText} />
                     </a>
                 </div>
 

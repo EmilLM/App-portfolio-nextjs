@@ -1,22 +1,31 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faTools, faPencilAlt, faDatabase, faDesktop } from '@fortawesome/free-solid-svg-icons'
-import Waves from "../Waves"
+import Waves from "../Waves";
+import { Fade, Flip, JackInTheBox } from "react-awesome-reveal";
+
+import MiscContext from "../MiscContext"
+import {useContext} from "react"
 
 const About = () => {
-    
+    const {animate} = useContext(MiscContext);
     return ( 
         <div className="about-bg" id="about">
             <div className="content-container about-content ">
                 <h2 className="section-title">About</h2>
                 
+                <Fade direction="left">
                 <div className="about-code">
-                    <p><span>Name :</span> 'Luchian Emil Moise', </p>
-                    <p><span>Specialization :</span> 'Full stack web dev',</p> 
-                    <p><span>Stack :</span> 'MongoDB-Express-React-Node',</p>
-                    <p><span>Location :</span> 'Bucharest, Romania'</p>
+                    
+                        <p><span>Name :</span> 'Luchian Emil Moise', </p>
+                        <p><span>Specialization :</span> 'Full stack web dev',</p> 
+                        <p><span>Stack :</span> 'MongoDB-Express-React-Node',</p>
+                        <p><span>Location :</span> 'Bucharest, Romania'</p>
+                   
                 </div>
-
+                 </Fade>
+                 
+                <Fade direction="right">
                 <button
                     className="btn btn-primary"
                     href="/assets/CV_Luchian_Emil.pdf"
@@ -25,17 +34,20 @@ const About = () => {
                     <FontAwesomeIcon icon={faDownload} />
                     Download CV
                 </button>
-               
+                </Fade>
+                <Flip direction="horizontal" cascade>
                 <p className="about-info">
-                    Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Self-learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker with more to follow.
+                    Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker and other.
                 </p>
                 <p className="about-info">
-                    Eager to prove my abilities and excited for new challenges. <span>Efficient </span>and 
+                    Striving to write clean and scalable code using best practices. <span>Efficient </span>and 
                     <span> resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
                    
                 </p>
+                </Flip>
                 
                 <h3>Skills</h3>
+                <JackInTheBox cascade>
                 <div className="about-skills">
                     <div className="skills-container">
                         <div className="skills-ui skills-card">
@@ -82,6 +94,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                </JackInTheBox>
             </div>
             <Waves wavesClass={"about-waves"} />
         </div>

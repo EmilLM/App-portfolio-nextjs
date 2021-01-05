@@ -4,6 +4,7 @@ import Slider from "react-slick";
 export default function SlickCarousel() {
 
   const settings = {
+    //can add center class
     className: "center",
     centerPadding: "60px",
     slidesToShow: 3,
