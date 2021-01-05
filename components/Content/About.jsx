@@ -41,16 +41,16 @@ const About = () => {
 
                 <Flip direction="horizontal" cascade triggerOnce>
                     <p className="about-info">
-                        Learned the ropes of front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker and other.
+                        Studied front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker and other.
                     </p>
                     <p className="about-info">
-                        Striving to write clean and scalable code using best practices. <span>Efficient </span>and 
+                        Striving to write <span>clean</span>, <span>scalable code</span> using best practices. <span>Efficient </span>and 
                         <span> resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
                     
                     </p>
                 </Flip>
                 <Bounce triggerOnce>
-                    <h3>Skills</h3>
+                    {/* <h3>Skills</h3> */}
                 </Bounce>
                 <JackInTheBox cascade triggerOnce>
                 <div className="about-skills">
