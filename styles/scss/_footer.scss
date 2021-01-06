@@ -31,7 +31,7 @@ footer {
     flex-direction: column;
     width: 50%;
     min-width: 300px; 
-    margin-top: 30px;
+    // margin-top: 30px;
     
   }
   .form-info {
@@ -114,7 +114,21 @@ footer {
       margin: 0;
     }
   }
-  
+  .contact-bar {
+    background-color: rgb(110, 131, 236);
+    @media (max-width: 766px) {
+      height: 3px; 
+      width: 320px;
+      margin-top: 30px;
+    }
+    
+    @media (min-width: 767px) {
+      margin-top: 50px;
+      height: 280px;
+      width: 3px;
+    }
+    
+  }
   .links-container {
     // border: 1px solid white;
     width: 50%; 
@@ -124,11 +138,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: 3px solid rgb(146, 161, 235);
-    margin-top: 30px;
+    // border-top: 3px solid rgb(146, 161, 235);  
+    
     @media (min-width: 767px) {
-      border-top: none;
-      border-left: 3px solid rgb(128, 146, 240);
+      // border-top: none;
+      // border-left: 3px solid rgb(128, 146, 240);
       margin-top: none !important;
     }
   }
@@ -207,6 +221,11 @@ footer {
     width: 100%;
     p {
       margin: 0 5px;
+      span {
+        display:inline-block;
+        transform: scale(-1, 1);
+        
+      }
     }
   }
   
