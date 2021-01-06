@@ -6,7 +6,7 @@ const Logo = () => {
     const {animate} = useContext(MiscContext)
 
     return (
-        <div className={`logo footer-logo tooltip ${animate?"flicker-in-glow":""}`} >
+        <div className={` swirl-in logo footer-logo tooltip ${animate?"flicker-in-glow":""}`} >
             <span className="logo-text">LEM</span>
             <div className="bottom">
                 <p>Stands for my full name initials!</p>

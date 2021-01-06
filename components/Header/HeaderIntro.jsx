@@ -7,11 +7,11 @@ const HeaderIntro = () => {
     return (
         <div className="header-inner">
             <div className="text-container">
-                <h1 className={`header-text ${animate?"pop-up":""}`}>APP PORTFOLIO </h1>
+                <h1 className={`header-text focus-in ${animate?"pop-up":""}`}>APP PORTFOLIO </h1>
                 {/* <span className="text-by">by</span> */}
                 <Logo/>
             </div>
-            <img alt="app-build-img" src={" /assets/header-img.svg"} className={animate?"float": ""} />
+            <img alt="app-build-img" src={" /assets/header-img.svg"} className={animate?"float": "bounce-in"} />
         </div>  
     );
 }
