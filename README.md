@@ -17,7 +17,7 @@
     <br> 
 </p>
 
-<h2 align="center"><a href="emilsprojects.site">Live demo</a></h2>
+<h2 align="center"><a href="luchianemil.com">Live demo</a></h2>
 
 ## 🧐 About <a name = "about"></a>
 
