@@ -70,41 +70,31 @@
     font-family: "Quantum";
     font-size: 1.4em;
   }
-  .about-skills {
+  .about-skills-container {
     margin-top: 30px;
     width: 100%;
-    // max-width: 1000px;
-    display: flex;
-    // justify-content: center;
-    flex-wrap: wrap;
-    align-items: space-evenly;
-    @media (min-width: 950px) {
+    max-width: 350px;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, minmax(80px, 200px));
+    @media (max-width: 300px) {
+
+      grid-template-columns: repeat(1, minmax(80px, 120px));
+    }
+    @media (min-width: 960px) {
       width: 100%;
-      max-width: 925px;
+      max-width: 850px;
+      grid-template-columns: repeat(4, minmax(130px, 200px));
     }
     
     
   }
-  .skills-container{
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    @media (min-width: 950px) {
-      width: 50%;
-      margin: 0;
-      min-height: 275px;
-    }
-    
-    
-  }
+  
   .skills-card {
     position: relative;
-    width: 50%;
     height: 150px;
-    max-width: 200px;
-    min-width: 100px;
-    margin: 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -112,22 +102,20 @@
     background-color: rgb(18, 72, 92, 0.38);
     border-radius: 0.25em;
     transition: 0.5s;
-    @media (min-width: 372px) and (max-width: 949px) {
-      height: 190px;
-      width: 43%;
+    &:hover {
+      // width: 27%;
+      // height: 260px;
+      transform: scale(1.08);
+    }
+    @media (min-width: 373px) {
+      height: 180px;
       
     }
-    @media (min-width: 950px) {
+    @media (min-width: 850px) {
       height: 250px;
-      width: 23%;
-      min-width: 200px;
-      &:hover {
-        // width: 27%;
-        // height: 260px;
-        transform: scale(1.08);
-        
-      }
+      
     }
+    
     svg {
       color: red;
     }

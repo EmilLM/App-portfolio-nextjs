@@ -52,10 +52,9 @@ const About = () => {
                 <Bounce triggerOnce>
                     {/* <h3>Skills</h3> */}
                 </Bounce>
-                <JackInTheBox cascade triggerOnce>
-                <div className="about-skills">
-                    <div className="skills-container">
-                        <div className="skills-ui skills-card">
+                <JackInTheBox triggerOnce>
+                    <div className="about-skills-container">
+                        <div className="skills-card">
                             <FontAwesomeIcon icon={faPencilAlt} />
                             <strong>UI/UX</strong>
                             <ul>
@@ -65,7 +64,7 @@ const About = () => {
                                 <li>Adobe XD</li>
                             </ul>
                         </div>
-                        <div className="skills-frontend skills-card">
+                        <div className="skills-card">
                             <FontAwesomeIcon icon={faDesktop} />
                             <strong>Front-end</strong>
                             <ul>
@@ -75,9 +74,7 @@ const About = () => {
                                 <li>Material-UI</li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="skills-container">
-                        <div className="skills-backend skills-card">
+                        <div className="skills-card">
                             <FontAwesomeIcon icon={faDatabase} />
                             <strong>Back-end</strong>
                             <ul>
@@ -87,7 +84,7 @@ const About = () => {
                                 <li>Firebase</li>
                             </ul>
                         </div>
-                        <div className="skills-tools skills-card ">
+                        <div className="skills-card ">
                             <FontAwesomeIcon icon={faTools} />
                             <strong>Tools</strong>
                             <ul>
@@ -97,8 +94,8 @@ const About = () => {
                                 <li>REST API</li>
                             </ul>
                         </div>
+                    
                     </div>
-                </div>
                 </JackInTheBox>
             </div>
             <Waves wavesClass={"about-waves"} />
