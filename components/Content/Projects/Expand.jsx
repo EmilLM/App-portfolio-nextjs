@@ -22,11 +22,11 @@ const ExpandButton = ({setExpand, expand}) => {
         >  
         <Ripples>  
             <button 
-                className={`button-expand ${pulse? "heartbeat":""}`}
+                className={`button-expand`}
                 onClick={handleClick}
             >
                 {!expand
-                    ?<FontAwesomeIcon icon={faArrowDown}/>
+                    ?<div className="heartbeat"><FontAwesomeIcon icon={faArrowDown}/></div>
                     :<FontAwesomeIcon icon={faArrowUp}/>
                 }
             </button> 

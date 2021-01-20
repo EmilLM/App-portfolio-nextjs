@@ -19,11 +19,13 @@ const [expand, setExpand] = useState(false);
             <div id="projects">
                 <div className="projects-header">
                     <Flip direction="vertical" triggerOnce>
-                    <h2 className="section-title">Projects</h2>
+                        <h2 className="section-title">Projects</h2>
                     </Flip>
+                    
                     <SlickCarousel/>
+
                     <Fade direction="down" triggerOnce>
-                    <ExpandButton setExpand={setExpand} expand={expand} />
+                        <ExpandButton setExpand={setExpand} expand={expand} />
                     </Fade>
                     <Waves wavesClass="carousel-waves"/>
                 </div>

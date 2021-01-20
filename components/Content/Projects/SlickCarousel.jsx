@@ -62,15 +62,13 @@ export default function SlickCarousel() {
   return (
     <div className="carousel-container">
       <JackInTheBox triggerOnce>
-      <Slider {...settings}>
-        
+        <Slider {...settings}>
           <img src="/assets/ChatAway.webp" alt="chatAway"/>
           <img src="/assets/CV.webp" alt="CV"/>
           <img src="/assets/countryinfo.webp" alt="countryInfo"/>
           <img src="/assets/weather_app.webp" alt="weather_app"/>
           <img src="/assets/portfolio.webp" alt="portfolio"/>
-        
-      </Slider>
+        </Slider>
       </JackInTheBox>
     </div>
   );
