@@ -26,7 +26,8 @@
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.27.13",
     "sass": "^1.32.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "ui-neumorphism": "^1.1.0"
   },
   "devDependencies": {}
 }

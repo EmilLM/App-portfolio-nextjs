@@ -1,13 +1,19 @@
-@import './scss/_app.scss';
-@import './scss/_footer.scss';
-@import './scss/_animation';
-@import './scss/_logo.scss';
-@import './scss/_about.scss';
-// @import './scss/_menu.scss';
-@import './scss/_waves.scss';
-@import './scss/_switch.scss';
-@import './scss/theme/_dark.scss';
-@import './scss/theme/_light.scss';
-@import './scss/_projects.scss';
+// portfolio styles for v 3.0
+@import './v3/_app.scss';
+@import './v3/_footer.scss';
+@import './v3/_animation';
+@import './v3/_logo.scss';
+@import './v3/_about.scss';
+// @import './v3/_menu.scss';
+@import './v3/_waves.scss';
+@import './v3/_switch.scss';
+@import './v3/theme/_dark.scss';
+@import './v3/theme/_light.scss';
+@import './v3/_projects.scss';
 // copied all the styles since with the doc import some didnt apply
-@import './scss/_slickCarousel.scss';
+@import './v3/_slickCarousel.scss';
+
+// portfolio styles for v 4.0
+
+@import './v4/navbar.scss';
+@import './v4/content.scss';
