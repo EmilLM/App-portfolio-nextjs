@@ -33,6 +33,9 @@ html {
 @font-face {
   font-family: 'Anurati';
   src: url("../public/assets/fonts/Anurati-Regular.otf");
+}@font-face {
+  font-family: 'Gone';
+  src: url("../public/assets/fonts/Youre-Gone.ttf");
 }
 
 body {

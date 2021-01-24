@@ -12,18 +12,26 @@ const Navbar = () => {
     return ( 
         <nav className="v4-navbar">
             <div className="v4-nav-container">
+
                 <IconButton text={false} size='medium' color='var(--primary)   '>
                    <FontAwesomeIcon icon={faLightbulb}/>
                 </IconButton>
-                <div className="v4-logo">Neumorphism</div>
+
+                <h1>Neumorphism</h1>
+
                 <Button 
                     color='var(--primary)' 
                     onClick={()=>setShowMenu(!showMenu)}
                     className="style-change" 
                 >
                     Change style &nbsp;
-                   <FontAwesomeIcon icon={faChevronDown} className={showMenu ? "rotate-up": "rotate-down"}/> 
+                   <FontAwesomeIcon 
+                        icon={faChevronDown} 
+                        className={showMenu ? "rotate-up": "rotate-down"}
+                   /> 
+
                    {showMenu && <MenuDropdown clsName={"style-change-menu"}/>}
+
                 </Button>
             </div>
         </nav>
