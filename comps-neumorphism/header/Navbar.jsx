@@ -2,7 +2,7 @@ import {useState} from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLightbulb, faChevronDown} from "@fortawesome/free-solid-svg-icons";
-import { Button, IconButton, Card } from 'ui-neumorphism';
+import { Button, IconButton} from 'ui-neumorphism';
 import MenuDropdown from "./MenuDropdown";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="v4-navbar">
             <div className="v4-nav-container">
 
-                <IconButton text={false} size='medium' color='var(--primary)   '>
+                <IconButton text={false} size='large' color='var(--primary)' className="v4-theme-change"   >
                    <FontAwesomeIcon icon={faLightbulb}/>
                 </IconButton>
 

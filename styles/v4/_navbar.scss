@@ -22,31 +22,19 @@
     .rotate-down {
         transition: all 0.3s;
     }
-    // .v4-theme-switch {
-    //     color: rgb(41, 41, 201);
-    //     padding: 7px 15px;
-    //     border-radius: 10px;
-    //     box-shadow: 3px 3px 5px #cdced4,
-    //                 -3px -3px 5px #ffffff;   
-    //     &:hover {
-    //         
-    //         svg {
-    //             color: blue;
-    //         }
-    //     }
+    .v4-theme-change {
+        ._3lLt8 {
+            font-size: 25px; 
+        }
 
-    // }
+    }
     h1 {
         font-size: 3em;
-        font-weight: 900;
+        font-weight: 100;
         text-transform: uppercase;
-        background-color: #26195e;
-        color: transparent;
-        text-shadow: 0px 2px 5px rgba(255,255,255,0.7);
-        background-clip: text;
-        font-family: "Anurati";
+        color: #E4EBF5;
+        text-shadow:-3px -3px 5px #bec8e4, 3px 3px 5px #fff ;font-family: "Gone";
         letter-spacing: 15px;
-        margin-left: 40px;
     }
     .style-change {
         position: relative;
@@ -55,7 +43,7 @@
             cursor:default; 
             position: absolute;
             top: 55px;
-            left:-35px;
+            left:-40px;
             text-transform: capitalize;
             text-align: left;
         }
@@ -72,7 +60,7 @@
                         inset 3px 3px 5px #bec8e4;
                 }
                 a {
-                    color: black;
+                    color: blue;
                     text-decoration: none;
                 }
             }

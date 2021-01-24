@@ -1,15 +1,31 @@
 .header-intro-container {
     width: 100%;
-    // padding: 1.5em;
+    border: 1px solid black;
+
     height: 100vh;
     background: #E4EBF5;
-    margin-top: 30px;
-    display: grid;
-    grid-template-rows: 80vh;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
-    align-content: center;
+    // margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
+    .header-card {
+        height: 80vh;
+        margin-top: 90px;
+        width: 95%;
+        // border: 1px solid black;
+        // padding: 1.5em;
+        display: grid;
+        grid-template-rows: 80vh;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        align-content: center;
+
+        box-shadow: 7px 7px 10px #bec8e4, -7px -7px 10px #ffffff;
+        border-radius: 10px;
+                        
+    }
     // div{
     //     border: 1px solid red;
     // }
@@ -24,21 +40,32 @@
     .title-container {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         
         .header-text {
             width: 100%;
-            font-weight: 700;
             font-size: 3em;
-            font-family: 'Quantum', cursive;
-            text-shadow: 0 0 5px #1900fd;
-            line-height: 80px;
-            letter-spacing: 3px;
-            @media (min-width: 768px) {
-                width: 80%;
-                font-size: 3.3em;
-            }
+            font-weight: 900;
+            text-transform: uppercase;
+            background-color: #26195e;
+            color: transparent;
+            text-shadow: 0px 2px 5px rgba(255,255,255,0.7);
+            background-clip: text;
+            font-family: "Anurati";
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            // @media (min-width: 768px) {
+            //     width: 80%;
+            //     font-size: 3.3em;
+            // }
+            
         }
+        .explore-button {
+            margin-top: 50px;     
+        }
+        
     }
     .img-container {
         display: flex;
