@@ -30,13 +30,13 @@ const About = () => {
                  
                 <Fade direction="right" triggerOnce>
                     <button
-                    className="btn btn-primary"
-                    href="/assets/CV_Luchian_Emil.pdf"
-                    download="CV_Luchian_Emil.pdf"
-                >
+                        className="btn btn-primary"
+                        href="/assets/CV_Luchian_Emil.pdf"
+                        download="CV_Luchian_Emil.pdf"
+                    >
                     <FontAwesomeIcon icon={faDownload} />
-                    Download CV
-                </button>
+                        Download CV
+                    </button>
                 </Fade>
 
                 <Flip direction="horizontal" cascade triggerOnce>

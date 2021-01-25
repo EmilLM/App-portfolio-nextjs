@@ -1,13 +1,19 @@
 
+import {useContext} from "react";
+import MiscContext from "../../components/MiscContext";
+import {Card} from "ui-neumorphism";
 
 const Content = () => {
-    
+
+    const {theme} = useContext(MiscContext);
     return (
         <>
             
-            <main className="v4-content v4-container" >
-                <div className="v4-about card-container-down"></div>
-            </main>
+            <Card className="v4-content v4-container" dark={theme} >
+                <Card inset className="v4-about" dark={theme}>
+
+                </Card>
+            </Card>
         </>
     );
 }

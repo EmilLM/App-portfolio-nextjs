@@ -10,8 +10,6 @@ import { overrideThemeVariables } from 'ui-neumorphism'
 
 const NeumorphismPage = () => {
 
-   const scrollToRef = (scrollRef) => scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
-
     useEffect(()=>{
         overrideThemeVariables({
 

@@ -1,5 +1,5 @@
 
-export default function ContactLinks() {
+ const ContactLinks =() => {
     return (
         <div className="links-container">
            <p className="links-info">You can also reach me on:</p>
@@ -44,3 +44,4 @@ export default function ContactLinks() {
         </div>
     );
 };
+export default ContactLinks

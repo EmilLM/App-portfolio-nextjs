@@ -18,3 +18,7 @@
 @import './v4/navbar.scss';
 @import './v4/content.scss';
 @import './v4/intro.scss';
+
+body {
+    transition: background-color 1s ease;
+}

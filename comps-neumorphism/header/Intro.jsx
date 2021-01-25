@@ -7,6 +7,9 @@ import {useRef, useContext} from "react";
 import MiscContext from "../../components/MiscContext"
 
 
+// import 'ui-neumorphism/dist/index.css';
+
+
 const Intro = () => {
 
     const {theme} = useContext(MiscContext);
@@ -17,7 +20,7 @@ const Intro = () => {
     return (
         <>
         <Card flat className="header-intro v4-container" dark={theme}>
-            <Card className="header-card card-container-up" dark={theme} >
+            <Card className="header-card" dark={theme} >
                 <div className="logo-container">
                     <Logo clsName={`v4-logo ${theme?"dark-active":"light-active"}`}/>
                 </div>
@@ -40,7 +43,7 @@ const Intro = () => {
             </Card>
         </Card>
         <div ref={scrollRef} style={{width: "100%"}}>
-           <Divider />
+           <Divider dark={theme}/>
         </div>
          
         

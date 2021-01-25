@@ -1,5 +1,4 @@
 
-
 // divider style
 ._1RYKi {
     border-radius: 0px !important;
@@ -19,6 +18,7 @@
 
 // buttons class
 ._cL4RU {
+    transition: box-shadow 0s ease !important; 
     &:active {
         color: black !important; 
                 
@@ -27,7 +27,8 @@
 // heading class styles 
 .dark-heading {
     color: #292E35;
-    text-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a; 
+    text-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a;
+    
 }
 .light-heading {
     color: #E4EBF5;
@@ -49,20 +50,19 @@
     align-items: center;
     width: 100% !important;
     border-radius: 0px !important;
-    background: #E4EBF5;
+
 }
 // styles for section card-containers
-.card-container-up {
-    width: 90% !important;
-    box-shadow: 7px 7px 10px #bec8e4, -7px -7px 10px #ffffff;
-    border-radius: 10px;
-}
-.card-container-down {
-    width: 90%;
-    box-shadow: inset 7px 7px 10px #bec8e4, inset -7px -7px 10px #ffffff;
-    border-radius: 10px;
-    
-}
+// .card-container-up {
+//     width: 90% !important;
+//     box-shadow: 7px 7px 10px #bec8e4, -7px -7px 10px #ffffff;
+//     border-radius: 10px;
+// }
+// .card-container-down {
+//     width: 90%;
+//     box-shadow: inset 7px 7px 10px #bec8e4, inset -7px -7px 10px #ffffff;
+//     border-radius: 10px; 
+// }
 .v4-divider{
     width: 100%;
 }

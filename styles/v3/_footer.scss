@@ -10,6 +10,9 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%; 
+  p {
+    margin-bottom: 10px;
+  }
   .contact-container {
     display: flex;
     align-items: center;
@@ -67,6 +70,7 @@ footer {
     }
     textarea {
       font-size: 1em;
+      font-family: "Iceland";
       height: 80px;
       resize: none;
       width: 300px;
@@ -203,6 +207,8 @@ footer {
     margin-top: 0;
     margin: 10px 0;
     .logo-text {
+      margin-bottom: 20px;
+      margin-left: 10px;
       color: white;
       font-size: 20px;
       text-shadow: 0 0 3px blue;
