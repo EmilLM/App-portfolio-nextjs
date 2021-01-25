@@ -1,24 +1,31 @@
 
-import { Card, ListItem, ListItemGroup, CardContent } from 'ui-neumorphism';
-import Link from 'next/link'
+import { Card, CardContent } from 'ui-neumorphism';
+import Link from 'next/link';
+import {useState, useContext} from "react";
+import MiscContext from "../../components/MiscContext"
 
-const MenuDropdown = ({clsName}) => {
+const MenuDropdown = () => {
+    const {theme} = useContext(MiscContext); 
+
     return (
-        <Card className={clsName}>
-            <CardContent>
+        <Card className="style-change-menu" dark={theme}>
+            <CardContent dark={theme}>
                 <ul>
-                    <li className="first-draft">First draft -N/A</li>
-                    <li>
+                    <li className="first-draft">First draft - N/A</li>
+                    <li className={theme?"dark-engrave":"light-engrave"}>
                         <Link href="/">
                             <a>Second iteration</a>
                         </Link>
                     </li>
-                    <li>
+                    <li className={theme?"dark-engrave":"light-engrave"}>
                         <Link href="/">
                             <a>Flowing waves</a>
                         </Link>
                     </li>
-                    <li className="current-style">Neumorphism style</li>
+                    <li className={theme?"dark-engrave dark-active ":"light-engrave light-active"}>
+                        <Link href="/neumophism">
+                            <a>Neumorphism</a>
+                        </Link></li>
                 </ul>
             </CardContent>
         </Card>

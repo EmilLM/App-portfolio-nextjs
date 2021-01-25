@@ -1,4 +1,17 @@
+
+
+// divider style
+._1RYKi {
+    border-radius: 0px !important;
+}
+// card style override
+// ._28vIk {
+//     // width: 100% !important;
+//     // border-radius: 0px !important;
+// }
+
 // buttons inner text
+
 ._3lLt8 {
     text-transform: none !important;
     
@@ -10,4 +23,70 @@
         color: black !important; 
                 
     }
+}
+// heading class styles 
+.dark-heading {
+    color: #292E35;
+    text-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a; 
+}
+.light-heading {
+    color: #E4EBF5;
+    text-shadow:-3px -3px 5px #fff, 3px 3px 5px #bec8e4 ;
+}
+.dark-h-e {
+    background-color: #080611;
+    text-shadow: 0px 2px 5px rgba(70, 14, 143, 0.7);
+}
+.light-h-e {
+    background-color: #26195e;
+    text-shadow: 0px 2px 5px rgba(255,255,255,0.7);
+}
+
+
+.v4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    border-radius: 0px !important;
+    background: #E4EBF5;
+}
+// styles for section card-containers
+.card-container-up {
+    width: 90% !important;
+    box-shadow: 7px 7px 10px #bec8e4, -7px -7px 10px #ffffff;
+    border-radius: 10px;
+}
+.card-container-down {
+    width: 90%;
+    box-shadow: inset 7px 7px 10px #bec8e4, inset -7px -7px 10px #ffffff;
+    border-radius: 10px;
+    
+}
+.v4-divider{
+    width: 100%;
+}
+
+.dark-engrave {
+    &:hover {
+        border-radius: 5px;
+        box-shadow: inset -3px -3px 5px #313740,
+            inset 3px 3px 5px#21252a !important; 
+    }
+    
+}
+.light-engrave {
+    &:hover {
+        border-radius: 5px;
+        box-shadow: inset -3px -3px 5px #fff, 
+            inset 3px 3px 5px #bec8e4 !important;
+    }
+}
+.dark-active {
+    box-shadow: inset -3px -3px 5px #313740,
+            inset 3px 3px 5px#21252a !important;
+}
+.light-active {
+    box-shadow: inset -3px -3px 5px #fff, 
+            inset 3px 3px 5px #bec8e4 !important
 }

@@ -6,10 +6,9 @@ import {useRef, useEffect} from "react"
 const ProjectsExpanded = () => {
 
     const projectRef = useRef();
-
+    const scrollToRef = () => projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+    
     useEffect( ()=> {
-        
-        const scrollToRef = () => projectRef.current?.scrollIntoView({ behavior: 'smooth' });
         scrollToRef();
     }, [])
     

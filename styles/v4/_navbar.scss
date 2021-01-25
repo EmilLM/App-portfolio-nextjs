@@ -1,15 +1,16 @@
 
 .v4-navbar {
-    background: #E4EBF5;
-    width: 100%;
+    // background: #E4EBF5;
+    width: 100% !important;
+    border-radius: 0px !important;
     height: 90px;
-    position: fixed;
+    // position: fixed;
     z-index: 9;
     display: flex;
     justify-content: center;
-    box-shadow: 3px 3px 5px #bec8e4;
     
     .v4-nav-container {
+        background: inherit;
         width: 90%;
         display: flex;  
         justify-content: space-between;
@@ -32,8 +33,7 @@
         font-size: 3em;
         font-weight: 100;
         text-transform: uppercase;
-        color: #E4EBF5;
-        text-shadow:-3px -3px 5px #bec8e4, 3px 3px 5px #fff ;font-family: "Gone";
+        font-family: "Gone";
         letter-spacing: 15px;
     }
     .style-change {
@@ -53,28 +53,14 @@
             li {
                 cursor: pointer;
                 padding: 10px 15px;
-                &:hover {
-                    // color: blue;
-                    border-radius: 5px;
-                    box-shadow: inset -3px -3px 5px #ffffff,
-                        inset 3px 3px 5px #bec8e4;
-                }
                 a {
-                    color: blue;
                     text-decoration: none;
                 }
             }
             .first-draft {
                 color: gray;
-                &:hover {
-                    color: gray;
-                    box-shadow: none;
-                }
             }
-            .current-style {
-                box-shadow: inset -3px -3px 5px #ffffff,
-                        inset 3px 3px 5px #bec8e4;
-            }
+
         }
     }
 }
