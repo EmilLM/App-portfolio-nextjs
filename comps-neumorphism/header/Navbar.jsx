@@ -1,17 +1,28 @@
-import {useState, useContext} from "react";
-import MiscContext from "../../components/MiscContext"
+import {useState, useContext, useEffect} from "react";
+import MiscContext from "../../components/MiscContext";
+import StylesButton from "./StylesButton";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLightbulb, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { Button, IconButton, Card} from 'ui-neumorphism';
-import MenuDropdown from "./MenuDropdown";
+
 
 
 
 const Navbar = () => {
    
-    const [showMenu, setShowMenu] = useState(false);
+    
     const {theme, setTheme} = useContext(MiscContext); 
+
+
+    const [offset, setOffset] = useState(false);
+    useEffect(() => {
+        window.onscroll = () => {
+            if (window.pageYOffset > 60) {
+                setOffset(true)
+            } else setOffset(false)
+        }
+    }, [offset]);
 
     return ( 
         <Card flat className="v4-navbar" dark={theme}>
@@ -19,8 +30,9 @@ const Navbar = () => {
                 <IconButton 
                     text={false} 
                     size='large' 
-                    // color={theme?'var(--primary-dark)':'var(--primary-light)'} 
+                    color={theme?'var(--primary-dark)':'var(--primary)'} 
                     className="v4-theme-change"
+                    id={offset?"theme-scrolling":""}
                     onClick={()=>setTheme(!theme)}
                     dark={theme} 
                 >
@@ -29,21 +41,8 @@ const Navbar = () => {
 
                 <h1 className={theme?"dark-heading":"light-heading"}>Neumorphism</h1>
 
-                <Button 
-                    color='var(--primary)' 
-                    onClick={()=>setShowMenu(!showMenu)}
-                    className="style-change"
-                    dark={theme} 
-                >
-                    Change style &nbsp;
-                   <FontAwesomeIcon 
-                        icon={faChevronDown} 
-                        className={showMenu ? "rotate-up": "rotate-down"}
-                   /> 
-
-                   {showMenu && <MenuDropdown/>}
-
-                </Button>
+                <StylesButton offset={offset} setOffset={setOffset} />
+                    
             </div>
         </Card>
     );

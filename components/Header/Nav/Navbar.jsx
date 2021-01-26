@@ -17,7 +17,7 @@ const NavBar = () =>{
    
         return (
             <section className='nav_section'>
-                <nav className="navbar"  id={offset ? "scrolling": null}>
+                <nav className="navbar"  id={offset ? "scrolling":""}>
     
                         <ul>
                             <Scrollspy items={['header','about', 'projects', 'contact']} 

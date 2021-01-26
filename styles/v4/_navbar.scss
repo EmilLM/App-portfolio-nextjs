@@ -23,22 +23,31 @@
     .rotate-down {
         transition: all 0.3s;
     }
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: "Gone";
+        letter-spacing: 0.8rem;
+    }
+
+    // theme change button styles
     .v4-theme-change {
         ._3lLt8 {
             font-size: 25px; 
         }
+    }
+    #theme-scrolling {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+    }
 
-    }
-    h1 {
-        font-size: 3em;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-family: "Gone";
-        letter-spacing: 15px;
-    }
+    // style change button styles
+    
+    
     .style-change {
         position: relative;
-        
         .style-change-menu {
             cursor:default; 
             position: absolute;
@@ -62,5 +71,38 @@
             }
 
         }
+    }
+    .style-scrolling {
+        position: fixed;
+        top: 110px;
+        right: 20px;
+        padding: 0 !important;
+        ._3lLt8 {
+            font-size: 20px; 
+        }
+        .style-change-menu {
+            cursor:default; 
+            position: absolute;
+            top: 0px;
+            left:-210px;
+            text-transform: capitalize;
+            text-align: left;
+        }
+        ul {
+            list-style: none;
+            padding: 10px 0;
+            li {
+                cursor: pointer;
+                padding: 10px 15px;
+                a {
+                    text-decoration: none;
+                }
+            }
+            .first-draft {
+                color: gray;
+            }
+
+        }
+       
     }
 }

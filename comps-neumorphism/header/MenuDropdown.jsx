@@ -26,7 +26,7 @@ const MenuDropdown = () => {
                         </Link>
                     </li>
                     <li className={theme?"dark-engrave dark-active ":"light-engrave light-active"}>
-                        <Link href="/neumophism">
+                        <Link href="/neumorphism">
                             <a>Neumorphism</a>
                         </Link></li>
                 </ul>

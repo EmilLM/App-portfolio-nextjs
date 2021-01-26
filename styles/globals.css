@@ -15,7 +15,7 @@ html {
   @media (min-width: 793px) and (max-width:992px) {
     font-size: 125%;
   }
-  @media (min-width: 993px) {
+  @media (min-width: 993px) and (max-width: 1499px) {
     font-size: 140%;
   }
   @media (min-width: 1500px) {
