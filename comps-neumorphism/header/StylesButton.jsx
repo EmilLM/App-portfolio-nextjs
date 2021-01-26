@@ -8,18 +8,21 @@ import {faChevronDown, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
 const StylesButton = ({offset, setOffset}) => {
     
     const {theme} = useContext(MiscContext)
-
     const [showMenu, setShowMenu] = useState(false);
 
+    const [isSmall, setIsSmall] = useState(false);
     useEffect(() => {
         window.onscroll = () => {
             if (window.pageYOffset > 60) {
                 setOffset(true)
             } else setOffset(false)
         }
-    }, [offset]);
+        if (window.innerWidth <= 767) {
+            setIsSmall(true)
+        } else setIsSmall(false)
+    }, []);
     
-    if (offset) return (
+    if (offset ||isSmall) return (
         <IconButton 
             text={false} 
             color='var(--primary)' 
@@ -32,14 +35,15 @@ const StylesButton = ({offset, setOffset}) => {
             {showMenu && <MenuDropdown/>}
         </IconButton>
     )
-
+  
     return (
         <Button 
             color='var(--primary)' 
             onClick={()=>setShowMenu(!showMenu)}
             className="style-change"
             dark={theme} 
-        > Change style &nbsp;
+        >
+             Change style &nbsp;
             <FontAwesomeIcon 
                 icon={faChevronDown} 
                 className={showMenu ? "rotate-up": "rotate-down"}
@@ -47,6 +51,7 @@ const StylesButton = ({offset, setOffset}) => {
             {showMenu && <MenuDropdown/>}
         </Button>
     )
+    // return null
 }
  
 export default StylesButton;

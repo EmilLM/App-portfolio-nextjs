@@ -11,9 +11,7 @@ import { Button, IconButton, Card} from 'ui-neumorphism';
 
 const Navbar = () => {
    
-    
     const {theme, setTheme} = useContext(MiscContext); 
-
 
     const [offset, setOffset] = useState(false);
     useEffect(() => {

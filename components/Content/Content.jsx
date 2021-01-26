@@ -14,7 +14,9 @@ const [expand, setExpand] = useState(false);
 
     return (
         <main className={theme? "main-dark": "main-light"} >
-            <About/>
+            <About>
+                <Waves wavesClass={"about-waves"} />
+            </About>
 
             <div id="projects">
                 <div className="projects-header">

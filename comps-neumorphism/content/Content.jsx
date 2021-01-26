@@ -2,6 +2,7 @@
 import {useContext} from "react";
 import MiscContext from "../../components/MiscContext";
 import {Card} from "ui-neumorphism";
+import AboutInfo from '../../components/Content/AboutInfo';
 
 const Content = () => {
 
@@ -10,8 +11,8 @@ const Content = () => {
         <>
             
             <Card className="v4-content v4-container" dark={theme} >
-                <Card inset className="v4-about" dark={theme}>
-
+                <Card inset className="v4-about about-content" dark={theme}>
+                    <AboutInfo/>    
                 </Card>
             </Card>
         </>

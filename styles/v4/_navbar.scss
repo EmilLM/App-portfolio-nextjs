@@ -3,18 +3,23 @@
     // background: #E4EBF5;
     width: 100% !important;
     border-radius: 0px !important;
-    height: 90px;
-    // position: fixed;
+    height: 4.5rem;
     z-index: 9;
     display: flex;
     justify-content: center;
+    @media only screen and (min-width: 992px) {
+        height: 3.5rem;
+    }
     
     .v4-nav-container {
         background: inherit;
         width: 90%;
         display: flex;  
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        @media only screen and (min-width: 920px) {
+            justify-content: space-between;
+        }
     }
     .rotate-up {
         transition: all 0.3s;
@@ -24,37 +29,68 @@
         transition: all 0.3s;
     }
     h1 {
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         font-weight: 100;
         text-transform: uppercase;
         font-family: "Gone";
         letter-spacing: 0.8rem;
+        @media only screen and (min-width: 400px) {
+            font-size: 2.3rem;
+        }
+
     }
 
     // theme change button styles
     .v4-theme-change {
+        position: fixed;
+        top: 16%;
+        right: 6%;
+
+        @media only screen and (min-width: 920px) {
+            position: static;
+        }
         ._3lLt8 {
-            font-size: 25px; 
+            font-size: 1.3em; 
         }
     }
     #theme-scrolling {
         position: fixed;
-        top: 50px;
-        right: 20px;
+        top: 5%;
+        right: 6%;
+        // @media only screen and (min-width: 920px) {
+        //     position: fixed;
+        //     top: 50px;
+        //     right: 20px;
+        // }
     }
 
     // style change button styles
     
     
     .style-change {
-        position: relative;
+        position: fixed;
+        top: 23%;
+        right: 6%;;
+        ._3lLt8 {
+            font-size: 16px; 
+        }
+        @media only screen and (min-width: 920px) {
+            position: relative;
+            top: 0;
+            right: 0;
+
+        }
         .style-change-menu {
             cursor:default; 
             position: absolute;
-            top: 55px;
-            left:-40px;
+            top: 0px;
+            left:-210px;    
             text-transform: capitalize;
             text-align: left;
+            @media only screen and (min-width: 920px) {
+                top: 55px;
+                left:-40px;
+            }
         }
         ul {
             list-style: none;
@@ -74,11 +110,10 @@
     }
     .style-scrolling {
         position: fixed;
-        top: 110px;
-        right: 20px;
-        padding: 0 !important;
+        top: 12%;
+        right: 6%;
         ._3lLt8 {
-            font-size: 20px; 
+            font-size: 16px; 
         }
         .style-change-menu {
             cursor:default; 

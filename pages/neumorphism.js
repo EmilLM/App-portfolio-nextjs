@@ -1,11 +1,13 @@
-import {useState, useEffect} from "react"
+import {useEffect} from "react"
 
 import Head from 'next/head';
-import Header from "../comps-neumorphism/header/Header.jsx";
-import Content from "../comps-neumorphism/content/Content.jsx"
+import Header from "../comps-neumorphism/header/Header";
+import Content from "../comps-neumorphism/content/Content"
+import Footer from '../comps-neumorphism/footer/Footer';
+
 
 import 'ui-neumorphism/dist/index.css';
-import { overrideThemeVariables } from 'ui-neumorphism'
+import { overrideThemeVariables } from 'ui-neumorphism';
 
 
 const NeumorphismPage = () => {
@@ -34,7 +36,7 @@ const NeumorphismPage = () => {
             </Head>
             <Header/>
             <Content/>
-           
+            <Footer/>
         </>
     );
 }
