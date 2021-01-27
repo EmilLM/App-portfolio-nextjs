@@ -78,14 +78,14 @@ const AboutInfo = () => {
                         </ul>
                     </div>
                     <div className="skills-card ">
-                        <FontAwesomeIcon icon={faTools} />
-                        <strong>Tools</strong>
-                        <ul>
-                            <li>Jest</li>
-                            <li>Git/Github</li>
-                            <li>GraphQL</li>
-                            <li>REST API</li>
-                        </ul>
+                            <FontAwesomeIcon icon={faTools} />
+                            <strong>Tools</strong>
+                            <ul>
+                                <li>Jest</li>
+                                <li>Git/Github</li>
+                                <li>GraphQL</li>
+                                <li>REST API</li>
+                            </ul>
                     </div>
                 
                 </div>

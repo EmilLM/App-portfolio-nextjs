@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="v4-nav-container">
                 <IconButton 
                     text={false} 
-                    size={isSmall?"small":"large"}
+                    // size={isSmall?"small":"large"}
                     color={theme?'var(--primary-dark)':'var(--primary)'} 
                     className="v4-theme-change"
                     id={offset?"theme-scrolling":""}

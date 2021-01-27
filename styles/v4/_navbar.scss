@@ -5,6 +5,7 @@
     height: 4.5rem;
     display: flex;
     justify-content: center;
+    z-index: 1;
     @media only screen and (min-width: 992px) {
         height: 3.5rem;
     }
@@ -42,9 +43,9 @@
     // theme change button styles
     .v4-theme-change {
         position: fixed;
-        top: 16%;
+        top: 13%;
         right: 6%;
-
+        z-index: 9;
         @media only screen and (min-width: 920px) {
             position: static;
         }
@@ -54,19 +55,20 @@
     }
     #theme-scrolling {
         position: fixed;
-        top: 5%;
+        top: 4%;
         right: 6%;
+        @media only screen and (min-width: 920px) {
+            top: 5.5%;
+        }
         
     }
 
     // style change button styles
     .style-change {
         position: fixed;
-        top: 23%;
-        right: 6%;;
-        ._3lLt8 {
-            font-size: 0.7rem; 
-        }
+        top: 19%;
+        right: 6%;
+        z-index: 9;
         @media only screen and (min-width: 920px) {
             position: relative;
             top: 0;
@@ -103,8 +105,12 @@
     }
     .style-scrolling {
         position: fixed;
-        top: 12%;
+        top: 10%;
         right: 6%;
+        @media only screen and (min-width: 920px) {
+            top: 12%;
+            
+        }
         ._3lLt8 {
             font-size: 16px; 
         }

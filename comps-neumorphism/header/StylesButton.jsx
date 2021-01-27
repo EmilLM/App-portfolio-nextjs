@@ -17,7 +17,7 @@ const StylesButton = ({offset, isSmall}) => {
             color='var(--primary)' 
             onClick={()=>setShowMenu(!showMenu)}
             className={offset?"style-scrolling":"style-change"}
-            size={isSmall?"small":"large"}
+            // size={isSmall?"small":"large"}
             dark={theme} 
         >
             <FontAwesomeIcon icon={faUndoAlt}/> 
