@@ -7,9 +7,6 @@ import {useRef, useContext} from "react";
 import MiscContext from "../../components/MiscContext"
 
 
-// import 'ui-neumorphism/dist/index.css';
-
-
 const Intro = () => {
 
     const {theme} = useContext(MiscContext);
@@ -31,7 +28,6 @@ const Intro = () => {
                     <Button dark={theme}
                         color='var(--primary)' 
                         className="explore-button"
-                        size="large"
                         onClick={()=>scrollToRef()}
                     >Explore &nbsp;
                         <FontAwesomeIcon icon={faArrowDown} className="heartbeat"/>
@@ -55,7 +51,7 @@ export default Intro;
 
 {/* <div className="header-inner">
     <div className="text-container">
-        <h1 className={`header-text focus-in`}>APP PORTFOLIO </h1>
+        <h1 className={`header-text focus-in`}>APPS PORTFOLIO </h1>
         <Logo/>
     </div>
     <img alt="app-build-img" src="/assets/header-img.svg" />

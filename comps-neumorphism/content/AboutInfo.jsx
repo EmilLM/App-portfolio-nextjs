@@ -1,53 +1,64 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faTools, faPencilAlt, faDatabase, faDesktop } from '@fortawesome/free-solid-svg-icons'
 import { Fade, Flip, JackInTheBox, Bounce } from "react-awesome-reveal";
+import {Card, Button} from "ui-neumorphism";
+
+import {useContext} from "react";
+import MiscContext from "../../components/MiscContext";
 
 const AboutInfo = () => {
+    const {theme} = useContext(MiscContext);
     return (
         <>
             <Fade direction="down" triggerOnce>           
-                <h2 className="section-title">About</h2>
+                <h2 className={theme?"dark-h-e":"light-h-e"}>About</h2>
+            </Fade>
+
+            <Fade direction="right" triggerOnce>
+                
+                    <a 
+                        href="/assets/CV_Luchian_Emil.pdf"
+                        download="CV_Luchian_Emil.pdf"
+                        className={"v4-btn-download"}
+                    >
+                        <Button dark={theme} color='var(--primary)'>
+                            <FontAwesomeIcon icon={faDownload} />
+                            &nbsp;  Download CV
+                        </Button>
+                    </a>
+                
+                
             </Fade>
             
-            
             <Fade direction="left" triggerOnce>
-                <div className="about-code">
+                <Card inset className="about-code" dark={theme}>
                     
                         <p><span>Name :</span> 'Luchian Emil Moise', </p>
                         <p><span>Specialization :</span> 'Full stack web dev',</p> 
                         <p><span>Stack :</span> 'MongoDB-Express-React-Node',</p>
                         <p><span>Location :</span> 'Bucharest, Romania'</p>
                     
-                </div>
+                </Card>
             </Fade>
                 
-            <Fade direction="right" triggerOnce>
-                <a
-                    className="btn-download"
-                    href="/assets/CV_Luchian_Emil.pdf"
-                    download="CV_Luchian_Emil.pdf"
-                >
-                <FontAwesomeIcon icon={faDownload} />
-                    Download CV
-                </a>
-            </Fade>
+          
 
             <Flip direction="horizontal" cascade triggerOnce>
-                <p className="about-info">
-                    Studied front-end programming at <span><a href="https://www.coderslab.ro/">Coder's Lab</a></span>. Learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker and other.
-                </p>
-                <p className="about-info">
+                <Card className="about-info" dark={theme}>
+                    Studied front-end programming at <span><a id="cl-link" href="https://www.coderslab.ro/">Coder's Lab</a></span>. Learned the <span>MERN stack</span> and currently studying technologies like GraphQL, Jest, Docker and other.
+                </Card>
+                <Card className="about-info" dark={theme}>
                     Striving to write <span>clean</span>, <span>scalable code</span> using best practices. <span>Efficient </span>and 
                     <span> resourceful</span> in reaching my objectives, in bringing code to life in <span>amazing designs</span>. 
-                
-                </p>
+
+                </Card>
             </Flip>
             <Bounce triggerOnce>
                 {/* <h3>Skills</h3> */}
             </Bounce>
             <JackInTheBox triggerOnce>
                 <div className="skills-container">
-                    <div className="skills-card">
+                    <Card inset className="skills-card" dark={theme}>
                         <FontAwesomeIcon icon={faPencilAlt} />
                         <strong>UI/UX</strong>
                         <ul>
@@ -56,8 +67,8 @@ const AboutInfo = () => {
                             <li>Photoshop</li>
                             <li>Adobe XD</li>
                         </ul>
-                    </div>
-                    <div className="skills-card">
+                    </Card>
+                    <Card inset className="skills-card" dark={theme}>
                         <FontAwesomeIcon icon={faDesktop} />
                         <strong>Front-end</strong>
                         <ul>
@@ -66,8 +77,8 @@ const AboutInfo = () => {
                             <li>Next.js</li>
                             <li>Material-UI</li>
                         </ul>
-                    </div>
-                    <div className="skills-card">
+                    </Card>
+                    <Card inset className="skills-card" dark={theme}>
                         <FontAwesomeIcon icon={faDatabase} />
                         <strong>Back-end</strong>
                         <ul>
@@ -76,8 +87,8 @@ const AboutInfo = () => {
                             <li>Node.js</li>
                             <li>Firebase</li>
                         </ul>
-                    </div>
-                    <div className="skills-card ">
+                    </Card>
+                    <Card inset className="skills-card" dark={theme}>
                         <FontAwesomeIcon icon={faTools} />
                         <strong>Tools</strong>
                         <ul>
@@ -86,7 +97,7 @@ const AboutInfo = () => {
                             <li>GraphQL</li>
                             <li>REST API</li>
                         </ul>
-                    </div>
+                    </Card>
                 
                 </div>
             </JackInTheBox>

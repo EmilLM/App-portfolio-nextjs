@@ -1,10 +1,8 @@
 
 .v4-navbar {
-    // background: #E4EBF5;
     width: 100% !important;
     border-radius: 0px !important;
     height: 4.5rem;
-    z-index: 9;
     display: flex;
     justify-content: center;
     @media only screen and (min-width: 992px) {
@@ -34,6 +32,7 @@
         text-transform: uppercase;
         font-family: "Gone";
         letter-spacing: 0.8rem;
+        margin-left: 10px;
         @media only screen and (min-width: 400px) {
             font-size: 2.3rem;
         }
@@ -57,22 +56,16 @@
         position: fixed;
         top: 5%;
         right: 6%;
-        // @media only screen and (min-width: 920px) {
-        //     position: fixed;
-        //     top: 50px;
-        //     right: 20px;
-        // }
+        
     }
 
     // style change button styles
-    
-    
     .style-change {
         position: fixed;
         top: 23%;
         right: 6%;;
         ._3lLt8 {
-            font-size: 16px; 
+            font-size: 0.7rem; 
         }
         @media only screen and (min-width: 920px) {
             position: relative;

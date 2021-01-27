@@ -5,22 +5,11 @@ import { Button, IconButton} from 'ui-neumorphism';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronDown, faUndoAlt} from "@fortawesome/free-solid-svg-icons";
 
-const StylesButton = ({offset, setOffset}) => {
+const StylesButton = ({offset, isSmall}) => {
     
     const {theme} = useContext(MiscContext)
     const [showMenu, setShowMenu] = useState(false);
 
-    const [isSmall, setIsSmall] = useState(false);
-    useEffect(() => {
-        window.onscroll = () => {
-            if (window.pageYOffset > 60) {
-                setOffset(true)
-            } else setOffset(false)
-        }
-        if (window.innerWidth <= 767) {
-            setIsSmall(true)
-        } else setIsSmall(false)
-    }, []);
     
     if (offset ||isSmall) return (
         <IconButton 
@@ -28,7 +17,7 @@ const StylesButton = ({offset, setOffset}) => {
             color='var(--primary)' 
             onClick={()=>setShowMenu(!showMenu)}
             className={offset?"style-scrolling":"style-change"}
-            size={"large"}
+            size={isSmall?"small":"large"}
             dark={theme} 
         >
             <FontAwesomeIcon icon={faUndoAlt}/> 

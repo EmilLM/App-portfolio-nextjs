@@ -2,7 +2,7 @@
 import {useContext} from "react";
 import MiscContext from "../../components/MiscContext";
 import {Card} from "ui-neumorphism";
-import AboutInfo from '../../components/Content/AboutInfo';
+import AboutInfo from '../content/AboutInfo';
 
 const Content = () => {
 

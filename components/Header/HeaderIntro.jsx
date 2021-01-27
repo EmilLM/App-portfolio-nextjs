@@ -7,7 +7,7 @@ const HeaderIntro = () => {
     return (
         <div className="header-inner">
             <div className="text-container">
-                <h1 className={`header-text focus-in ${animate?"pop-up":""}`}>APP PORTFOLIO </h1>
+                <h1 className={`header-text focus-in ${animate?"pop-up":""}`}>APPS PORTFOLIO </h1>
                 <Logo/>
             </div>
             <img alt="app-build-img" src={" /assets/header-img.svg"} className={animate?"float": "bounce-in"} />

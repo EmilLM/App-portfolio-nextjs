@@ -14,20 +14,25 @@ const Navbar = () => {
     const {theme, setTheme} = useContext(MiscContext); 
 
     const [offset, setOffset] = useState(false);
+    const [isSmall, setIsSmall] = useState(false);
+    
     useEffect(() => {
         window.onscroll = () => {
             if (window.pageYOffset > 60) {
                 setOffset(true)
             } else setOffset(false)
         }
-    }, [offset]);
+        if (window.innerWidth <= 767) {
+            setIsSmall(true)
+        } else setIsSmall(false)
+    }, []);
 
     return ( 
         <Card flat className="v4-navbar" dark={theme}>
             <div className="v4-nav-container">
                 <IconButton 
                     text={false} 
-                    size='large' 
+                    size={isSmall?"small":"large"}
                     color={theme?'var(--primary-dark)':'var(--primary)'} 
                     className="v4-theme-change"
                     id={offset?"theme-scrolling":""}
@@ -37,9 +42,9 @@ const Navbar = () => {
                    <FontAwesomeIcon icon={faLightbulb}/>
                 </IconButton>
 
-                <h1 className={theme?"dark-heading":"light-heading"}>Neumorphism</h1>
+                <h1 className={theme?"dark-emboss":"light-emboss"}>Neumorphism</h1>
 
-                <StylesButton offset={offset} setOffset={setOffset} />
+                <StylesButton offset={offset} isSmall={isSmall} />
                     
             </div>
         </Card>

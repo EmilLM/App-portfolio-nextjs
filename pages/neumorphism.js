@@ -23,9 +23,10 @@ const NeumorphismPage = () => {
             '--dark-bg-dark-shadow': '#21252a',
             '--dark-bg-light-shadow': '#313740',
 
-            '--primary': '#8672FB',
+            '--primary': '#0101FF',
             '--primary-dark': '#c7befd',
             '--primary-light': '#4526f9'
+            
         })
     })
 
@@ -36,7 +37,7 @@ const NeumorphismPage = () => {
             </Head>
             <Header/>
             <Content/>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     );
 }

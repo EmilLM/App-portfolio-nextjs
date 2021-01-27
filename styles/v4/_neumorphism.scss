@@ -9,38 +9,57 @@
 //     // border-radius: 0px !important;
 // }
 
-// buttons inner text
 
-._3lLt8 {
-    text-transform: none !important;
-    
-} 
 
-// buttons class
-._cL4RU {
+
+// button container class
+._cL4RU{
     transition: box-shadow 0s ease !important; 
+    // padding: 0 !important;
+    // height: 0px !important;
     &:active {
         color: black !important; 
                 
     }
+    // button inside container
+    ._3lLt8 {
+        text-transform: none !important;
+        // font-size: rem !important;
+        // padding: 0.5em 1em !important;     
+    } 
 }
 // heading class styles 
-.dark-heading {
+
+.dark-emboss {
     color: #292E35;
     text-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a;
+
     
 }
-.light-heading {
+.light-emboss {
     color: #E4EBF5;
     text-shadow:-3px -3px 5px #fff, 3px 3px 5px #bec8e4 ;
+
+
+}
+@mixin heading-engrave-styles {
+    color: transparent;  
+    background-clip: text;
+    font-family: "Anurati";
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 .dark-h-e {
     background-color: #080611;
     text-shadow: 0px 2px 5px rgba(70, 14, 143, 0.7);
+    @include heading-engrave-styles;
+
 }
 .light-h-e {
     background-color: #26195e;
     text-shadow: 0px 2px 5px rgba(255,255,255,0.7);
+    @include heading-engrave-styles;
+
 }
 
 
@@ -66,7 +85,7 @@
 .v4-divider{
     width: 100%;
 }
-
+// engrave on hover
 .dark-engrave {
     &:hover {
         border-radius: 5px;
@@ -82,6 +101,7 @@
             inset 3px 3px 5px #bec8e4 !important;
     }
 }
+// standard engrave
 .dark-active {
     box-shadow: inset -3px -3px 5px #313740,
             inset 3px 3px 5px#21252a !important;
@@ -90,3 +110,4 @@
     box-shadow: inset -3px -3px 5px #fff, 
             inset 3px 3px 5px #bec8e4 !important
 }
+// .neumorphism-btn
