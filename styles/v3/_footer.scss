@@ -9,8 +9,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%; 
+  width: 100%;
+  h2 {
+    margin-bottom: 15px;
+  } 
   p {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: "Iceland";
     margin-bottom: 10px;
   }
   .contact-container {
@@ -37,12 +43,7 @@ footer {
     // margin-top: 30px;
     
   }
-  .form-info {
-    font-size: 20px;
-    text-align: center;
-    font-family: "Iceland";
-  
-  }
+
   form {
     width: 300px;
     height: 234px ;
@@ -55,13 +56,10 @@ footer {
     }
     input {
       font-family: "Iceland";
-      color: navy;
+      color: blue;
       font-size: 1em;
-      height: 35px;
-      border: 2px solid lightblue;
       border-radius: 5px;
-      padding-left: 10px;
-      color: navy;
+      padding: 7px 10px;
       border: 2px solid rgb(120, 120, 248);
       outline: none;
       &:focus {
@@ -69,14 +67,14 @@ footer {
       }
     }
     textarea {
-      font-size: 1em;
+      font-size: 1rem;
       font-family: "Iceland";
       height: 80px;
       resize: none;
       width: 300px;
       border-radius: 5px;
-      padding-left: 10px;
-      color: navy;
+      padding: 10px 0 0 10px;
+      color: blue;
       border: 2px solid rgb(120, 120, 248);
       outline: none;
       &:focus {
@@ -87,7 +85,7 @@ footer {
       }
     }
     .btn {
-      font-size: 1em;
+      font-size: 1rem;
       font-family: "Iceland";
       font-weight: 600;
       background: rgb(0, 191, 255);
@@ -104,8 +102,9 @@ footer {
         color: red;
       }
       &:disabled {
-        background: lightblue;
-        color: gray;
+        background: rgb(51, 171, 211);
+        color: rgb(66, 66, 66);
+        cursor:default;
       }
     }
     #afterSubmit {
@@ -127,7 +126,7 @@ footer {
     }
     
     @media (min-width: 767px) {
-      margin-top: 50px;
+      // margin-top: 50px;
       height: 280px;
       width: 3px;
     }
@@ -150,13 +149,7 @@ footer {
       margin-top: none !important;
     }
   }
-  .links-info {
-    // margin-top: 10px;
-    text-align: center;
-    color: navy;
-    font-size: 20px;
-    font-family: "Iceland";
-  }
+  
   .links {
     height: 240px;
     display: flex;

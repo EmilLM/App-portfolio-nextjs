@@ -1,0 +1,103 @@
+.v4-slider {
+    flex-direction: column;
+    h2 {
+        font-size: 2rem;
+        margin-top: 1em;
+    }
+    .v4-project {
+        // border: 1px solid black;
+        height: 50vh;
+        width: 100%;
+        // font-size: 1.5rem;
+        margin: 1em 0;
+    }
+
+    // project card
+    .v4-card {
+        width: 550px;
+        height: 350px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        
+        .card-content {
+            // border: 1px solid black;
+            // border-radius: 10px;
+            margin: 0 auto;
+            width: 500px;
+            // max-width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background-image: url("../../public/assets/ChatAway.webp");
+            background-size: cover;
+            box-shadow: 0px !important;
+            // border: 0.5px solid rgba(128, 128, 128, 0.425);
+        }
+
+        .info {
+            position: relative;
+            width: 100%;
+            height: inherit;
+            z-index: 1;
+            background-color: #E4EBF5;
+            transform: translateY(100%)
+                translateY(-60px)
+                translateZ(0);
+            
+
+            transition: transform 0.5s ease-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info:before {
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-image: url("../../public/assets/ChatAway.webp");
+            filter: blur(5px);
+            background-size: cover;
+            opacity: 0.25;
+            transform: translateY(-100%)
+                translateY(60px)
+                translateZ(0);
+            
+
+            transition: transform 0.5s ease-out;
+        }
+
+        .card-content:hover .info,
+        .card-content:hover .info:before {
+            transform: translateY(0) translateZ(0);
+        }
+
+        .title {
+            margin: 0;
+            padding: 0.5em 1.5em;
+            font-size: 1.2rem;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        .v4-description {
+            color: black;
+            margin: 0;
+            padding: 0 24px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .project-links {
+           margin-bottom: 20px;
+            #source {
+                svg {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

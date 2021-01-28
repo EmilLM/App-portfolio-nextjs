@@ -110,4 +110,32 @@
     box-shadow: inset -3px -3px 5px #fff, 
             inset 3px 3px 5px #bec8e4 !important
 }
-// .neumorphism-btn
+// deep engrave 
+.dark-deep-engrave {
+    box-shadow: inset -10px -10px 15px #313740, 
+            inset 10px 10px 15px #21252a !important;
+}
+.light-deep-engrave {
+    box-shadow: inset -10px -10px 15px #fff, 
+                inset 10px 10px 15px #bec8e4 !important;
+}
+// Form styles
+.dark-form {
+    background-color: #292E35;
+    box-shadow: inset -3px -3px 5px #313740,
+             inset 3px 3px 5px#21252a !important;
+    &:focus {
+        box-shadow: inset -1px -1px 3px #313740,
+                inset 1px 1px 3px#21252a !important;
+    }
+}
+.light-form {
+    background: #E4EBF5;
+    box-shadow: inset -3px -3px 5px #fff, 
+                inset 3px 3px 5px #bec8e4 !important;
+    &:focus {
+        box-shadow: inset -2px -2px 3px #fff,
+                inset 2px 2px 3px #bec8e4 !important;
+    }
+                
+}

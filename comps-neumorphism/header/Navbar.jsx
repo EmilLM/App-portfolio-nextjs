@@ -22,13 +22,14 @@ const Navbar = () => {
                 setOffset(true)
             } else setOffset(false)
         }
+        // detecting small viewports
         if (window.innerWidth <= 767) {
             setIsSmall(true)
         } else setIsSmall(false)
     }, []);
 
     return ( 
-        <Card flat className="v4-navbar" dark={theme}>
+        <Card  className="v4-navbar" dark={theme}>
             <div className="v4-nav-container">
                 <IconButton 
                     text={false} 
