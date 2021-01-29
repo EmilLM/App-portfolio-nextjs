@@ -2,7 +2,7 @@
  <a href="https://imgbb.com/"><img width=100px height=100px src="https://i.ibb.co/31BR9gb/logo.png" alt="logo"/></a>
 </p>
 
-<h1 align="center">App Portfolio</h1>
+<h1 align="center">Apps Portfolio</h1>
 
 <div align="center">
 

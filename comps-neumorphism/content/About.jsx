@@ -61,7 +61,9 @@ const About = () => {
                 <JackInTheBox triggerOnce>
                     <div className="skills-container">
                         <Card inset className="skills-card" dark={theme}>
-                            <FontAwesomeIcon icon={faPencilAlt} />
+                            <Card className="card-icon">
+                                <FontAwesomeIcon icon={faPencilAlt} />
+                            </Card>
                             <strong>UI/UX</strong>
                             <ul>
                                 <li>Html5</li>
@@ -71,7 +73,9 @@ const About = () => {
                             </ul>
                         </Card>
                         <Card inset className="skills-card" dark={theme}>
-                            <FontAwesomeIcon icon={faDesktop} />
+                            <Card className="card-icon">
+                                 <FontAwesomeIcon icon={faDesktop} />
+                            </Card>
                             <strong>Front-end</strong>
                             <ul>
                                 <li>Javascript</li>
@@ -81,7 +85,9 @@ const About = () => {
                             </ul>
                         </Card>
                         <Card inset className="skills-card" dark={theme}>
-                            <FontAwesomeIcon icon={faDatabase} />
+                            <Card className="card-icon">
+                                <FontAwesomeIcon icon={faDatabase} />
+                            </Card>
                             <strong>Back-end</strong>
                             <ul>
                                 <li>MongoDB</li>
@@ -91,7 +97,9 @@ const About = () => {
                             </ul>
                         </Card>
                         <Card inset className="skills-card" dark={theme}>
-                            <FontAwesomeIcon icon={faTools} />
+                            <Card className="card-icon">
+                                <FontAwesomeIcon icon={faTools} />
+                            </Card>
                             <strong>Tools</strong>
                             <ul>
                                 <li>Jest</li>

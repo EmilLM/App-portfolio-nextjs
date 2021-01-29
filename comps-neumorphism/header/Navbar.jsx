@@ -43,7 +43,7 @@ const Navbar = () => {
                    <FontAwesomeIcon icon={faLightbulb}/>
                 </IconButton>
 
-                <h1 className={theme?"dark-emboss":"light-emboss"}>Neumorphism</h1>
+                <h1 className={theme?"dark-h-emboss":"light-h-emboss"}>Neumorphism</h1>
 
                 <StylesButton offset={offset} isSmall={isSmall} />
                     

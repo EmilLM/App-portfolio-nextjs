@@ -62,7 +62,17 @@
     }
     .skills-container {
          margin: 20px 7px;
-        
+        .card-icon {
+            border-radius: 100% !important;
+            width: 40px !important;
+            height: 40px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                font-size: 18px;
+            }
+        }
         .skills-card {
             background: none;
             transition: box-shadow 0s;

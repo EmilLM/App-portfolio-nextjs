@@ -33,7 +33,7 @@ const NeumorphismPage = () => {
     return (
         <>
             <Head>
-                <title>Apps Portfolio</title>
+                <title>Neumorphism</title>
             </Head>
             <Header/>
             <Content/>

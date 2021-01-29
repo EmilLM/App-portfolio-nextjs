@@ -4,13 +4,23 @@ import MiscContext from '../../components/MiscContext';
 import {useContext} from "react";
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     const {theme} = useContext(MiscContext)
     return (
+        <>
         <Card flat className="v4-contact v4-container" dark={theme}>
             <Card className="contact v4-contact-container" dark={theme}>
                 <Contact/>
             </Card> 
+            <Card flat className="date" > 
+                <p className="light-h-e">Copyleft <span>&copy;</span>
+                    <span>{year}</span>
+                 </p>
+                
+            </Card>
         </Card>
+        
+        </>
     );
 }
  

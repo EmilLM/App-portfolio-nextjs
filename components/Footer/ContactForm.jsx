@@ -6,7 +6,7 @@ import classNames from '../../classNames'
 
 export default function ContactForm() {
     const {theme} = useContext(MiscContext);
-    const {lightForm, darkForm} = classNames;
+    const {lightForm, darkForm, btnLight, btnDark} = classNames;
     const [formState, setFormState] = useState({
         nameInput: "",
         emailInput: "",
@@ -85,7 +85,11 @@ export default function ContactForm() {
                         placeholder={"Message"}
                     />
                 
-                <button type="submit" className="btn" disabled={!isEnabled}>
+                <button 
+                    type="submit" 
+                    disabled={!isEnabled}
+                    className={`btn ${theme?btnDark:btnLight}`}
+                >
                     {isValid?"Message sent!":"Send"}
                 </button>
                 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactLinks from './ContactLinks'
 import ContactForm from './ContactForm';
-import {Slide} from "react-awesome-reveal";
+import {Slide, Fade} from "react-awesome-reveal";
 const Contact = () => {
     return ( 
         <div className="content-container contact" >
@@ -10,10 +10,14 @@ const Contact = () => {
             </Slide>
             
             <div className="contact-container">
-                <Slide direction="left" triggerOnce>
+
+
+                <Slide direction="horizontal" triggerOnce>
                     <ContactForm />
                 </Slide>
-                <div className="contact-bar"></div>
+                
+                <div className="contact-bar"/>
+    
                 <Slide direction="right" triggerOnce>
                     <ContactLinks />
                 </Slide>

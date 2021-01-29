@@ -1,10 +1,10 @@
 
-import ContactLinks from '../../components/Footer/ContactLinks'
+import ContactLinks from './ContactLinks'
 import ContactForm from '../../components/Footer/ContactForm';
 import {Slide, Fade} from "react-awesome-reveal";
 import MiscContext from '../../components/MiscContext';
 import {useContext} from "react";
-import { Divider } from 'ui-neumorphism';
+import { Divider, Button } from 'ui-neumorphism';
 
 const Contact = () => {
     const {theme} = useContext(MiscContext)
@@ -25,7 +25,7 @@ const Contact = () => {
                 </Fade>
 
                 <Slide direction="right" triggerOnce>
-                    <ContactLinks />
+                   <ContactLinks/>
                 </Slide>
                 
             </div>
