@@ -180,19 +180,28 @@
     color: blue !important;
     box-shadow:  -3px -3px 5px #fff, 
                  3px 3px 5px #bec8e4 !important;
-    &:hover {
-        box-shadow:  -2px -2px 2px #fff, 
-                 2px 2px 2px #bec8e4 !important;
-    }
-    &:focus {
-        box-shadow: inset -3px -3px 5px #fff, 
-                inset 3px 3px 5px #bec8e4 !important;
-    }
-    &:disabled {
-        color: gray !important;
-        box-shadow:  -3px -3px 5px #fff, 
-                 3px 3px 5px #bec8e4 !important;
-    }
+        &:hover {
+            box-shadow:  -2px -2px 2px #fff, 
+                    2px 2px 2px #bec8e4 !important;
+        }
+        &:focus {
+            box-shadow: inset -3px -3px 5px #fff, 
+                    inset 3px 3px 5px #bec8e4 !important;
+        }
+        &:disabled {
+            color: gray !important;
+            box-shadow:  -3px -3px 5px #fff, 
+                    3px 3px 5px #bec8e4 !important;
+        }
 
+    }
 }
+
+// slider arrows gradient
+.prev-slide-dark {
+    // background: linear-gradient(to left, transparent,  #292e354b, #292E35) !important;
+    background: linear-gradient(90deg, #292E35 0%,#292E35 25%, transparent 100%) !important;  
+}
+.next-slide-dark {
+    background: linear-gradient(-90deg, #292E35 0%,#292E35 25%, transparent 100%) !important;
 }

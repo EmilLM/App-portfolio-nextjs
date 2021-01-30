@@ -1,12 +1,12 @@
 
 
 import About from './About';
-import ProjectsSlider from './ProjectsSlider'
+import ProjectsContent from './ProjectsContent'
 const Content = () => {
     return (
         <>
             <About/> 
-            <ProjectsSlider/>
+            <ProjectsContent/>
              
         </>
     );

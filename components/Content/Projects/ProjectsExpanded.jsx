@@ -14,11 +14,8 @@ const ProjectsExpanded = () => {
     
     return ( 
         <div ref={projectRef}>
-            {projects.map(project => {
-                return (
-                    <Project key={project.id} project={project} />
-                )
-            })}   
+            {projects.map(project =>  <Project key={project.id} project={project} />)}
+                  
         </div>           
     );
 }

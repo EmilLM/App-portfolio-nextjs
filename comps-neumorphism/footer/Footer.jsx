@@ -13,7 +13,7 @@ const Footer = () => {
                 <Contact/>
             </Card> 
             <Card flat className="date" > 
-                <p className="light-h-e">Copyleft <span>&copy;</span>
+                <p className={theme?"dark-h-e":"light-h-e"}>Copyleft <span>&copy;</span>
                     <span>{year}</span>
                  </p>
                 

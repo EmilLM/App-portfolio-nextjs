@@ -2,14 +2,10 @@
 .v4-navbar {
     width: 100% !important;
     border-radius: 0px !important;
-    height: 4.5rem;
     display: flex;
     justify-content: center;
-    z-index: 1;
-    @media only screen and (min-width: 992px) {
-        height: 3.5rem;
-    }
-    
+    z-index: 99999;
+   
     .v4-nav-container {
         background: inherit;
         width: 90%;
@@ -34,8 +30,11 @@
         font-family: "Gone";
         letter-spacing: 0.8rem;
         margin-left: 10px;
+        word-wrap: break-word !important;
+        padding: 0.3em 0;
         @media only screen and (min-width: 400px) {
             font-size: 2.3rem;
+            padding: 0.2em 0;
         }
 
     }

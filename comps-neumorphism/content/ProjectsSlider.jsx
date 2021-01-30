@@ -1,19 +1,22 @@
-import {Card, Divider} from "ui-neumorphism";
-import Project from "./Project";
-import {useContext} from "react";
-import MiscContext from "../../components/MiscContext";
+import Project from './Project';
+import projectsData from '../../projectsData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faAngleRight, faAngleLeft, faLongArrowAltLeft} from '@fortawesome/free-solid-svg-icons';
 
-const ProjectsSlider = () => {
-    const {theme} = useContext(MiscContext);
+const ProjectsSlider = ({theme}) => {
+    
     return (
-        <>
-            <Divider dark={theme}/>
-            <Card flat className="v4-container v4-slider" dark={theme}>
-                <h2 className={theme?"dark-h-e":"light-h-e"}>Projects</h2>
-                <Project/>
-            </Card> 
-            <Divider dark={theme}/>
-       </>
+        <div className="v4-slider">
+            <div className="v4-slide-wrapper">
+                {projectsData.map( project => <Project project={project} key={project.id} />)}
+            </div>
+            <button className={`prev-slide ${theme && 'prev-slide-dark'}`} >
+                <FontAwesomeIcon icon={faAngleLeft}/>
+            </button>
+            <div className={`next-slide ${theme && 'next-slide-dark'}`}> 
+                <FontAwesomeIcon icon={faAngleRight}/>
+            </div> 
+        </div>
     );
 }
  
