@@ -1,24 +1,24 @@
-import {Button, Card} from 'ui-neumorphism';
+import {Card} from 'ui-neumorphism';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons';
-import projectsData from "../../projectsData";
 import MiscContext from '../../components/MiscContext';
 import {useContext} from "react";
-import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 
-const Project = ({project}) => {
 
-    const {src, link, sourceLink, title, description, stack} = project;
+const Project = ({project, active, setCurrentSlide}) => {
+
+    const {id,src, link, sourceLink, title, description, stack} = project;
     const {theme} = useContext(MiscContext);
+
 
     const bgImage = {
         "--backgroundImage": `url(/assets/${src})`
     }
     return (
-        <div  className="v4-project v4-container">
+        <div id={active} className={`v4-project-container project-${id}`} onClick={()=>setCurrentSlide(project.id)}>
 
-            <div className={`v4-card ${theme?"dark-deep-engrave":"light-deep-engrave"}`}>
+            <div className={`v4-card ${theme?"dark-deep-engrave":"light-deep-engrave"}`} >
                 <Card className='card-content' dark={theme} style={bgImage}>
                     
                     <div className='info'>
