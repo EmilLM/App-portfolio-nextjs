@@ -1,0 +1,69 @@
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: rgb(40, 109, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 2rem;
+    color: white;
+    font-family : "Quantum";
+    margin-bottom: 50px; 
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    text-transform: uppercase;
+    @media screen and (min-width: 700px) {
+        width: 60%;
+    }
+    .choose {
+        color: navy;
+    }
+    .your {
+        color: white;
+    }
+    .style {
+        color: blue;
+    }
+}
+.accordion {
+    height: 30vh;
+    width: 95%;
+    background: navy;
+    box-shadow: 0px 0px 12px 0 black;
+    @media screen and (min-width: 700px) {
+        width: 60%;
+        height: 60vh;
+    }
+    display: flex;
+
+    .section {
+        width: 33.33%;
+        height: 100%;
+        display: grid;
+        place-content: center;
+        transition: width 0.5s ease-out ;
+
+        &:hover {
+            width: 100%;
+        }
+    }
+    .skewed {
+        background: blue;
+    }
+    .red {
+        background: red;
+    }
+    .neumorphism {
+        background: white;
+    }
+    .type {
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+}
