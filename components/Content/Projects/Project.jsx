@@ -28,10 +28,10 @@ const Project = ({project}) => {
 
                     <div className="project-links">
                         <a href={link} target="_blank" rel="noopener noreferrer" id="demo">
-                            <FontAwesomeIcon icon={faLaptopCode}/>   Demo
+                            <FontAwesomeIcon icon={faLaptopCode}/>&nbsp; Demo
                         </a>   
                         <a href={sourceLink} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithubSquare}/>  Source
+                            <FontAwesomeIcon icon={faGithubSquare}/>&nbsp; Source
                         </a>
                     </div>
 

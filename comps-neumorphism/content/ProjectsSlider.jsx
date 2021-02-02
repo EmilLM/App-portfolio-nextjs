@@ -3,33 +3,32 @@ import projectsData from '../../projectsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleRight, faAngleLeft, faLongArrowAltLeft} from '@fortawesome/free-solid-svg-icons';
 import {useState, useRef} from "react";
+import projects from '../../projectsData';
 
 const ProjectsSlider = ({theme}) => {
     const [currentSlide, setCurrentSlide] = useState(1);
+    // added 1 to length to avoid 0 index for positioning purposes (nextActive, prevActive)
     const sliderLength = projectsData.length;
-
-    const nextSlide= () => {
+   
+     const nextSlide= () => {
         setCurrentSlide(currentSlide === sliderLength-1? 0 : currentSlide+1)
     }
     const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? sliderLength-1: currentSlide-1)
+        setCurrentSlide(currentSlide === 0 ? sliderLength-1: currentSlide-1);
     }
    
-    const scrollRef = useRef();
-    const scrollToRef = () => scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
-
-    console.log(currentSlide);
     return (
         <div className="v4-slider">
-            <div className="v4-slide-wrapper">
+            <div className="v4-slide-wrapper" >
                 {projectsData.map( project => {
                     return <Project 
                                 project={project} key={project.id} 
-                                active={currentSlide === project.id?"active":""} 
-                                setCurrentSlide={setCurrentSlide} 
+                                active={currentSlide === project.id ? "active":""}
+                                nextActive={project.id === (currentSlide+1)%sliderLength ? "nextActive":""}
+                                prevActive={project.id === (currentSlide + sliderLength-1)%sliderLength ? "prevActive": ""}
+                                setCurrentSlide={setCurrentSlide}
                             />
                 })}
-                {/* scrollToRef and add ref to active with constant position */}
             </div>
             
             <button 

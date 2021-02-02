@@ -119,9 +119,10 @@
     }
   }
   a {
+    // font-size: 1rem;
     color: blue;
     background-color: rgba(18, 72, 92, 0.38);
-    padding: 7px 10px;
+    padding: 0.3em 0.5em;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
@@ -133,8 +134,6 @@
       background-color: rgba(18, 72, 92, 1);
       text-decoration: none;
     }
-    svg {
-      margin-right: 5px;
-    }
+    
   }
 }
