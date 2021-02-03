@@ -77,3 +77,23 @@ body {
   outline: none;
 }
 
+:root {
+  --width: 100vw;
+  --full-width: 100vw;
+  
+  @media (min-width: 42em) {
+    --width: 42rem;
+  }
+  
+  --angle: -11deg;
+  /*-----------------
+  Magic Number Alert:
+  
+  the 0.09719 is calculated by this formula:
+  tan(11°) / 2
+  11° is the current skewY value.
+  ------------------*/
+  --magic-number: 0.09719;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  --clip-padding: calc(var(--full-width) * var(--magic-number));
+}

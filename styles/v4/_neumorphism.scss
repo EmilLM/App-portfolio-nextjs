@@ -73,13 +73,13 @@
 }
 .dark-h-e {
     background-color: #080611;
-    text-shadow: 0px 2px 5px rgba(70, 14, 143, 0.7);
+    text-shadow: 2px 2px 5px rgba(70, 14, 143, 0.7);
     @include heading-engrave-styles;
 
 }
 .light-h-e {
     background-color: #26195e !important;
-    text-shadow: 0px 2px 5px rgba(255,255,255,0.7);
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
     @include heading-engrave-styles;
 
 }

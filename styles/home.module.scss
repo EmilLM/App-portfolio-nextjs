@@ -12,58 +12,134 @@
 .title {
     font-size: 2rem;
     color: white;
-    font-family : "Quantum";
-    margin-bottom: 50px; 
+    margin-bottom: 100px; 
     display: flex;
     justify-content: space-around;
     width: 95%;
     text-transform: uppercase;
+    letter-spacing: 5px;
     @media screen and (min-width: 700px) {
         width: 60%;
     }
     .choose {
-        color: navy;
+       color:rgb(255, 255, 51);
+       font-family: "Iceland"; 
+       text-transform: uppercase;
+       font-size: 2.5rem;
+        text-shadow: 0px 0px 5px  white;
+
     }
     .your {
-        color: white;
+        font-family: "Quantum";
+        // color: transparent;  
+        // background-clip: text;
+        // background: -webkit-linear-gradient(to right, #0028b8, #011661, #05012c);
+        background: -webkit-linear-gradient(0deg, #0028b8, #011661, #05012c);
+        background-clip: text;
+        color: transparent;
+        
     }
     .style {
-        color: blue;
+        padding: 0 3px;
+        font-family: "Anurati";
+        color: transparent;  
+        background-clip: text;
+        background-color: #000000;
+        text-shadow: 1px 1px 5px rgba(90, 27, 172, 0.747);
+        font-size: 1.8rem;
     }
 }
 .accordion {
-    height: 30vh;
+
+    height: 50vh;
     width: 95%;
-    background: navy;
-    box-shadow: 0px 0px 12px 0 black;
+    background: transparent;
+    display: flex;
     @media screen and (min-width: 700px) {
         width: 60%;
-        height: 60vh;
+        height: 50vh;
     }
-    display: flex;
+   
 
     .section {
         width: 33.33%;
+        // clip-path: polygon(0 0, 75% 0, 35% 99%, 0% 100%);
+        box-shadow: 0px 0px 12px 0 black;
         height: 100%;
         display: grid;
         place-content: center;
-        transition: width 0.5s ease-out ;
-
+        transition: width 0.5s ease-out, filter 0.5s ease ;
+        transform: skew(-10deg, -10deg);
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        filter: grayscale(100%);
         &:hover {
             width: 100%;
+            z-index: 9;
+            filter: grayscale(0%) contrast(105%);
+            a {
+                display: block;
+            }
+        }
+        a {
+            display: none;
+            transform: skew(10deg, 10deg);
         }
     }
     .skewed {
-        background: blue;
+        // clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        background-image: url('../public/assets/skewed.jpg');
+       
     }
-    .red {
-        background: red;
+    .waves {
+        background-image: url('../public/assets/waves.jpg');
+        // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        margin: 0 -50px;
+
     }
     .neumorphism {
-        background: white;
+        background-image: url('../public/assets/neumorphism.jpg');
+        // clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
     }
     .type {
         text-decoration: none;
         font-size: 1.3rem;
     }
 }
+
+.clipPath {
+     --width: 100vw;
+  --full-width: 100vw;
+  
+  @media (min-width: 42em) {
+    --width: 42rem;
+  }
+  
+  --angle: -11deg;
+  /*-----------------
+  Magic Number Alert:
+  
+  the 0.09719 is calculated by this formula:
+  tan(11°) / 2
+  11° is the current skewY value.
+  ------------------*/
+  --magic-number: 0.09719;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  --clip-padding: calc(var(--full-width) * var(--magic-number));
+
+    margin-top: calc( ( var(--clip-padding) * -1 ) - 2px );
+    background: white;
+    padding: calc( ( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) ) ) 0 4em;
+    clip-path: polygon(
+      0% calc(var(--clip-padding) * 2), 
+      100% 0%, 
+      100% 100%, 
+      0% 100% );
+    -webkit-clip-path: polygon(
+      0% calc(var(--clip-padding) * 2), 
+      100% 0%, 
+      100% 100%, 
+      0% 100% );
+  }

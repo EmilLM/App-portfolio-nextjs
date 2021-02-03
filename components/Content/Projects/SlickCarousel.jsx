@@ -67,7 +67,7 @@ export default function SlickCarousel() {
           <img src="/assets/CV.webp" alt="CV"/>
           <img src="/assets/countryinfo.webp" alt="countryInfo"/>
           <img src="/assets/weather_app.webp" alt="weather_app"/>
-          <img src="/assets/portfolio.webp" alt="portfolio"/>
+          <img src="/assets/waves.webp" alt="portfolio"/>
         </Slider>
       </JackInTheBox>
     </div>
