@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Content from '../components/Content/Content.jsx'
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
+import Content from '../components/v3/Content/Content.jsx'
+import Header from "../components/v3/Header/Header"
+import Footer from "../components/v3/Footer/Footer"
 
 
 
-export default function Home() {
+export default function Waves() {
   
   return (
     <>

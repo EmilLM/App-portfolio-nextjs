@@ -1,9 +1,9 @@
 import {useEffect} from "react"
 
 import Head from 'next/head';
-import Header from "../comps-neumorphism/header/Header";
-import Content from "../comps-neumorphism/content/Content"
-import Footer from '../comps-neumorphism/footer/Footer';
+import Header from "../components/v4/header/Header";
+import Content from "../components/v4/content/Content"
+import Footer from '../components/v4/footer/Footer';
 
 
 import 'ui-neumorphism/dist/index.css';

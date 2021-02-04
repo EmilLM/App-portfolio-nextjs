@@ -1,4 +1,4 @@
-import styles from '../styles/home.module.scss'
+import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 const  Home = () => {
     return ( 
@@ -10,7 +10,7 @@ const  Home = () => {
             </h2>
             <div className={styles.accordion}>
                 <div className={`${styles.skewed} ${styles.section}`}>
-                    <a href="#" className={styles.type}>Skewed</a>
+                    <a href="waves" className={styles.type}>Skewed</a>
                 </div>
                 <div className={`${styles.waves} ${styles.section}`}>
                     <a href="/waves" className={styles.type}>Waves</a>
