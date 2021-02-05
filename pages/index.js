@@ -1,5 +1,5 @@
 import styles from '../styles/home.module.scss';
-import Link from 'next/link';
+import Link from 'next/link'
 const  Home = () => {
     return ( 
         <div className={styles.container}>
@@ -10,13 +10,19 @@ const  Home = () => {
             </h2>
             <div className={styles.accordion}>
                 <div className={`${styles.skewed} ${styles.section}`}>
-                    <a href="waves" className={styles.type}>Skewed</a>
+                    <Link href="/skew">
+                        <a className={styles.type}>Skewed</a>
+                    </Link>
                 </div>
                 <div className={`${styles.waves} ${styles.section}`}>
-                    <a href="/waves" className={styles.type}>Waves</a>
+                    <Link href="/waves">
+                        <a className={styles.type}>Waves</a>
+                    </Link>
                 </div>
                 <div className={`${styles.neumorphism} ${styles.section}`}>
-                    <a href="/neumorphism" className={styles.type}>Neumorphism</a>
+                    <Link href="/neumorphism">
+                        <a className={styles.type}>Neumorphism</a>
+                    </Link>
                 </div>
             </div>
         </div>

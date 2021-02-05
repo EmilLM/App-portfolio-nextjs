@@ -160,12 +160,12 @@
     }
     .skewed {
         // clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-        background-image: url('../public/assets/skewed.jpg');
+        background-image: url('../public/assets/skew.webp');
         
        
     }
     .waves {
-        background-image: url('../public/assets/waves.jpg');
+        background-image: url('../public/assets/waves_about.webp');
         // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         margin: -30px 0;
         @media screen and (min-width: 820px) {
@@ -174,7 +174,7 @@
 
     }
     .neumorphism {
-        background-image: url('../public/assets/neumorphism.jpg');
+        background-image: url('../public/assets/neumorphism.webp');
         // clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
     }
     .type {

@@ -10,7 +10,7 @@ export default function Skew() {
       <Head>
         <title><i>Skew</i></title>
       </Head>
-   
+      <h1>Page is under construction!</h1>
     </>
   )
 }
