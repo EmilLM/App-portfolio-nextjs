@@ -38,10 +38,11 @@
         letter-spacing: 5px;
     }
     .choose {
-        color:rgb(255, 255, 51);
+        color: black;
         font-family: "Iceland"; 
         text-transform: uppercase;
-        text-shadow: 0px 0px 5px  white;
+        text-shadow: 0px 0px 3px  rgb(8, 0, 255);
+        font-weight: 700px;
         font-size: 1.6rem;
         @media screen and (min-width: 820px) {
             font-size: 2.5rem;
@@ -50,14 +51,14 @@
     }
     .your {
         font-family: "Quantum";
-        background: -webkit-linear-gradient(-90deg, #eeea06, #227494, #10047e);
+        background: -webkit-linear-gradient(-90deg, #125dff, #10047e);
         background-clip: text;
         color: transparent;
         font-size: 1.6rem;
         @media (min-width: 820px) {
             font-size: 2rem;
             background-clip: text !important;            
-            background: -webkit-linear-gradient(0deg, #eeea06, #227494, #10047e);
+            background: -webkit-linear-gradient(0deg, #125dff, #10047e);
 
         }
         
@@ -158,9 +159,9 @@
         
         
     }
-    .skewed {
+    .glassmorphism {
         // clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-        background-image: url('../public/assets/skew.webp');
+        background-image: url('../public/assets/glassmorphism.webp');
         
        
     }

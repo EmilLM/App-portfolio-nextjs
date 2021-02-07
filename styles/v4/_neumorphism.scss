@@ -65,11 +65,11 @@
     text-shadow:-3px -3px 5px #fff, 3px 3px 5px #bec8e4 ;
 }
 @mixin heading-engrave-styles {
-    color: transparent !important;  
+    color: transparent !important; 
+    text-transform: uppercase;
     background-clip: text;
     font-family: "Anurati";
     letter-spacing: 5px;
-    text-transform: uppercase;
 }
 .dark-h-e {
     background-color: #080611;

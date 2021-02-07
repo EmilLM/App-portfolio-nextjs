@@ -9,9 +9,9 @@ const  Home = () => {
                 <span className={styles.style}>style </span> 
             </h2>
             <div className={styles.accordion}>
-                <div className={`${styles.skewed} ${styles.section}`}>
-                    <Link href="/skew">
-                        <a className={styles.type}>Skewed</a>
+                <div className={`${styles.glassmorphism} ${styles.section}`}>
+                    <Link href="/glassmorphism">
+                        <a className={styles.type}>Glassmorphism</a>
                     </Link>
                 </div>
                 <div className={`${styles.waves} ${styles.section}`}>
