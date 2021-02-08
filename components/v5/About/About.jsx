@@ -1,10 +1,17 @@
+// import style from './about.module.scss';
 
-const About = ({aboutRef}) => {
+// const About = ({ aboutRef }) => {
+// 	return (
+// 		<>
+// 			<div className={style.title_bg}>
+// 				<h1 className={style.title}>About</h1>
+// 			</div>
 
-    
-    return (
-        <h1 ref={aboutRef}>Section under construction!</h1>
-    );
-}
- 
-export default About;
+// 			<div ref={aboutRef} className={style.container}>
+// 				<div className={style.about_content}></div>
+// 			</div>
+// 		</>
+// 	);
+// };
+
+// export default About;

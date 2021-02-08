@@ -17,7 +17,7 @@ export default function Waves() {
       </Head>
       <main className={globalStyle.v2}>
         <Header scrollToRef={scrollToRef}/>
-        <About aboutRef={aboutRef}/>
+        {/* <About aboutRef={aboutRef}/> */}
       </main>
     </>
   )

@@ -1,161 +1,163 @@
 .container {
-    width: 100%;
-    height: 100%;
-    // background-image: url('../../../public/5.jpg');
-    background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
-    background-size: cover;
-    background-position: bottom;
-    box-shadow: inset 0px 12px 25px 0px rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    
-    &:after {
-        position: absolute;
-        content : '';
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-        background-color: #74EBD5;
-         background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
-        // box-shadow: inset 5px 10px 20px #788ce9, 3px 3px 8px gray;
-        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.534);
-        top: 25%;
-        right: 5%;
-        z-index: 10;
-    }
-    &:before {
-        position: absolute;
-        content : '';
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-        // background-color: #74EBD5;
-        // background: linear-gradient(to bottom, #373b44, #4286f4);
-        background: linear-gradient(to bottom, #000428, #004e92);
-        // box-shadow:  0px 0px 5px #788ce9,inset 0px 0px 8px rgb(83, 80, 87);
-        top: 60%;
-        left: 5%;
-        z-index: 1;
-    }
-    
-    // &::after {
-    //     content:"";
-    //     background-image: inherit;
-    //     background-size: cover;
-    //     background-position: bottom;
-    //     width:inherit;
-    //     height: 60%;
-    //     position: absolute;
-    //     bottom:-60.5%;
-    //     transform:scaleY(-1);
-    //     opacity: 0.5;
-    // }
-    // &::before {
-    //      content:"";
-    //     width:inherit;
-    //     height: 62%;
-    //     position: absolute;
-    //     bottom: -62%;
-    //     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.116),white);
-    //     z-index: 1;
-    // }
+	width: 100%;
+	height: 75vh;
+	// background-image: url('../../../public/5.jpg');
+	background-image: radial-gradient(
+		circle farthest-corner at 16.5% 28.1%,
+		rgba(15, 27, 49, 1) 0%,
+		rgba(0, 112, 218, 1) 90%
+	);
+	background-size: cover;
+	background-position: bottom;
+	box-shadow: inset 0px 12px 25px 0px rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 
+	&:after {
+		position: absolute;
+		content: '';
+		width: 8rem;
+		height: 8rem;
+		border-radius: 50%;
+		background-color: #74ebd5;
+		background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+		// box-shadow: inset 5px 10px 20px #788ce9, 3px 3px 8px gray;
+		box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.534);
+		top: 25%;
+		right: 5%;
+		z-index: 10;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		width: 11rem;
+		height: 11rem;
+		border-radius: 50%;
+		// background-color: #74EBD5;
+		// background: linear-gradient(to bottom, #373b44, #4286f4);
+		background: linear-gradient(to bottom, #000428, #004e92);
+		// box-shadow:  0px 0px 5px #788ce9,inset 0px 0px 8px rgb(83, 80, 87);
+		bottom: -10%;
+		left: 5%;
+		z-index: 1;
+	}
 
+	// &::after {
+	//     content:"";
+	//     background-image: inherit;
+	//     background-size: cover;
+	//     background-position: bottom;
+	//     width:inherit;
+	//     height: 60%;
+	//     position: absolute;
+	//     bottom:-60.5%;
+	//     transform:scaleY(-1);
+	//     opacity: 0.5;
+	// }
+	// &::before {
+	//      content:"";
+	//     width:inherit;
+	//     height: 62%;
+	//     position: absolute;
+	//     bottom: -62%;
+	//     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.116),white);
+	//     z-index: 1;
+	// }
 }
-.title {
-    width: 100%;
-    // height: 10vh;
-    text-align: center;
-    font-size: 4rem;
-    padding: 0.1em 0 .3em 0;
-    text-transform: uppercase;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.911);
-    background: rgba(0, 0, 0, 0.315);
-    // background-clip: text;
-    color: #fff;
-    text-shadow: 1px 5px 10px rgb(0, 0, 0),
-    -1px -1px 1px rgba(255, 255, 255, 0.473) ; 
-    word-wrap: break-word;
-    mix-blend-mode: multiply;
-    font-family: "Quantum";
-    letter-spacing: 15px;
-    // border-bottom: 5px solid rgb(0, 0, 0);
-    
+
+.title_bg {
+	background: url('../../../public/5.jpg') no-repeat center top;
+	background-size: cover;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.911);
+
+	.title {
+		width: 100%;
+		// height: 10vh;
+		text-align: center;
+		font-size: 3.3rem;
+		padding: 0.1em 0 0.3em 0;
+		text-transform: uppercase;
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.911);
+		background: rgba(0, 0, 0, 0.315);
+		color: #fff;
+		text-shadow: 1px 5px 10px rgb(0, 0, 0),
+			-1px -1px 1px rgba(255, 255, 255, 0.473);
+		word-wrap: break-word;
+		mix-blend-mode: multiply;
+		font-family: 'Quantum';
+		letter-spacing: 15px;
+	}
 }
+
 .content {
-    width: 70%;
-    height: 70%;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: -1px -1px 5px #ffffff,
-        1px 1px 5px#21252a ;
-    backdrop-filter: blur(10px) contrast(110%) brightness(110%);
-    border-radius: 30px;
-    mix-blend-mode: overlay;
-    margin: 2.5em 0;
-    z-index: 9;
-    
-    display: grid;
-    place-content: center;
-    h2 {
-        font-family: "Iceland";
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        mix-blend-mode: overlay;
-        text-shadow: 2px 2px 10px rgb(0, 0, 0),
-                -2px -2px 1px rgba(255, 255, 255, 0.473); 
-        color: gray;
-    }
-    p {
-       font-family: "Iceland";
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 3rem;
-        padding: 0.3em 0;
-        mix-blend-mode:overlay;
-        text-shadow: 1px 1px 1px rgb(0, 0, 0),
-                -1px -1px 1px rgba(255, 255, 255, 0.473);  
-        color: gray; 
-    }
-    .header_buttons {
-        display: flex;
-        width: 70%;
-        justify-self: center;
-        justify-content: space-around;
-        mix-blend-mode: normal !important;
-        font-family: "RussoOne";
-        color: white;
-        margin-top: 30px;
-        button {
-            border: none;
-            background: white;
-            color: rgb(15, 77, 82);
-            mix-blend-mode: none!important;
-            padding: 0.4em 0.7em;
-            font-size: 1rem;
-            font-family: "RussoOne";
-            border-radius: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            &:hover{
-                background: navy;
-                color: white;
-            }
-        }
-        a {
-            text-decoration: none;
-            padding: 0.4em 0.7em;
-            display: flex;
-            align-items: center;
-            &:hover {
-                color: white;
-                background: navy;
-                border-radius: 5px;
-                
-            }
-        }
-    }
+	width: 70%;
+	height: 80%;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: -1px -1px 5px #ffffff, 1px 1px 5px#21252a;
+	backdrop-filter: blur(10px) contrast(110%) brightness(110%);
+	border-radius: 30px;
+	mix-blend-mode: overlay;
+	z-index: 9;
+	display: grid;
+	place-content: center;
+	h2 {
+		font-family: 'Iceland';
+		text-transform: uppercase;
+		font-size: 3.5rem;
+		mix-blend-mode: overlay;
+		text-shadow: 2px 2px 10px rgb(0, 0, 0),
+			-2px -2px 1px rgba(255, 255, 255, 0.473);
+		color: gray;
+	}
+	p {
+		font-family: 'Iceland';
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 3rem;
+		padding: 0.3em 0;
+		mix-blend-mode: overlay;
+		text-shadow: 1px 1px 1px rgb(0, 0, 0),
+			-1px -1px 1px rgba(255, 255, 255, 0.473);
+		color: gray;
+	}
+	.header_buttons {
+		display: flex;
+		width: 70%;
+		justify-self: center;
+		justify-content: space-around;
+		mix-blend-mode: normal !important;
+		font-family: 'RussoOne';
+		color: white;
+		margin-top: 30px;
+		button {
+			border: none;
+			background: white;
+			color: rgb(15, 77, 82);
+			mix-blend-mode: none !important;
+			padding: 0.4em 0.7em;
+			font-size: 1rem;
+			font-family: 'RussoOne';
+			border-radius: 5px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			&:hover {
+				background: navy;
+				color: white;
+			}
+		}
+		a {
+			text-decoration: none;
+			padding: 0.4em 0.7em;
+			display: flex;
+			align-items: center;
+			&:hover {
+				color: white;
+				background: navy;
+				border-radius: 5px;
+			}
+		}
+	}
 }

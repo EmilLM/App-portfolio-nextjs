@@ -51,14 +51,14 @@
     }
     .your {
         font-family: "Quantum";
-        background: -webkit-linear-gradient(-90deg, #125dff, #10047e);
+        background: -webkit-linear-gradient(-90deg, #000000, #10047e);
         background-clip: text;
         color: transparent;
         font-size: 1.6rem;
         @media (min-width: 820px) {
             font-size: 2rem;
             background-clip: text !important;            
-            background: -webkit-linear-gradient(0deg, #125dff, #10047e);
+            background: -webkit-linear-gradient(0deg, #000000, #10047e);
 
         }
         
