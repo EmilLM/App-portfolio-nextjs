@@ -1,28 +1,97 @@
-.container {
-	// background: linear-gradient(to bottom, #000428, rgb(28, 28, 117));
-	// background: url('../../../public/4.jpg') no-repeat center top;
-	// background-size: cover;
-	background: navy;
-	height: 50vh;
-}
 .title_bg {
 	background: url('../../../public/4.jpg') no-repeat center top;
 	background-size: cover;
-	z-index: 999;
+	z-index: 9;
 	box-shadow: 0 8px 32px 0 rgba(117, 95, 95, 0.767);
+	.title {
+		width: 100%;
+		text-align: center;
+		font-size: 3.3rem;
+		padding: 0.2em 0 0.4em 0;
+		text-transform: uppercase;
+		// background: rgba(0, 0, 0, 0.315);
+		color: rgba(255, 255, 255, 0.966);
+		text-shadow: 1px 2px 7px rgb(0, 0, 0),
+			-1px -1px 1px rgba(255, 255, 255, 0.473);
+		word-wrap: break-word;
+		mix-blend-mode: multiply;
+		font-family: 'Quantum';
+		letter-spacing: 15px;
+	}
 }
-.title {
-	width: 100%;
-	text-align: center;
-	font-size: 3.3rem;
-	padding: 0.1em 0 0.3em 0;
-	text-transform: uppercase;
-	// background: rgba(0, 0, 0, 0.315);
-	color: rgba(255, 255, 255, 0.966);
-	text-shadow: 1px 5px 10px rgb(0, 0, 0),
-		-1px -1px 1px rgba(255, 255, 255, 0.473);
-	word-wrap: break-word;
-	mix-blend-mode: multiply;
-	font-family: 'Quantum';
-	letter-spacing: 15px;
+
+.container {
+	background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+	position: relative;
+	z-index: 5;
+	&:after {
+		position: absolute;
+		content: '';
+		width: 300px;
+		height: 300px;
+		clip-path: polygon(
+			0% 0%,
+			0% 100%,
+			25% 100%,
+			25% 25%,
+			75% 25%,
+			75% 75%,
+			25% 75%,
+			25% 100%,
+			100% 100%,
+			100% 0%
+		);
+		top: 30%;
+		right: 5%;
+		z-index: -1;
+		// background: rgba(131, 128, 153, 0.25);
+		border-radius: 5px;
+		background: linear-gradient(
+			to right,
+			rgb(11, 11, 230),
+			rgba(28, 28, 194, 0)
+		);
+
+		// backdrop-filter: blur(10px);
+	}
+	&:before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+		width: 17rem;
+		height: 17rem;
+		transform: rotate(45deg);
+		left: 10%;
+		background: white;
+		clip-path: polygon(
+			53% 0,
+			0% 100%,
+			35% 74%,
+			55% 31%,
+			55% 65%,
+			77% 89%,
+			42% 100%,
+			100% 100%
+		);
+	}
+}
+
+.about_content {
+	width: 70%;
+	height: 80vh;
+	margin: 2em 0;
+	background: rgba(131, 128, 153, 0.25);
+	// box-shadow: -1px -1px 5px #ffffff, 1px 1px 5px#21252a;
+	border: 1px solid rgba(255, 255, 255, 0.438);
+	backdrop-filter: blur(15px) contrast(110%) brightness(110%);
+	border-radius: 30px;
+	mix-blend-mode: overlay;
+	display: flex;
+	// flex-direction: column;
+	align-items: center;
+	// justify-content: center;
 }
