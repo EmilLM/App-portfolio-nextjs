@@ -47,7 +47,7 @@ const About = ({ children }) => {
 							<a href='https://www.coderslab.ro/'>Coder's Lab</a>
 						</span>
 						. Learned the <span>MERN stack</span> and currently studying
-						technologies like GraphQL, Jest, Docker and other.
+						technologies like GraphQL, Jest, Docker and others.
 					</p>
 					<p className='about-info'>
 						Striving to write <span>clean</span>, <span>scalable code</span>{' '}

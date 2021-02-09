@@ -1,10 +1,11 @@
-import Project from './Project';
-import projectsData from '../../../projectsData';
+import Project from '../Project/Project';
+import projectsData from '../../../../projectsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import style from './slider.module.scss'
 import { useState } from 'react';
 
-const ProjectsSlider = ({ theme }) => {
+const Slider = () => {
 	const [currentSlide, setCurrentSlide] = useState(1);
 	const sliderLength = projectsData.length;
 
@@ -16,22 +17,22 @@ const ProjectsSlider = ({ theme }) => {
 	};
 
 	return (
-		<div className='v4-slider'>
-			<div className='v4-slide-wrapper'>
+		<div className={style.v5_slider}>
+			<div className={style.slider_wrapper}>
 				{projectsData.map((project) => {
 					return (
 						<Project
 							project={project}
 							key={project.id}
-							active={currentSlide === project.id ? 'active' : ''}
-							nextActive={
+							currentSlide={currentSlide === project.id ? 'current' : ''}
+							nextSlide={
 								project.id === (currentSlide + 1) % sliderLength
-									? 'nextActive'
+									? 'nextSlide'
 									: ''
 							}
-							prevActive={
+							prevSlide={
 								project.id === (currentSlide + sliderLength - 1) % sliderLength
-									? 'prevActive'
+									? 'prevSlide'
 									: ''
 							}
 							setCurrentSlide={setCurrentSlide}
@@ -40,20 +41,14 @@ const ProjectsSlider = ({ theme }) => {
 				})}
 			</div>
 
-			<button
-				className={`prev-slide ${theme && 'prev-slide-dark'}`}
-				onClick={prevSlide}
-			>
+			<button className={style.prev_slide} onClick={prevSlide}>
 				<FontAwesomeIcon icon={faAngleLeft} />
 			</button>
-			<button
-				className={`next-slide ${theme && 'next-slide-dark'}`}
-				onClick={nextSlide}
-			>
+			<button className={style.next_slide} onClick={nextSlide}>
 				<FontAwesomeIcon icon={faAngleRight} />
 			</button>
 		</div>
 	);
 };
 
-export default ProjectsSlider;
+export default Slider;

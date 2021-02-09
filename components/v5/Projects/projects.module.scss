@@ -1,5 +1,5 @@
 .title_bg {
-	background: url('../../../public/8.jpg') no-repeat center top;
+	background: url('../../../public/7.jpg') no-repeat center top;
 	background-size: cover;
 	z-index: 9;
 	box-shadow: 0 8px 32px 0 rgba(117, 95, 95, 0.767);
@@ -14,12 +14,12 @@
 		text-shadow: 1px 2px 7px rgb(0, 0, 0),
 			-1px -1px 1px rgba(255, 255, 255, 0.473);
 		word-wrap: break-word;
-		mix-blend-mode: multiply;
+		mix-blend-mode: overlay;
 		font-family: 'Quantum';
 		letter-spacing: 15px;
 	}
 }
 .container {
-	height: 70vh;
 	background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+	overflow: hidden;
 }

@@ -61,7 +61,7 @@ const About = () => {
 							</a>
 						</span>
 						. Learned the <span>MERN stack</span> and currently studying
-						technologies like GraphQL, Jest, Docker and other.
+						technologies like GraphQL, Jest, Docker and others.
 					</Card>
 					<Card className='about-info' dark={theme}>
 						Striving to write <span>clean</span>, <span>scalable code</span>{' '}
