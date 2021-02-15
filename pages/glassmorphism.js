@@ -15,7 +15,7 @@ export default function Waves() {
       <Head>
         <title>Glassmorphism</title>
       </Head>
-      <main className={globalStyle.v2}>
+      <main className={globalStyle.v5}>
         <Header scrollToRef={scrollToRef}/>
         <About aboutRef={aboutRef}/>
         <Projects/>

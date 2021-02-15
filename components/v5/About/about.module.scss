@@ -79,56 +79,177 @@
 		);
 	}
 }
+@mixin inner_card {
+	width: 500px;
+	height: 260px;
+	background: rgba(132, 129, 158, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.438);
+	padding: 1.2em 1.5em;
+	border-radius: 10px;
+	transform: rotateY(45deg) skewY(-15deg);
+	position: absolute;
+	content: '';
+	transition: 0.5s all ease-out;
+	user-select: none;
+}
 
 .about_content {
 	width: 70%;
-	height: 80vh;
+	height: 100vh;
+	// max-height: 700px;
 	margin: 2em 0;
 	background: rgba(132, 129, 158, 0.25);
-	// box-shadow: -1px -1px 5px #ffffff, 1px 1px 5px#21252a;
 	border: 1px solid rgba(255, 255, 255, 0.438);
 	backdrop-filter: blur(15px) contrast(110%) brightness(110%);
 	border-radius: 30px;
 	// mix-blend-mode: overlay;
 	display: flex;
-	// flex-direction: column;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	perspective: 1000px;
 	transform-style: flat;
 	position: relative;
-	.one {
-		height: 250px;
-		width: 500px;
-		background: rgba(132, 129, 158, 0.25);
-		border: 1px solid rgba(255, 255, 255, 0.438);
+
+	.about_objective {
+		@include inner_card();
+		top: 10%;
+		right: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 0.9em;
+		color: white;
 		border-radius: 10px;
-		mix-blend-mode: overlay;
-		background-blend-mode: overlay;
-		transform: rotateY(45deg) skewY(-15deg);
+		font-family: 'RussoOne';
+		line-height: 1.5em;
+
+		h5 {
+			text-align: left;
+			width: 100%;
+			margin-bottom: 30px;
+			font-size: 1.3rem;
+			color: navy;
+			filter: blur(4px);
+		}
+		p {
+			text-align: center;
+			filter: blur(3px);
+		}
+		span {
+			color: navy;
+		}
+		&:hover {
+			top: 4%;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
+		}
+		&:active {
+			top: 50%;
+			h5,
+			p {
+				filter: blur(0);
+			}
+		}
 	}
-	.two {
-		position: absolute;
-		content: '';
-		top: 37%;
-		left: 30%;
-		height: 250px;
-		width: 500px;
-		background: rgba(132, 129, 158, 0.25);
-		border: 1px solid rgba(255, 255, 255, 0.438);
+
+	.about_studies {
+		@include inner_card();
+		top: 14%;
+		right: 23%;
+		background: rgba(132, 129, 158, 0.329);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 0.9em;
+		color: white;
 		border-radius: 10px;
-		transform: rotateY(45deg) skewY(-15deg);
+		font-family: 'RussoOne';
+		line-height: 1.5em;
+		h5 {
+			text-align: left;
+			width: 100%;
+			margin-bottom: 30px;
+			font-size: 1.3rem;
+			color: navy;
+			filter: blur(4px);
+		}
+		p {
+			text-align: center;
+			filter: blur(4px);
+		}
+		span {
+			color: navy;
+			a {
+				color: blue;
+				&:hover {
+					color: black;
+				}
+			}
+		}
+		&:hover {
+			top: 4%;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
+		}
+		&:active {
+			top: 48%;
+			h5,
+			p {
+				filter: blur(0);
+			}
+		}
 	}
-	.three {
-		position: absolute;
-		content: '';
-		top: 42%;
-		left: 35%;
-		height: 250px;
-		width: 500px;
-		background: rgba(132, 129, 158, 0.25);
-		border: 1px solid rgba(255, 255, 255, 0.438);
-		border-radius: 10px;
-		transform: rotateY(45deg) skewY(-15deg);
+	.about_info {
+		@include inner_card();
+		background: rgba(132, 129, 158, 0.473);
+		top: 18%;
+		right: 20%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: left;
+		font-size: 1.3rem;
+		color: navy;
+		font-weight: 600;
+		font-family: 'Iceland';
+		line-height: 1.2em;
+
+		p {
+			margin: 0;
+			span {
+				color: rgb(189, 196, 255);
+				text-shadow: 0px 0px 3px black;
+			}
+		}
+	}
+	.btn_download {
+		display: flex;
+		align-items: center;
+		color: navy;
+		margin-top: 1.2em;
+		padding: 0.3em 0.5em;
+		border-radius: 0.25em;
+		font-size: 1rem;
+		font-weight: 700;
+		background: rgba(18, 72, 92, 0.38);
+		border: none;
+		font-family: 'Iceland';
+		text-decoration: none;
+		cursor: pointer;
+		&:hover {
+			color: white;
+			background: rgba(18, 72, 92, 1);
+		}
+		svg {
+			margin-right: 10px;
+		}
 	}
 }

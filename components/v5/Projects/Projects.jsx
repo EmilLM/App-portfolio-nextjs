@@ -1,13 +1,11 @@
 import style from './projects.module.scss';
-import Slider from './Slider/Slider.jsx';
+import Coverflow from './Coverflow/Coverflow';
 const Projects = () => {
 	return (
 		<>
-			<div className={style.title_bg}>
-				<h1 className={style.title}>Projects</h1>
-			</div>
+			<div className={style.title_bg}>Projects</div>
 			<div className={style.container}>
-				<Slider />
+				<Coverflow />
 			</div>
 		</>
 	);

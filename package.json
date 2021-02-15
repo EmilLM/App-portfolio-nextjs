@@ -28,6 +28,7 @@
     "react-slick": "^0.27.13",
     "sass": "^1.32.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^6.4.11",
     "ui-neumorphism": "^1.1.0"
   },
   "devDependencies": {}

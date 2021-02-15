@@ -10,6 +10,10 @@ import MiscContext from "../components/MiscContext.jsx";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/effect-coverflow/effect-coverflow.scss';
 
 function MyApp({ Component, pageProps}) {
   

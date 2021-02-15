@@ -12,7 +12,7 @@ const Header = ({ scrollToRef }) => {
 			<div className={style.container}>
 				<div className={style.content}>
 					<h2>Glassmorphism</h2>
-					<p>- Luchian Emil -</p>
+					<p>- Work in progress -</p>
 					<div className={style.header_buttons}>
 						<button onClick={scrollToRef}>
 							<GiArrowDunk /> &nbsp; Explore

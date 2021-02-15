@@ -2,24 +2,32 @@
 	background: url('../../../public/7.jpg') no-repeat center top;
 	background-size: cover;
 	z-index: 9;
-	box-shadow: 0 8px 32px 0 rgba(117, 95, 95, 0.767);
-	.title {
-		width: 100%;
-		text-align: center;
-		font-size: 3.3rem;
-		padding: 0.2em 0 0.4em 0;
-		text-transform: uppercase;
-		// background: rgba(0, 0, 0, 0.315);
-		color: rgb(255, 255, 255);
-		text-shadow: 1px 2px 7px rgb(0, 0, 0),
-			-1px -1px 1px rgba(255, 255, 255, 0.473);
-		word-wrap: break-word;
-		mix-blend-mode: overlay;
-		font-family: 'Quantum';
-		letter-spacing: 15px;
-	}
+	// box-shadow: 0 8px 32px 0 rgba(117, 95, 95, 0.767);
+
+	width: 100%;
+	text-align: center;
+	font-size: 3.3rem;
+	padding: 0.2em 0 0.4em 0;
+	text-transform: uppercase;
+
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	color: rgb(255, 255, 255);
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.26);
+	// -1px -1px 1px rgba(255, 255, 255, 0.473);
+	word-wrap: break-word;
+	mix-blend-mode: overlay;
+	font-family: 'Quantum';
+	letter-spacing: 15px;
 }
 .container {
-	background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
-	overflow: hidden;
+	// background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+	background: linear-gradient(
+		180deg,
+		rgba(233, 255, 247, 1) 10%,
+		rgba(213, 245, 253, 1) 50%
+	);
+	// overflow: hidden;
+	height: 100vh;
 }
