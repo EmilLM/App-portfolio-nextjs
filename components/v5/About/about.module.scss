@@ -1,33 +1,41 @@
-.title_bg {
-	background: url('../../../public/4.jpg') no-repeat center top;
-	background-size: cover;
+.title {
+	width: 100%;
+	background: url('../../../public/4.jpg') no-repeat center;
+
+	background-size: contain;
 	z-index: 9;
-	box-shadow: 0 8px 32px 0 rgba(117, 95, 95, 0.767);
-	.title {
-		width: 100%;
-		text-align: center;
-		font-size: 3.3rem;
-		padding: 0.2em 0 0.4em 0;
-		text-transform: uppercase;
-		// background: rgba(0, 0, 0, 0.315);
-		color: rgba(255, 255, 255, 0.966);
-		text-shadow: 1px 2px 7px rgb(0, 0, 0),
-			-1px -1px 1px rgba(255, 255, 255, 0.473);
-		word-wrap: break-word;
-		mix-blend-mode: multiply;
-		font-family: 'Quantum';
-		letter-spacing: 15px;
-	}
+	text-align: center;
+	font-size: 3.3rem;
+	padding: 0.2em 0 0.4em 0;
+	text-transform: uppercase;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
+
+	word-wrap: break-word;
+	font-family: 'Quantum';
+	letter-spacing: 15px;
 }
 
 .container {
 	background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	overflow: visible;
 	position: relative;
 	z-index: 5;
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		79% 97%,
+		56% 100%,
+		37% 98%,
+		16% 100%,
+		0 96%
+	);
 	&:after {
 		position: absolute;
 		content: '';
@@ -95,9 +103,9 @@
 
 .about_content {
 	width: 70%;
-	height: 100vh;
+	height: 80vh;
 	// max-height: 700px;
-	margin: 2em 0;
+	margin: 2em 0 3em 0;
 	background: rgba(132, 129, 158, 0.25);
 	border: 1px solid rgba(255, 255, 255, 0.438);
 	backdrop-filter: blur(15px) contrast(110%) brightness(110%);
@@ -130,7 +138,7 @@
 			width: 100%;
 			margin-bottom: 30px;
 			font-size: 1.3rem;
-			color: navy;
+			color: #000;
 			filter: blur(4px);
 		}
 		p {
@@ -165,7 +173,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		font-size: 0.9em;
+		font-size: 1rem;
 		color: white;
 		border-radius: 10px;
 		font-family: 'RussoOne';
@@ -175,7 +183,7 @@
 			width: 100%;
 			margin-bottom: 30px;
 			font-size: 1.3rem;
-			color: navy;
+			color: #000;
 			filter: blur(4px);
 		}
 		p {
@@ -221,7 +229,14 @@
 		font-weight: 600;
 		font-family: 'Iceland';
 		line-height: 1.2em;
-
+		h5 {
+			text-align: left;
+			width: 100%;
+			font-size: 1.3rem;
+			color: #000;
+			font-family: 'RussoOne';
+			margin-bottom: 10px;
+		}
 		p {
 			margin: 0;
 			span {
@@ -229,12 +244,15 @@
 				text-shadow: 0px 0px 3px black;
 			}
 		}
+		&:hover {
+			transform: rotateY(0deg) skew(0deg);
+		}
 	}
 	.btn_download {
 		display: flex;
 		align-items: center;
 		color: navy;
-		margin-top: 1.2em;
+		margin-top: 0.7em;
 		padding: 0.3em 0.5em;
 		border-radius: 0.25em;
 		font-size: 1rem;

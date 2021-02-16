@@ -3,8 +3,9 @@ import Coverflow from './Coverflow/Coverflow';
 const Projects = () => {
 	return (
 		<>
-			<div className={style.title_bg}>Projects</div>
 			<div className={style.container}>
+				<h1 className={style.title}>Projects</h1>
+
 				<Coverflow />
 			</div>
 		</>

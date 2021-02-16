@@ -5,11 +5,10 @@ import { VscCompareChanges } from 'react-icons/vsc';
 
 const Header = ({ scrollToRef }) => {
 	return (
-		<>  
-			<div className={style.title_bg}>
-			    <h1 className={style.title}>Portfolio</h1>
-            </div>
+		<>
 			<div className={style.container}>
+				<h1 className={style.title}>Portfolio</h1>
+
 				<div className={style.content}>
 					<h2>Glassmorphism</h2>
 					<p>- Work in progress -</p>

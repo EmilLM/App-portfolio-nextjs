@@ -4,11 +4,9 @@ import { FaDownload } from 'react-icons/fa';
 const About = ({ aboutRef }) => {
 	return (
 		<>
-			<div className={style.title_bg}>
-				<h1 className={style.title}>About</h1>
-			</div>
-
 			<div ref={aboutRef} className={style.container}>
+				<h1 className={style.title}>About</h1>
+
 				<div className={style.about_content}>
 					{/* Objective */}
 					<div className={style.about_objective}>
@@ -35,6 +33,7 @@ const About = ({ aboutRef }) => {
 					</div>
 					{/* Main info + CV */}
 					<div className={style.about_info}>
+						<h5>Info</h5>
 						<div>
 							<p>
 								Name :<span>'Luchian Emil Moise'</span>

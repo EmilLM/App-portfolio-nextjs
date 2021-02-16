@@ -3,6 +3,7 @@ import globalStyle from '../components/v5/global.module.scss';
 import Header from '../components/v5/Header/Header.jsx';
 import About from '../components/v5/About/About.jsx';
 import Projects  from "../components/v5/Projects/Projects.jsx";
+import Contact from "../components/v5/Contact/Contact"
 import {useRef} from 'react';
 
 export default function Waves() {
@@ -19,6 +20,7 @@ export default function Waves() {
         <Header scrollToRef={scrollToRef}/>
         <About aboutRef={aboutRef}/>
         <Projects/>
+        <Contact/>
       </main>
     </>
   )
