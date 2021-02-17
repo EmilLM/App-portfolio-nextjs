@@ -5,26 +5,25 @@
 	z-index: 9;
 	text-align: center;
 	font-size: 3.3rem;
-	padding: 0.2em 0 0.4em 0;
+	padding: 0.2em 0 0.7em 0;
 	text-transform: uppercase;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
-
 	word-wrap: break-word;
 	font-family: 'Quantum';
 	letter-spacing: 15px;
 }
 
 .container {
-	background: linear-gradient(to top, #311a6e, #789ec4, #fff);
+	background: linear-gradient(to top, #18005a, #789ec4, #fff);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	overflow: visible;
 	position: relative;
-	z-index: 5;
+	z-index: 0;
 	clip-path: polygon(
 		0 0,
 		100% 0,
@@ -35,25 +34,29 @@
 		16% 100%,
 		0 96%
 	);
-	// &:after {
-	// 	position: absolute;
-	// 	content: '';
-	// 	width: 25%;
-	// 	height: 50%;
-	// 	top: 35%;
-	// 	left: 30%;
-	// 	clip-path: polygon(
-	// 		0% 0%,
-	// 		0% 100%,
-	// 		25% 100%,
-	// 		25% 25%,
-	// 		75% 25%,
-	// 		75% 75%,
-	// 		25% 75%,
-	// 		25% 100%,
-	// 		100% 100%,
-	// 		100% 0%
-	// 	);
-	// 	background: linear-gradient(to bottom, #03001e, #7303c0, #fdeff9);
-	// }
+	&:after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 600px;
+		z-index: 0;
+		clip-path: polygon(0 35%, 50% 45%, 100% 35%, 100% 65%, 50% 75%, 0 65%);
+		background: linear-gradient(to bottom, #0178f0, #fff);
+	}
+}
+.card_contact {
+	z-index: 10;
+	width: 70%;
+	margin-bottom: 2.5em;
+	background: rgba(84, 69, 216, 0.137);
+	border: 1px solid rgba(255, 255, 255, 0.438);
+	backdrop-filter: blur(5px);
+	border-radius: 30px;
+}
+.footer {
+	color: white;
+	display: grid;
+	place-content: center;
+	font-family: 'Quantum';
+	margin: 1em 0;
 }
