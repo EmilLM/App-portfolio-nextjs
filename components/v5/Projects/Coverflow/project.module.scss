@@ -1,0 +1,27 @@
+.content {
+	width: 250px;
+	text-align: center;
+	margin-top: 30%;
+	margin-left: 30px;
+	color: black;
+	font-family: 'Iceland';
+	background: rgba(210, 210, 255, 0.295);
+	border-radius: 10px;
+	padding: 1em 0;
+
+	h3 {
+		font-size: 2rem;
+		color: white;
+		text-shadow: 0 0 5px blue;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 1em 0;
+	}
+	a {
+		margin-right: 20px;
+		font-size: 1.1rem;
+		color: navy;
+	}
+}
