@@ -100,7 +100,7 @@
 		background-position: center top;
 		background-repeat: no-repeat;
 		z-index: 1;
-		filter: grayscale(100%);
+		// filter: grayscale(100%);
 		position: relative;
 		@media screen and (min-width: 500px) {
 			height: 33%;
@@ -129,7 +129,7 @@
 				height: 100%;
 				top: 0;
 				z-index: 10;
-				background: rgba(59, 53, 53, 0.349);
+				// background: rgba(59, 53, 53, 0.349);
 				text-shadow: 2px 2px 7px blue;
 			}
 		}

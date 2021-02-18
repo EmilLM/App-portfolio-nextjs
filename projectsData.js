@@ -45,6 +45,18 @@
         description: "Weather app for all cities. Project made during my time at Coder's Lab. Uses a GPS and weather-data API.",
         stack: 'jQuery - Ajax - Scss',
         wavesClass: 'project3-waves'
+    },
+    {
+        id: 4,
+        src: 'portfolio.webp',
+        link: 'https://luchianemil.com',
+        sourceLink: 'https://github.com/EmilLM/App-portfolio-nextjs',
+        altText: "Portfolio",
+        title: 'Portfolio',
+        description: "Page for all my projects. Designed in various styles.",
+        stack: 'React-Scss-Next.js',
+        // class needed for styling the waves in various positions
+        wavesClass: 'project1-waves'
     }
 ];
 

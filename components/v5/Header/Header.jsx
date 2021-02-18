@@ -8,10 +8,9 @@ const Header = ({ scrollToRef }) => {
 		<>
 			<div className={style.container}>
 				<h1 className={style.title}>Portfolio</h1>
-
 				<div className={style.content}>
 					<h2>Glassmorphism</h2>
-					<p>- Work in progress -</p>
+					<p>- Luchian Emil -</p>
 					<div className={style.header_buttons}>
 						<button onClick={scrollToRef}>
 							<GiArrowDunk /> &nbsp; Explore

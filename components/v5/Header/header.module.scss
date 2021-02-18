@@ -49,7 +49,8 @@
 .title {
 	width: 100%;
 	// height: 10vh;
-	background: url('../../../public/blue_ice.jpg') no-repeat center top;
+	background: url('../../../public/assets/h_bg/blue_ice.webp') no-repeat center
+		top;
 	background-size: contain;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -101,7 +102,7 @@
 		justify-self: center;
 		justify-content: space-around;
 		mix-blend-mode: normal !important;
-		font-family: 'RussoOne';
+		font-family: 'Iceland';
 		color: white;
 		margin-top: 30px;
 		button {
@@ -112,8 +113,9 @@
 			mix-blend-mode: overlay;
 			border: 1px solid rgba(255, 255, 255, 0.377);
 			padding: 0.4em 0.7em;
-			font-size: 1rem;
-			font-family: 'RussoOne';
+			font-size: 1.2rem;
+			font-family: 'Iceland';
+
 			border-radius: 5px;
 			cursor: pointer;
 			display: flex;
