@@ -1,6 +1,7 @@
 .title {
 	width: 100%;
-	background: url('../../../public/assets/h_bg/broken.webp') no-repeat center top;
+	background: url('../../../public/assets/h_bg/broken.webp') no-repeat center
+		top;
 	background-size: contain;
 	z-index: 9;
 	text-align: center;
@@ -16,7 +17,7 @@
 }
 
 .container {
-	background: linear-gradient(to top, #18005a, #789ec4, #fff);
+	background: linear-gradient(to top, #18005a, #70b7ff, #fff);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -41,7 +42,7 @@
 		height: 600px;
 		z-index: 0;
 		clip-path: polygon(0 35%, 50% 45%, 100% 35%, 100% 65%, 50% 75%, 0 65%);
-		background: linear-gradient(to bottom, #0178f0, #fff);
+		background: linear-gradient(to right, #0178f0, #fff);
 	}
 }
 .card_contact {
@@ -49,7 +50,7 @@
 	width: 70%;
 	margin-bottom: 2.5em;
 	background: rgba(84, 69, 216, 0.137);
-	border: 1px solid rgba(255, 255, 255, 0.438);
+	border: 1px solid rgba(255, 255, 255, 0.253);
 	backdrop-filter: blur(5px);
 	border-radius: 30px;
 }
