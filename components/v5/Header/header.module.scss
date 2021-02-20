@@ -10,22 +10,24 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-
 	&:after {
 		position: absolute;
 		content: '';
 		width: 8rem;
 		height: 8rem;
 		background: rgba(229, 199, 255, 0.45);
-		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		box-shadow: 0 0 6px 0 rgba(31, 38, 135, 0.37);
 		backdrop-filter: blur(6.5px);
 		-webkit-backdrop-filter: blur(6.5px);
 		border-radius: 50%;
-		border: 1px solid rgba(255, 255, 255, 0.18);
-
-		top: 25%;
-		right: 8%;
+		border: 1px solid rgba(255, 255, 255, 0.322);
+		top: 20%;
+		right: -5%;
 		z-index: 10;
+		@media screen and (min-width: 600px) {
+			top: 25%;
+			right: 8%;
+		}
 	}
 	&:before {
 		position: absolute;
@@ -46,25 +48,33 @@
 
 .title {
 	width: 100%;
-	// height: 10vh;
-	background: url('../../../public/assets/h_bg/blue_ice.webp') no-repeat center
-		top;
-	background-size: contain;
+	min-height: 100px;
+	background: url('../../../public/assets/h_bg/blue_ice.webp') no-repeat;
+	background-position: center top;
+	background-size: cover;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
-	font-size: 3.3rem;
-	padding: 0.3em 0 0.3em 0;
+	font-size: 2.5rem;
+	padding: 0.3em 0;
 	text-transform: uppercase;
 	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.26);
 	word-wrap: break-word;
 	font-family: 'Quantum';
 	letter-spacing: 15px;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media screen and (min-width: 470px) {
+		font-size: 3.3rem;
+	}
 }
 
 .content {
 	width: 70%;
 	height: 75vh;
+	min-width: 350px;
 	margin: 2rem 0;
 	background: rgba(255, 255, 255, 0.25);
 	backdrop-filter: blur(10px) contrast(110%) brightness(110%);
@@ -74,10 +84,20 @@
 	display: grid;
 	place-content: center;
 	border: 1px solid rgba(255, 255, 255, 0.63);
+	@media screen and (min-width: 500px) {
+		min-width: 480px;
+		h2 {
+			font-size: 3.5rem;
+		}
+		p {
+			font-size: 3rem;
+		}
+	}
 	h2 {
 		font-family: 'Iceland';
 		text-transform: uppercase;
-		font-size: 3.5rem;
+		text-align: center;
+		font-size: 3rem;
 		mix-blend-mode: overlay;
 		text-shadow: 2px 2px 10px rgb(0, 0, 0),
 			-2px -2px 1px rgba(255, 255, 255, 0.473);
@@ -87,12 +107,16 @@
 		font-family: 'Iceland';
 		text-transform: uppercase;
 		text-align: center;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		padding: 0.3em 0;
+		margin: 1.5em 0;
 		mix-blend-mode: overlay;
 		text-shadow: 1px 1px 1px rgb(0, 0, 0),
 			-1px -1px 1px rgba(255, 255, 255, 0.473);
 		color: gray;
+		@media screen and (min-width: 500px) {
+			margin: 0;
+		}
 	}
 	.header_buttons {
 		display: flex;

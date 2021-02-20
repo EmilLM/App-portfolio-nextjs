@@ -1,6 +1,7 @@
-.container_links {
+.container {
 	width: 100%;
 	height: 13vh;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -13,6 +14,8 @@
 		color: navy;
 	}
 	.links {
+		min-width: 300px;
+
 		width: 40%;
 		display: flex;
 		align-items: center;

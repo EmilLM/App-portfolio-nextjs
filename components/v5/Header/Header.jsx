@@ -10,14 +10,14 @@ const Header = ({ scrollToRef }) => {
 				<h1 className={style.title}>Portfolio</h1>
 				<div className={style.content}>
 					<h2>Glassmorphism</h2>
-					<p>- Luchian Emil -</p>
+					<p>- Web Developer -</p>
 					<div className={style.header_buttons}>
 						<button onClick={scrollToRef}>
 							<GiArrowDunk /> &nbsp; Explore
 						</button>
 						<Link href='/'>
 							<a>
-								<VscCompareChanges /> &nbsp; Change style
+								<VscCompareChanges /> &nbsp; Home
 							</a>
 						</Link>
 					</div>

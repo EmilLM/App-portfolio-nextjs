@@ -10,12 +10,12 @@ const Coverflow = () => {
 		<>
 			<Swiper
 				effect='coverflow'
-				parallax={true}
-				spaceBetween={50}
+				parallax
+				spaceBetween={20}
 				speed={800}
 				slidesPerView={2}
-				centeredSlides={true}
-				grabCursor={true}
+				centeredSlides
+				grabCursor
 				coverflowEffect={{
 					rotate: 50, // Slde rotate in degrees
 					stretch: 0, // Stretch space between slides (in px)
@@ -23,9 +23,16 @@ const Coverflow = () => {
 					modifier: 1, // Effect multipler
 					slideShadows: true, // Enables slides shadows
 				}}
-				loop={true}
+				loop
 				navigation
-				// autoHeight
+				breakpoints={{
+					400: {
+						spaceBetween: 0,
+					},
+					600: {
+						spaceBetween: 50,
+					},
+				}}
 			>
 				{projects.map((project) => {
 					return (

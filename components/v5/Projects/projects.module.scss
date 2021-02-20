@@ -3,8 +3,10 @@
 	background-size: contain;
 	z-index: 9;
 	width: 100%;
+	min-height: 100px;
+
 	text-align: center;
-	font-size: 3.3rem;
+	font-size: 2.5rem;
 	padding: 0.2em 0 0.4em 0;
 	text-transform: uppercase;
 	background-clip: text;
@@ -13,9 +15,14 @@
 	word-wrap: break-word;
 	font-family: 'Quantum';
 	letter-spacing: 15px;
+	display: grid;
+	place-content: center;
+	@media screen and (min-width: 470px) {
+		font-size: 3.3rem;
+	}
 }
 .container {
-	// background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+	height: 70vh;
 	background: linear-gradient(180deg, #fff 10%, rgb(213, 245, 253) 50%);
 	clip-path: polygon(
 		0 0,
@@ -23,11 +30,11 @@
 		100% 100%,
 		86% 93%,
 		62% 97%,
-		44% 98%,
+		44% 99%,
 		16% 95%,
 		0 100%
 	);
-
-	// overflow: hidden;
-	height: 100vh;
+	@media screen and (min-width: 600px) {
+		height: 100vh;
+	}
 }

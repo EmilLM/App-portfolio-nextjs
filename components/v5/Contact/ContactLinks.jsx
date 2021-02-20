@@ -1,7 +1,7 @@
 import style from './links.module.scss';
 const ContactLinks = () => {
 	return (
-		<div className={style.container_links}>
+		<div className={style.container}>
 			<p>You can also reach me on:</p>
 
 			<div className={style.links}>

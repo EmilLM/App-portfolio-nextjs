@@ -5,7 +5,6 @@ const Projects = () => {
 		<>
 			<div className={style.container}>
 				<h1 className={style.title}>Projects</h1>
-
 				<Coverflow />
 			</div>
 		</>
