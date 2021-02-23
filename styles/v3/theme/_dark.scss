@@ -58,7 +58,7 @@ $dhtc: rgb(160, 160, 255);
 // about+projects section
 .main-dark {
 	.about-bg {
-		background: linear-gradient(to top, #373b44, #4286f4);
+		background: linear-gradient(to top, #00287e, #4286f4);
 		.skills-card {
 			ul {
 				color: rgb(117, 117, 247);
@@ -66,7 +66,14 @@ $dhtc: rgb(160, 160, 255);
 		}
 	}
 	.projects-header {
-		background: linear-gradient(to top, #002457, #4286f4);
+		background: linear-gradient(
+			180deg,
+			rgba(66, 134, 244, 1) 0%,
+			rgba(0, 0, 0, 1) 71%
+		);
+		.swiper-slide::before {
+			background: linear-gradient(to top, black, #00000056) !important;
+		}
 	}
 	.project-container {
 		background: linear-gradient(to top, #02193d, rgb(6, 44, 131), #4286f4);

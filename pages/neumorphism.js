@@ -38,6 +38,7 @@ const NeumorphismPage = () => {
             <Header/>
             <Content/>
             <Footer/>
+            
         </>
     );
 }

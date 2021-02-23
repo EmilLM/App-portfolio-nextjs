@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import "../styles/main.scss"
 
 import {useState, useEffect} from 'react';
@@ -7,8 +7,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from "next/head"
 import MiscContext from "../components/MiscContext.jsx";
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -18,28 +17,9 @@ import 'swiper/components/effect-coverflow/effect-coverflow.scss';
 function MyApp({ Component, pageProps}) {
   
   
-  // const {animateCookie, themeCookie} = cookies;
   const [animate, setAnimate] = useState(false);
   const [theme, setTheme] = useState(false);
  
-
-  // Cookies.set('animateCookie', animate);
-  // useEffect(()=> {
-  //   Cookies.set('animateCookie', animate);
-  //   setAnimate(()=> JSON.parse(Cookies.get('animateCookie')))
-    
-  // }, [animate]);
-
-  // useEffect(()=>{
-  //   setAnimate( ()=>JSON.parse(Cookies.get('animateCookie')))
-  // }, [])
-
-  // useEffect(()=> {
-  //   Cookies.set('themeCookie', theme);
-  // }, [theme]);
-
-
-
   return (
     <>
       <Head>
@@ -53,14 +33,3 @@ function MyApp({ Component, pageProps}) {
 }
 
 export default MyApp
-
-
-// MyApp.getInitialProps = ({ req }) => {
-//   const cookies = new Cookies(req.headers.cookie);
-  
-//   // const cookies = parseCookies(req);
-
-//   return {
-//      cookies
-//   };
-// };
