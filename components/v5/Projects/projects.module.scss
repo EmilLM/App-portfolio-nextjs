@@ -24,16 +24,16 @@
 .container {
 	height: 70vh;
 	background: linear-gradient(180deg, #fff 10%, rgb(213, 245, 253) 50%);
-	clip-path: polygon(
-		0 0,
-		100% 0,
-		100% 100%,
-		86% 93%,
-		62% 97%,
-		44% 99%,
-		16% 95%,
-		0 100%
-	);
+	// clip-path: polygon(
+	// 	0 0,
+	// 	100% 0,
+	// 	100% 100%,
+	// 	86% 93%,
+	// 	62% 97%,
+	// 	44% 99%,
+	// 	16% 95%,
+	// 	0 100%
+	// );
 	@media screen and (min-width: 600px) {
 		height: 100vh;
 	}

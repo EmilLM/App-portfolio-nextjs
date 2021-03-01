@@ -35,7 +35,7 @@ Other dependencies:
 
 - [Font Awesome](https://fontawesome.com) - Icon library
 - [EmailJs](https://www.emailjs.com) - Email sender
-- [React Slick](https://react-slick.neostack.com) - Carousel library
+- [Swiper JS](https://react-slick.neostack.com) - Slider library
 - [React Scrollspy](https://makotot.github.io/react-scrollspy/) - Scrollspy navigation library
 - [React Lazyload](https://www.npmjs.com/package/react-lazy-load) - Lazyload images library
 - [React Ripples](https://rwu823.github.io/react-ripples/) - Ripples for buttons library
@@ -46,7 +46,7 @@ Other dependencies:
 
 
 ```
-Install Node.js, Git Bash
+Install Node.js
 ```
 
 ### Installing

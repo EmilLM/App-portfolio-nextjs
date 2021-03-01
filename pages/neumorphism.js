@@ -10,7 +10,7 @@ import 'ui-neumorphism/dist/index.css';
 import { overrideThemeVariables } from 'ui-neumorphism';
 
 
-const NeumorphismPage = () => {
+const Neumorphism = () => {
 
     useEffect(()=>{
         overrideThemeVariables({
@@ -43,4 +43,4 @@ const NeumorphismPage = () => {
     );
 }
  
-export default NeumorphismPage;
+export default Neumorphism;

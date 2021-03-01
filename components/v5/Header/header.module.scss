@@ -1,10 +1,9 @@
 .container {
 	width: 100%;
-	background-image: radial-gradient(
-		circle farthest-corner at 16.5% 28.1%,
-		rgb(60, 127, 250) 0%,
-		rgb(163, 211, 255) 90%
-	);
+	background-image: url('../../../public/assets/bg/intro.webp');
+	background-size: cover;
+	background-position: center center;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,14 +14,13 @@
 		content: '';
 		width: 8rem;
 		height: 8rem;
-		background: rgba(229, 199, 255, 0.45);
+		// background: rgba(229, 199, 255, 0.247);
 		box-shadow: 0 0 6px 0 rgba(31, 38, 135, 0.37);
-		backdrop-filter: blur(6.5px);
-		-webkit-backdrop-filter: blur(6.5px);
+		backdrop-filter: blur(5px);
 		border-radius: 50%;
 		border: 1px solid rgba(255, 255, 255, 0.322);
-		top: 20%;
-		right: -5%;
+		top: 15%;
+		right: 3%;
 		z-index: 10;
 		@media screen and (min-width: 600px) {
 			top: 25%;
@@ -34,10 +32,9 @@
 		content: '';
 		width: 11rem;
 		height: 11rem;
-		background: rgba(229, 199, 255, 0.45);
+		background: transparent;
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-		backdrop-filter: blur(6.5px);
-		-webkit-backdrop-filter: blur(6.5px);
+		backdrop-filter: blur(5px);
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
 		bottom: -5%;
@@ -73,18 +70,21 @@
 
 .content {
 	width: 70%;
-	height: 75vh;
+	height: 60vh;
 	min-width: 350px;
 	margin: 2rem 0;
-	background: rgba(255, 255, 255, 0.25);
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.336);
+
 	backdrop-filter: blur(10px) contrast(110%) brightness(110%);
 	border-radius: 30px;
 	mix-blend-mode: overlay;
 	z-index: 9;
 	display: grid;
 	place-content: center;
-	border: 1px solid rgba(255, 255, 255, 0.63);
+
 	@media screen and (min-width: 500px) {
+		height: 75vh;
 		min-width: 480px;
 		h2 {
 			font-size: 3.5rem;
@@ -93,6 +93,7 @@
 			font-size: 3rem;
 		}
 	}
+
 	h2 {
 		font-family: 'Iceland';
 		text-transform: uppercase;
@@ -109,7 +110,7 @@
 		text-align: center;
 		font-size: 2.5rem;
 		padding: 0.3em 0;
-		margin: 1.5em 0;
+		// margin: 1.5em 0;
 		mix-blend-mode: overlay;
 		text-shadow: 1px 1px 1px rgb(0, 0, 0),
 			-1px -1px 1px rgba(255, 255, 255, 0.473);
@@ -131,7 +132,7 @@
 			border: none;
 			background: rgba(255, 255, 255, 0.25);
 			backdrop-filter: blur(10px);
-			color: navy;
+			color: black;
 			mix-blend-mode: overlay;
 			border: 1px solid rgba(255, 255, 255, 0.377);
 			padding: 0.4em 0.7em;
@@ -149,6 +150,9 @@
 		}
 		a {
 			text-decoration: none;
+			font-family: 'Iceland';
+
+			font-size: 1.2rem;
 			padding: 0.4em 0.7em;
 			display: flex;
 			align-items: center;

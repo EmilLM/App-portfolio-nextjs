@@ -1,5 +1,7 @@
 .container {
-	background: linear-gradient(to top, #18005a, #70b7ff, #fff);
+	background-image: url('../../../public/assets/bg/contact.webp');
+	background-size: cover;
+	background-position: center center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -7,25 +9,6 @@
 	overflow: visible;
 	position: relative;
 	z-index: 0;
-	clip-path: polygon(
-		0 0,
-		100% 0,
-		100% 100%,
-		79% 97%,
-		56% 100%,
-		37% 98%,
-		16% 100%,
-		0 96%
-	);
-	&:after {
-		position: absolute;
-		content: '';
-		width: 100%;
-		height: 600px;
-		z-index: 0;
-		clip-path: polygon(0 35%, 50% 45%, 100% 35%, 100% 65%, 50% 75%, 0 65%);
-		background: linear-gradient(to top, #0178f0, #fff);
-	}
 }
 
 .title {
@@ -59,17 +42,22 @@
 
 	margin-bottom: 2.5em;
 	background: rgba(84, 69, 216, 0.137);
-	border: 1px solid rgba(255, 255, 255, 0.253);
-	backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.425);
+	backdrop-filter: blur(15px);
 	border-radius: 30px;
+
 	@media screen and (min-width: 500px) {
 		min-width: 480px;
 	}
 }
 .footer {
-	color: white;
+	color: black;
 	display: grid;
 	place-content: center;
 	font-family: 'Quantum';
 	margin: 1em 0;
+	span {
+		display: inline-block;
+		transform: scale(-1, 1);
+	}
 }

@@ -11,7 +11,6 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
-
 	word-wrap: break-word;
 	font-family: 'Quantum';
 	letter-spacing: 15px;
@@ -90,15 +89,21 @@
 	&:before {
 		position: absolute;
 		content: '';
-		top: 17%;
+		top: 18%;
 		width: 71%;
-		height: 81vh;
+		min-width: 360px;
+		height: 61vh;
 		background: rgba(134, 121, 250, 0.342);
 		border: 1px solid rgba(255, 255, 255, 0.274);
 		backdrop-filter: blur(15px);
 		z-index: 1;
 		border-radius: 30px;
 		transform: rotate(2deg);
+		@media screen and (min-width: 500px) {
+			height: 81vh;
+			min-width: 490px;
+			top: 17%;
+		}
 	}
 }
 @mixin inner_card {
@@ -117,28 +122,73 @@
 
 .content {
 	width: 70%;
-	height: 80vh;
-	// max-height: 700px;
+	height: 60vh;
+	min-width: 350px;
 	margin: 2em 0 3em 0;
 	border-radius: 30px;
 	background: rgba(93, 75, 250, 0.26);
 	border: 1px solid rgba(255, 255, 255, 0.253);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
 	backdrop-filter: blur(15px) contrast(110%) brightness(110%);
-	// mix-blend-mode: overlay;
+
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
-	perspective: 1000px;
-	transform-style: flat;
 	position: relative;
 	z-index: 10 !important;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
 
+	@media screen and (min-width: 500px) {
+		min-width: 480px;
+		height: 80vh;
+	}
+	@media screen and (min-width: 1100px) {
+		perspective: 1000px;
+		transform-style: flat;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 1099px) {
+	.objective,
+	.studies,
+	.info {
+		height: 260px;
+		padding: 1.2em 1.5em;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		font-family: 'RussoOne';
+		color: #190d6e;
+
+		h5 {
+			display: none;
+		}
+		span {
+			color: rgb(0, 0, 255);
+		}
+		p {
+			text-align: center;
+			font-size: 0.9rem;
+		}
+	}
+
+	.info {
+		margin-top: 20px;
+		line-height: 1.5rem;
+		p {
+			text-align: left;
+			color: green;
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) {
 	.objective {
 		@include inner_card();
-		top: 15%;
-		right: 26%;
+		top: 18%;
+		right: 23%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -176,8 +226,8 @@
 
 	.studies {
 		@include inner_card();
-		top: 19%;
-		right: 23%;
+		top: 21%;
+		right: 20%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -223,8 +273,8 @@
 		@include inner_card();
 		background: rgba(39, 33, 53, 0.45);
 
-		top: 23%;
-		right: 20%;
+		top: 25%;
+		right: 17%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -255,8 +305,8 @@
 		}
 	}
 	.active {
-		top: 27%;
-		right: 17%;
+		top: 29%;
+		right: 14%;
 		z-index: 10;
 		background: rgba(39, 33, 53, 0.466) !important;
 
@@ -281,39 +331,39 @@
 			filter: blur(5px);
 		}
 	}
-
-	.btn_download {
-		display: flex;
-		align-items: center;
-		color: rgb(189, 196, 255);
-
-		margin-top: 0.7em;
-		padding: 0.3em 0.5em;
-		border-radius: 0.25em;
-		font-size: 1rem;
-		font-weight: 700;
-		background: rgba(18, 72, 92, 0.38);
-		border: none;
-		font-family: 'Iceland';
-		text-decoration: none;
-		cursor: pointer;
+	.off {
+		top: 21% !important;
+		right: 20% !important;
 		&:hover {
-			color: white;
-			background: rgba(18, 72, 92, 1);
-		}
-		svg {
-			margin-right: 10px;
+			top: 9% !important;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
 		}
 	}
 }
-.off {
-	top: 19% !important;
-	right: 23% !important;
+
+.btn_download {
+	display: flex;
+	align-items: center;
+	color: rgb(189, 196, 255);
+
+	margin-top: 0.7em;
+	padding: 0.5em 0.5em;
+	border-radius: 0.25em;
+	font-size: 1rem;
+	font-weight: 700;
+	background: rgba(18, 72, 92, 0.38);
+	border: none;
+	font-family: 'Iceland';
+	text-decoration: none;
+	cursor: pointer;
 	&:hover {
-		top: 9% !important;
-		h5 {
-			filter: blur(0);
-			cursor: pointer;
-		}
+		color: white;
+		background: rgba(18, 72, 92, 1);
+	}
+	svg {
+		margin-right: 10px;
 	}
 }

@@ -4,13 +4,17 @@ import Header from '../components/v5/Header/Header.jsx';
 import About from '../components/v5/About/About.jsx';
 import Projects  from "../components/v5/Projects/Projects.jsx";
 import Contact from "../components/v5/Contact/Contact"
-import {useRef} from 'react';
+import {useRef, useEffect} from 'react';
+import cookie from 'js-cookie';
 
-export default function Waves() {
+export default function Glassmorphism() {
 
   const aboutRef = useRef(null);
   const scrollToRef = () => aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-
+  useEffect(()=>{
+    // cookie.set('route', '/glassmorphism')
+    return () => cookie.remove('route')
+  }, [])
   return (
     <>
       <Head>

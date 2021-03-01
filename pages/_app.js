@@ -7,8 +7,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from "next/head"
 import MiscContext from "../components/MiscContext.jsx";
 
-
-
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
