@@ -35,7 +35,7 @@ Other dependencies:
 
 - [Font Awesome](https://fontawesome.com) - Icon library
 - [EmailJs](https://www.emailjs.com) - Email sender
-- [Swiper JS](https://react-slick.neostack.com) - Slider library
+- [Swiper JS](https://swiperjs.com) - Slider library
 - [React Scrollspy](https://makotot.github.io/react-scrollspy/) - Scrollspy navigation library
 - [React Lazyload](https://www.npmjs.com/package/react-lazy-load) - Lazyload images library
 - [React Ripples](https://rwu823.github.io/react-ripples/) - Ripples for buttons library

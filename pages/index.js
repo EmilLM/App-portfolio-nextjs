@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import { useRouter } from 'next/router'
 import cookie from 'js-cookie';
 
-const  Home = ({route}) => {
+const  Home = () => {
     // const router = useRouter();
     // useEffect(()=> {
     //     router.push(route)
@@ -39,8 +39,8 @@ const  Home = ({route}) => {
  
 export default Home ;
 
-export async function getServerSideProps({req}) {
-  return {
-    props: {route: req.cookies.route || ""}
-  }
-}
+// export async function getServerSideProps({req}) {
+//   return {
+//     props: {route: req.cookies.route || ""}
+//   }
+// }
